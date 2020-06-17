@@ -18,7 +18,7 @@
             Exit Sub
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         If Not Pregunta("¿Desea dejar el Stock en 0 para el Local " & Trim(cLocal.Text) & ", Bodega: " & Trim(cBodega.Text) & "?") Then
             Exit Sub

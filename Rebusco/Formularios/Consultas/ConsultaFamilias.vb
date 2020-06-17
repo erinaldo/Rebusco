@@ -24,7 +24,7 @@
     End Sub
 
     Private Sub bConsultar_Click(sender As Object, e As EventArgs) Handles bConsultar.Click
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wListaFamiliaUsados = DC.T_Articulos.Select(Function(x) x.Familia).Distinct.ToList
         Dim wListaFamilias = DC.T_Familias.ToList
 

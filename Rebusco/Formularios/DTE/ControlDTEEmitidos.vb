@@ -475,7 +475,7 @@ Public Class ControlDTEEmitidos
 
         Cursor = Cursors.WaitCursor
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wListaTipoDoc = DC.T_TipoDoc.ToList
 
 

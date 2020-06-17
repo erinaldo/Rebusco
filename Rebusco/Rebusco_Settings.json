@@ -1,19 +1,15 @@
 ﻿{
-  "Empresa": "Wikets",
+  "Empresa": "Rebusco",
   "ImprimirDocumento": "true",
   "TiempoConexion": 3,
   "CantidadCopias": 2,
   "StockObligatorio": "false",
   "ImpresoraVoucher": "",
-  "RutaArchivos": "F:\\FTP\\MARKETONE",
+  "RutaArchivos": "F:\\FTP\\REBUSCO",
   "ServidoresEmpresas": [
     {
-      "Empresa": "Multibike",
-      "IP": "200.111.233.251"
-    },
-    {
-      "Empresa": "Bikemonkey",
-      "IP": "192.168.10.72"
+      "Empresa": "Rebusco",
+      "IP": "wikets.no-ip.info\SQL2008"
     },
     {
       "Empresa": "Wikets",

@@ -56,7 +56,7 @@ Public Class ManFamilia
             Exit Sub
         End If
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wFam As New T_Familias
         Dim qFam = DC.T_Familias.FirstOrDefault(Function(x) x.Familia = CInt(xFamilia.Text))
 

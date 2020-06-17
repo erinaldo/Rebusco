@@ -16,7 +16,7 @@ Public Class DocumentoReporte
     Public Property LogoVocuher As Byte()
 
     Sub New()
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wLocal = DC.T_Locales.FirstOrDefault(Function(x) x.Local = G_LOCALACTUAL)
         If wLocal IsNot Nothing Then
             Dim wComuna = DC.T_Comunas.FirstOrDefault(Function(x) x.NombreComuna = wLocal.Comuna)
@@ -62,7 +62,7 @@ Public Class ReporteEncabezadoDocumento
 
 
     Sub New(wNumDoc As Decimal, wTipoDoc As DocumentoPago)
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Caja = G_POS
         POS = G_POS
         Local = G_LOCALACTUAL

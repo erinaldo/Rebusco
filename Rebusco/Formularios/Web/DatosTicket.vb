@@ -178,9 +178,6 @@
             EmisionDocumentos.cTipoDoc.Text = "Factura Electrónica"
             EmisionDocumentos.xCliente.Text = xCliente.Text
             EmisionDocumentos.Ver_Cliente()
-        Else
-            VentaLocal.Show()
-            VentaLocal.BringToFront()
         End If
     End Sub
 

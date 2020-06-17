@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Principal
+Partial Class Menu_Principal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -23,7 +23,7 @@ Partial Class Principal
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Principal))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Menu_Principal))
         Me.cLocal = New System.Windows.Forms.ComboBox()
         Me.gParametros = New System.Windows.Forms.GroupBox()
         Me.lKey = New System.Windows.Forms.Label()
@@ -56,15 +56,6 @@ Partial Class Principal
         Me.mCambioDeProducto = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripSeparator()
         Me.ConsultaDeDocumentosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mMenuVentas = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem11 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem12 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mVentaLocal = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem14 = New System.Windows.Forms.ToolStripSeparator()
-        Me.CambioDeFormaDePagoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.mCambioPrecio = New System.Windows.Forms.ToolStripMenuItem()
         Me.mMenuDTE = New System.Windows.Forms.ToolStripMenuItem()
         Me.mConsultarDocumentosAlDTE = New System.Windows.Forms.ToolStripMenuItem()
         Me.mEnvíoDTE = New System.Windows.Forms.ToolStripMenuItem()
@@ -77,38 +68,8 @@ Partial Class Principal
         Me.mMenuWeb = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClickCollectToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AnulaciónDeTicketsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mMenuDistribucion = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mStocksPorDocumento = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mMovimientoDeStocksPOS = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mMenuServicios = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mIngresoDeOT = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mServicioTécnico = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mAnulaciónDeOT = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.mConsultaDeOT = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mRepuestoParaOT = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ConsultaDeAtencionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.mRepuestosPendientes = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StatusServicioTécnicoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mControlDeBicicletas = New System.Windows.Forms.ToolStripMenuItem()
         Me.mMenuCobranzas = New System.Windows.Forms.ToolStripMenuItem()
         Me.mControlPagos = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mMenuStocks = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mModificarStocks = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mTransformarArtículo = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mCierreDeStocksMensual = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripSeparator()
-        Me.mMovimientos = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mImprimirMovimientos = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mAnularMovimiento = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mListadosDeMovimientos = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripSeparator()
-        Me.mListadoDeStocks = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mListadoDeTomaDeInventario = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LimpiarBodegasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
-        Me.mImpresiónDeEtiquetas = New System.Windows.Forms.ToolStripMenuItem()
         Me.mMenuRemuneraciones = New System.Windows.Forms.ToolStripMenuItem()
         Me.mIngresoDeEventos = New System.Windows.Forms.ToolStripMenuItem()
         Me.mCréditosDePersonal = New System.Windows.Forms.ToolStripMenuItem()
@@ -125,11 +86,9 @@ Partial Class Principal
         Me.mConsultaAuditoria = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator14 = New System.Windows.Forms.ToolStripSeparator()
         Me.mConsultaArticulos = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mConsultaAbonos = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultaDeComisionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultaDePreciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.mConsultaTracking = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mConsultaDeKardex = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator8 = New System.Windows.Forms.ToolStripSeparator()
         Me.mOtrasConsultas = New System.Windows.Forms.ToolStripMenuItem()
         Me.mConsultaBodega = New System.Windows.Forms.ToolStripMenuItem()
@@ -190,13 +149,11 @@ Partial Class Principal
         Me.bIngresoOT = New System.Windows.Forms.Button()
         Me.bServicioTecnico = New System.Windows.Forms.Button()
         Me.bBuscarArticulo = New System.Windows.Forms.Button()
-        Me.bStockDocumentos = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.WinDeco1 = New WinDeco.WinDeco()
-        Me.bTest = New System.Windows.Forms.Button()
         Me.bVerConfig = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.gParametros.SuspendLayout()
@@ -492,7 +449,7 @@ Partial Class Principal
         Me.Barra.Dock = System.Windows.Forms.DockStyle.None
         Me.Barra.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Barra.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.Barra.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mMenuDocumentos, Me.mMenuVentas, Me.mMenuDTE, Me.mMenuWeb, Me.mMenuDistribucion, Me.mMenuServicios, Me.mMenuCobranzas, Me.mMenuStocks, Me.mMenuRemuneraciones, Me.mMenuConsultas, Me.mMenuTablas, Me.mMenuSalir})
+        Me.Barra.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mMenuDocumentos, Me.mMenuDTE, Me.mMenuWeb, Me.mMenuCobranzas, Me.mMenuRemuneraciones, Me.mMenuConsultas, Me.mMenuTablas, Me.mMenuSalir})
         Me.Barra.Location = New System.Drawing.Point(1, 52)
         Me.Barra.Name = "Barra"
         Me.Barra.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
@@ -558,60 +515,6 @@ Partial Class Principal
         Me.ConsultaDeDocumentosToolStripMenuItem.Name = "ConsultaDeDocumentosToolStripMenuItem"
         Me.ConsultaDeDocumentosToolStripMenuItem.Size = New System.Drawing.Size(240, 22)
         Me.ConsultaDeDocumentosToolStripMenuItem.Text = "Consulta de Documentos"
-        '
-        'mMenuVentas
-        '
-        Me.mMenuVentas.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem10, Me.mVentaLocal, Me.ToolStripMenuItem14, Me.CambioDeFormaDePagoToolStripMenuItem, Me.ToolStripSeparator2, Me.mCambioPrecio})
-        Me.mMenuVentas.Name = "mMenuVentas"
-        Me.mMenuVentas.Size = New System.Drawing.Size(63, 34)
-        Me.mMenuVentas.Text = "Ventas"
-        '
-        'ToolStripMenuItem10
-        '
-        Me.ToolStripMenuItem10.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem11, Me.ToolStripMenuItem12})
-        Me.ToolStripMenuItem10.Name = "ToolStripMenuItem10"
-        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(246, 22)
-        Me.ToolStripMenuItem10.Text = "Menú Cajas"
-        '
-        'ToolStripMenuItem11
-        '
-        Me.ToolStripMenuItem11.Name = "ToolStripMenuItem11"
-        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(215, 22)
-        Me.ToolStripMenuItem11.Text = "Apertura de Caja"
-        '
-        'ToolStripMenuItem12
-        '
-        Me.ToolStripMenuItem12.Name = "ToolStripMenuItem12"
-        Me.ToolStripMenuItem12.Size = New System.Drawing.Size(215, 22)
-        Me.ToolStripMenuItem12.Text = "Cuadratura de Ventas"
-        '
-        'mVentaLocal
-        '
-        Me.mVentaLocal.Name = "mVentaLocal"
-        Me.mVentaLocal.Size = New System.Drawing.Size(246, 22)
-        Me.mVentaLocal.Text = "Venta Local"
-        '
-        'ToolStripMenuItem14
-        '
-        Me.ToolStripMenuItem14.Name = "ToolStripMenuItem14"
-        Me.ToolStripMenuItem14.Size = New System.Drawing.Size(243, 6)
-        '
-        'CambioDeFormaDePagoToolStripMenuItem
-        '
-        Me.CambioDeFormaDePagoToolStripMenuItem.Name = "CambioDeFormaDePagoToolStripMenuItem"
-        Me.CambioDeFormaDePagoToolStripMenuItem.Size = New System.Drawing.Size(246, 22)
-        Me.CambioDeFormaDePagoToolStripMenuItem.Text = "Cambio de Forma de Pago"
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(243, 6)
-        '
-        'mCambioPrecio
-        '
-        Me.mCambioPrecio.Name = "mCambioPrecio"
-        Me.mCambioPrecio.Size = New System.Drawing.Size(246, 22)
-        Me.mCambioPrecio.Text = "Cambio de Precios"
         '
         'mMenuDTE
         '
@@ -686,96 +589,6 @@ Partial Class Principal
         Me.AnulaciónDeTicketsToolStripMenuItem.Size = New System.Drawing.Size(206, 22)
         Me.AnulaciónDeTicketsToolStripMenuItem.Text = "Anulación de Tickets"
         '
-        'mMenuDistribucion
-        '
-        Me.mMenuDistribucion.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mStocksPorDocumento, Me.mMovimientoDeStocksPOS})
-        Me.mMenuDistribucion.Name = "mMenuDistribucion"
-        Me.mMenuDistribucion.Size = New System.Drawing.Size(94, 34)
-        Me.mMenuDistribucion.Text = "Distribución"
-        '
-        'mStocksPorDocumento
-        '
-        Me.mStocksPorDocumento.Name = "mStocksPorDocumento"
-        Me.mStocksPorDocumento.Size = New System.Drawing.Size(314, 22)
-        Me.mStocksPorDocumento.Text = "Movimiento de Stocks por Documento"
-        '
-        'mMovimientoDeStocksPOS
-        '
-        Me.mMovimientoDeStocksPOS.Name = "mMovimientoDeStocksPOS"
-        Me.mMovimientoDeStocksPOS.Size = New System.Drawing.Size(314, 22)
-        Me.mMovimientoDeStocksPOS.Text = "Movimiento de Stocks POS"
-        '
-        'mMenuServicios
-        '
-        Me.mMenuServicios.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mIngresoDeOT, Me.mServicioTécnico, Me.mAnulaciónDeOT, Me.ToolStripSeparator1, Me.mConsultaDeOT, Me.mRepuestoParaOT, Me.ConsultaDeAtencionesToolStripMenuItem, Me.ToolStripSeparator3, Me.mRepuestosPendientes, Me.StatusServicioTécnicoToolStripMenuItem, Me.mControlDeBicicletas})
-        Me.mMenuServicios.Name = "mMenuServicios"
-        Me.mMenuServicios.Size = New System.Drawing.Size(77, 34)
-        Me.mMenuServicios.Text = "Servicios"
-        '
-        'mIngresoDeOT
-        '
-        Me.mIngresoDeOT.Name = "mIngresoDeOT"
-        Me.mIngresoDeOT.Size = New System.Drawing.Size(267, 22)
-        Me.mIngresoDeOT.Text = "Ingreso de OT"
-        '
-        'mServicioTécnico
-        '
-        Me.mServicioTécnico.Name = "mServicioTécnico"
-        Me.mServicioTécnico.Size = New System.Drawing.Size(267, 22)
-        Me.mServicioTécnico.Text = "Servicio Técnico"
-        '
-        'mAnulaciónDeOT
-        '
-        Me.mAnulaciónDeOT.Name = "mAnulaciónDeOT"
-        Me.mAnulaciónDeOT.Size = New System.Drawing.Size(267, 22)
-        Me.mAnulaciónDeOT.Text = "Anulación de OT"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(264, 6)
-        '
-        'mConsultaDeOT
-        '
-        Me.mConsultaDeOT.Name = "mConsultaDeOT"
-        Me.mConsultaDeOT.Size = New System.Drawing.Size(267, 22)
-        Me.mConsultaDeOT.Text = "Consulta de OT"
-        '
-        'mRepuestoParaOT
-        '
-        Me.mRepuestoParaOT.Name = "mRepuestoParaOT"
-        Me.mRepuestoParaOT.Size = New System.Drawing.Size(267, 22)
-        Me.mRepuestoParaOT.Text = "Consulta de Repuestos"
-        '
-        'ConsultaDeAtencionesToolStripMenuItem
-        '
-        Me.ConsultaDeAtencionesToolStripMenuItem.Name = "ConsultaDeAtencionesToolStripMenuItem"
-        Me.ConsultaDeAtencionesToolStripMenuItem.Size = New System.Drawing.Size(267, 22)
-        Me.ConsultaDeAtencionesToolStripMenuItem.Text = "Consulta de Atenciones"
-        '
-        'ToolStripSeparator3
-        '
-        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(264, 6)
-        '
-        'mRepuestosPendientes
-        '
-        Me.mRepuestosPendientes.Name = "mRepuestosPendientes"
-        Me.mRepuestosPendientes.Size = New System.Drawing.Size(267, 22)
-        Me.mRepuestosPendientes.Text = "Abastecimiento"
-        '
-        'StatusServicioTécnicoToolStripMenuItem
-        '
-        Me.StatusServicioTécnicoToolStripMenuItem.Name = "StatusServicioTécnicoToolStripMenuItem"
-        Me.StatusServicioTécnicoToolStripMenuItem.Size = New System.Drawing.Size(267, 22)
-        Me.StatusServicioTécnicoToolStripMenuItem.Text = "Status Servicio Técnico"
-        '
-        'mControlDeBicicletas
-        '
-        Me.mControlDeBicicletas.Name = "mControlDeBicicletas"
-        Me.mControlDeBicicletas.Size = New System.Drawing.Size(267, 22)
-        Me.mControlDeBicicletas.Text = "Consulta de datos de Bicicleta"
-        '
         'mMenuCobranzas
         '
         Me.mMenuCobranzas.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mControlPagos})
@@ -788,94 +601,6 @@ Partial Class Principal
         Me.mControlPagos.Name = "mControlPagos"
         Me.mControlPagos.Size = New System.Drawing.Size(186, 22)
         Me.mControlPagos.Text = "Control de Pagos"
-        '
-        'mMenuStocks
-        '
-        Me.mMenuStocks.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mModificarStocks, Me.mTransformarArtículo, Me.mCierreDeStocksMensual, Me.ToolStripMenuItem7, Me.mMovimientos, Me.mImprimirMovimientos, Me.mAnularMovimiento, Me.mListadosDeMovimientos, Me.ToolStripMenuItem8, Me.mListadoDeStocks, Me.mListadoDeTomaDeInventario, Me.LimpiarBodegasToolStripMenuItem, Me.ToolStripSeparator7, Me.mImpresiónDeEtiquetas})
-        Me.mMenuStocks.Name = "mMenuStocks"
-        Me.mMenuStocks.Size = New System.Drawing.Size(62, 34)
-        Me.mMenuStocks.Text = "Stocks"
-        '
-        'mModificarStocks
-        '
-        Me.mModificarStocks.Name = "mModificarStocks"
-        Me.mModificarStocks.Size = New System.Drawing.Size(266, 22)
-        Me.mModificarStocks.Text = "Consulta de Stocks"
-        '
-        'mTransformarArtículo
-        '
-        Me.mTransformarArtículo.Name = "mTransformarArtículo"
-        Me.mTransformarArtículo.Size = New System.Drawing.Size(266, 22)
-        Me.mTransformarArtículo.Text = "Transformar Artículo"
-        '
-        'mCierreDeStocksMensual
-        '
-        Me.mCierreDeStocksMensual.Name = "mCierreDeStocksMensual"
-        Me.mCierreDeStocksMensual.Size = New System.Drawing.Size(266, 22)
-        Me.mCierreDeStocksMensual.Text = "Cierre de Stocks Mensual"
-        '
-        'ToolStripMenuItem7
-        '
-        Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
-        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(263, 6)
-        '
-        'mMovimientos
-        '
-        Me.mMovimientos.Name = "mMovimientos"
-        Me.mMovimientos.Size = New System.Drawing.Size(266, 22)
-        Me.mMovimientos.Text = "Movimiento de Mercaderías"
-        '
-        'mImprimirMovimientos
-        '
-        Me.mImprimirMovimientos.Name = "mImprimirMovimientos"
-        Me.mImprimirMovimientos.Size = New System.Drawing.Size(266, 22)
-        Me.mImprimirMovimientos.Text = "Imprimir Movimiento"
-        '
-        'mAnularMovimiento
-        '
-        Me.mAnularMovimiento.Name = "mAnularMovimiento"
-        Me.mAnularMovimiento.Size = New System.Drawing.Size(266, 22)
-        Me.mAnularMovimiento.Text = "Anular Movimiento"
-        '
-        'mListadosDeMovimientos
-        '
-        Me.mListadosDeMovimientos.Name = "mListadosDeMovimientos"
-        Me.mListadosDeMovimientos.Size = New System.Drawing.Size(266, 22)
-        Me.mListadosDeMovimientos.Text = "Listados de Movimientos"
-        '
-        'ToolStripMenuItem8
-        '
-        Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
-        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(263, 6)
-        '
-        'mListadoDeStocks
-        '
-        Me.mListadoDeStocks.Name = "mListadoDeStocks"
-        Me.mListadoDeStocks.Size = New System.Drawing.Size(266, 22)
-        Me.mListadoDeStocks.Text = "Listado de Stocks"
-        '
-        'mListadoDeTomaDeInventario
-        '
-        Me.mListadoDeTomaDeInventario.Name = "mListadoDeTomaDeInventario"
-        Me.mListadoDeTomaDeInventario.Size = New System.Drawing.Size(266, 22)
-        Me.mListadoDeTomaDeInventario.Text = "Listado de Toma de Inventario"
-        '
-        'LimpiarBodegasToolStripMenuItem
-        '
-        Me.LimpiarBodegasToolStripMenuItem.Name = "LimpiarBodegasToolStripMenuItem"
-        Me.LimpiarBodegasToolStripMenuItem.Size = New System.Drawing.Size(266, 22)
-        Me.LimpiarBodegasToolStripMenuItem.Text = "Limpiar Stocks de Bodegas"
-        '
-        'ToolStripSeparator7
-        '
-        Me.ToolStripSeparator7.Name = "ToolStripSeparator7"
-        Me.ToolStripSeparator7.Size = New System.Drawing.Size(263, 6)
-        '
-        'mImpresiónDeEtiquetas
-        '
-        Me.mImpresiónDeEtiquetas.Name = "mImpresiónDeEtiquetas"
-        Me.mImpresiónDeEtiquetas.Size = New System.Drawing.Size(266, 22)
-        Me.mImpresiónDeEtiquetas.Text = "Impresión de Etiquetas"
         '
         'mMenuRemuneraciones
         '
@@ -950,7 +675,7 @@ Partial Class Principal
         '
         'mMenuConsultas
         '
-        Me.mMenuConsultas.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mConsultaAuditoria, Me.ToolStripSeparator14, Me.mConsultaArticulos, Me.mConsultaAbonos, Me.ConsultaDeComisionesToolStripMenuItem, Me.ConsultaDePreciosToolStripMenuItem, Me.mConsultaTracking, Me.mConsultaDeKardex, Me.ToolStripSeparator8, Me.mOtrasConsultas})
+        Me.mMenuConsultas.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mConsultaAuditoria, Me.ToolStripSeparator14, Me.mConsultaArticulos, Me.ConsultaDeComisionesToolStripMenuItem, Me.ConsultaDePreciosToolStripMenuItem, Me.mConsultaTracking, Me.ToolStripSeparator8, Me.mOtrasConsultas})
         Me.mMenuConsultas.Name = "mMenuConsultas"
         Me.mMenuConsultas.Size = New System.Drawing.Size(83, 34)
         Me.mMenuConsultas.Text = "&Consultas"
@@ -972,12 +697,6 @@ Partial Class Principal
         Me.mConsultaArticulos.Size = New System.Drawing.Size(229, 22)
         Me.mConsultaArticulos.Text = "Consulta de Artículos"
         '
-        'mConsultaAbonos
-        '
-        Me.mConsultaAbonos.Name = "mConsultaAbonos"
-        Me.mConsultaAbonos.Size = New System.Drawing.Size(229, 22)
-        Me.mConsultaAbonos.Text = "Consulta de Abonos"
-        '
         'ConsultaDeComisionesToolStripMenuItem
         '
         Me.ConsultaDeComisionesToolStripMenuItem.Name = "ConsultaDeComisionesToolStripMenuItem"
@@ -995,12 +714,6 @@ Partial Class Principal
         Me.mConsultaTracking.Name = "mConsultaTracking"
         Me.mConsultaTracking.Size = New System.Drawing.Size(229, 22)
         Me.mConsultaTracking.Text = "Consulta de Tracking"
-        '
-        'mConsultaDeKardex
-        '
-        Me.mConsultaDeKardex.Name = "mConsultaDeKardex"
-        Me.mConsultaDeKardex.Size = New System.Drawing.Size(229, 22)
-        Me.mConsultaDeKardex.Text = "Consulta de Kardex"
         '
         'ToolStripSeparator8
         '
@@ -1374,7 +1087,6 @@ Partial Class Principal
         Me.FlowLayoutPanel1.Controls.Add(Me.bIngresoOT)
         Me.FlowLayoutPanel1.Controls.Add(Me.bServicioTecnico)
         Me.FlowLayoutPanel1.Controls.Add(Me.bBuscarArticulo)
-        Me.FlowLayoutPanel1.Controls.Add(Me.bStockDocumentos)
         Me.FlowLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.FlowLayoutPanel1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(8, 94)
@@ -1553,24 +1265,6 @@ Partial Class Principal
         Me.bBuscarArticulo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.bBuscarArticulo.UseVisualStyleBackColor = True
         '
-        'bStockDocumentos
-        '
-        Me.bStockDocumentos.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bStockDocumentos.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bStockDocumentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bStockDocumentos.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bStockDocumentos.Image = Global.Rebusco.My.Resources.Resources.truck_load_wide16
-        Me.bStockDocumentos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bStockDocumentos.Location = New System.Drawing.Point(3, 122)
-        Me.bStockDocumentos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bStockDocumentos.Name = "bStockDocumentos"
-        Me.bStockDocumentos.Size = New System.Drawing.Size(199, 51)
-        Me.bStockDocumentos.TabIndex = 117
-        Me.bStockDocumentos.Text = "Movimiento de Stocks Documento"
-        Me.bStockDocumentos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bStockDocumentos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.bStockDocumentos.UseVisualStyleBackColor = True
-        '
         'Panel1
         '
         Me.Panel1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
@@ -1658,21 +1352,6 @@ Partial Class Principal
         Me.WinDeco1.VerMinimizar = True
         Me.WinDeco1.VerTitulo = True
         '
-        'bTest
-        '
-        Me.bTest.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.bTest.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bTest.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bTest.Location = New System.Drawing.Point(831, 299)
-        Me.bTest.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.bTest.Name = "bTest"
-        Me.bTest.Size = New System.Drawing.Size(199, 44)
-        Me.bTest.TabIndex = 118
-        Me.bTest.Text = "Test"
-        Me.bTest.UseVisualStyleBackColor = True
-        Me.bTest.Visible = False
-        '
         'bVerConfig
         '
         Me.bVerConfig.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -1704,7 +1383,7 @@ Partial Class Principal
         Me.PictureBox2.TabIndex = 108
         Me.PictureBox2.TabStop = False
         '
-        'Principal
+        'Menu_Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -1715,7 +1394,6 @@ Partial Class Principal
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.WinDeco1)
         Me.Controls.Add(Me.Barra)
-        Me.Controls.Add(Me.bTest)
         Me.Controls.Add(Me.bVerConfig)
         Me.Controls.Add(Me.gParametros)
         Me.Controls.Add(Me.PictureBox2)
@@ -1724,7 +1402,7 @@ Partial Class Principal
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.MaximumSize = New System.Drawing.Size(1860, 1122)
-        Me.Name = "Principal"
+        Me.Name = "Menu_Principal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MarketONE"
         Me.gParametros.ResumeLayout(False)
@@ -1783,31 +1461,8 @@ Partial Class Principal
     Friend WithEvents mControlDTE As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem6 As ToolStripSeparator
     Friend WithEvents mCargaDeArchivosCAFDeSII As ToolStripMenuItem
-    Friend WithEvents mMenuVentas As ToolStripMenuItem
-    Friend WithEvents mVentaLocal As ToolStripMenuItem
-    Friend WithEvents mMenuDistribucion As ToolStripMenuItem
-    Friend WithEvents mStocksPorDocumento As ToolStripMenuItem
-    Friend WithEvents mMovimientoDeStocksPOS As ToolStripMenuItem
-    Friend WithEvents mMenuServicios As ToolStripMenuItem
-    Friend WithEvents mIngresoDeOT As ToolStripMenuItem
-    Friend WithEvents mConsultaDeOT As ToolStripMenuItem
-    Friend WithEvents mServicioTécnico As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents mRepuestoParaOT As ToolStripMenuItem
-    Friend WithEvents mAnulaciónDeOT As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
-    Friend WithEvents mRepuestosPendientes As ToolStripMenuItem
     Friend WithEvents mMenuCobranzas As ToolStripMenuItem
     Friend WithEvents mControlPagos As ToolStripMenuItem
-    Friend WithEvents mMenuStocks As ToolStripMenuItem
-    Friend WithEvents mModificarStocks As ToolStripMenuItem
-    Friend WithEvents mTransformarArtículo As ToolStripMenuItem
-    Friend WithEvents mMovimientos As ToolStripMenuItem
-    Friend WithEvents mImprimirMovimientos As ToolStripMenuItem
-    Friend WithEvents mListadosDeMovimientos As ToolStripMenuItem
-    Friend WithEvents mListadoDeStocks As ToolStripMenuItem
-    Friend WithEvents mListadoDeTomaDeInventario As ToolStripMenuItem
-    Friend WithEvents mImpresiónDeEtiquetas As ToolStripMenuItem
     Friend WithEvents mMenuRemuneraciones As ToolStripMenuItem
     Friend WithEvents mIngresoDeEventos As ToolStripMenuItem
     Friend WithEvents mCréditosDePersonal As ToolStripMenuItem
@@ -1848,8 +1503,6 @@ Partial Class Principal
     Friend WithEvents ToolStripSeparator12 As ToolStripSeparator
     Friend WithEvents ToolStripSeparator6 As ToolStripSeparator
     Friend WithEvents mCambioDeProducto As ToolStripMenuItem
-    Friend WithEvents mAnularMovimiento As ToolStripMenuItem
-    Friend WithEvents mCierreDeStocksMensual As ToolStripMenuItem
     Friend WithEvents mOtrasConsultas As ToolStripMenuItem
     Friend WithEvents mConsultaBodega As ToolStripMenuItem
     Friend WithEvents mConsultaCorrelativo As ToolStripMenuItem
@@ -1862,7 +1515,6 @@ Partial Class Principal
     Friend WithEvents mConsultaTipoAcceso As ToolStripMenuItem
     Friend WithEvents mConsultaUnidadMedidas As ToolStripMenuItem
     Friend WithEvents mConsultaArticulos As ToolStripMenuItem
-    Friend WithEvents mConsultaAbonos As ToolStripMenuItem
     Friend WithEvents ConsultaDeComisionesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConsultaDePreciosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator8 As ToolStripSeparator
@@ -1873,25 +1525,10 @@ Partial Class Principal
     Friend WithEvents ToolStripSeparator5 As ToolStripSeparator
     Friend WithEvents Button1 As Button
     Friend WithEvents WinDeco1 As WinDeco.WinDeco
-    Friend WithEvents bTest As Button
-    Friend WithEvents LimpiarBodegasToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem8 As ToolStripSeparator
-    Friend WithEvents ToolStripMenuItem7 As ToolStripSeparator
     Friend WithEvents ConsumoFoliosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConsultaDeDocumentosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem9 As ToolStripSeparator
-    Friend WithEvents StatusServicioTécnicoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem10 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem11 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem12 As ToolStripMenuItem
     Friend WithEvents lKey As Label
-    Friend WithEvents ConsultaDeAtencionesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem14 As ToolStripSeparator
-    Friend WithEvents CambioDeFormaDePagoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
-    Friend WithEvents mCambioPrecio As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator7 As ToolStripSeparator
-    Friend WithEvents mControlDeBicicletas As ToolStripMenuItem
     Friend WithEvents bVerConfig As Button
     Friend WithEvents cServidor As ComboBox
     Friend WithEvents Label9 As Label
@@ -1904,7 +1541,6 @@ Partial Class Principal
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents ActualizarStatus As Timer
-    Friend WithEvents mConsultaDeKardex As ToolStripMenuItem
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents bVentaLocal As Button
     Friend WithEvents bEmitirDocumentos As Button
@@ -1916,7 +1552,6 @@ Partial Class Principal
     Friend WithEvents bIngresoOT As Button
     Friend WithEvents bServicioTecnico As Button
     Friend WithEvents bBuscarArticulo As Button
-    Friend WithEvents bStockDocumentos As Button
     Friend WithEvents mMenuWeb As ToolStripMenuItem
     Friend WithEvents ClickCollectToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AnulaciónDeTicketsToolStripMenuItem As ToolStripMenuItem

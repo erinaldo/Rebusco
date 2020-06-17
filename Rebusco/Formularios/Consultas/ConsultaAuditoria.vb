@@ -20,7 +20,7 @@
         cProceso.Items.Clear()
         cEvento.Items.Clear()
         Dim wAud As New List(Of ItemCombo)
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         wAud.Add(New ItemCombo With {.ID = "0", .Desc = ""})
         wAud.AddRange(DC.T_Auditoria.Where(Function(x) x.Proceso <> "").OrderBy(Function(x) x.Proceso) _

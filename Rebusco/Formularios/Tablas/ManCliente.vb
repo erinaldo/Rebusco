@@ -193,7 +193,7 @@ Public Class ManCliente
             End If
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim Cli = DC.T_Clientes.FirstOrDefault(Function(x) x.Cliente = CInt(xCliente.Text))
         If Cli IsNot Nothing Then
             xNombre.Text = Cli.Nombre
@@ -303,7 +303,7 @@ Public Class ManCliente
         If xVencimiento.Text.Trim = "" Then xVencimiento.Text = "0"
         If cFPago.Text.Trim = "" Then cFPago.Text = "EFECTIVO"
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim Cli As New T_Clientes
         Dim qCli = DC.T_Clientes.FirstOrDefault(Function(x) x.Cliente = CInt(xCliente.Text))
         Cursor = Cursors.WaitCursor

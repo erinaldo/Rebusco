@@ -48,7 +48,7 @@ Public Class ManEstados
         End If
 
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wEst As New T_Estados
         Dim qEst = DC.T_Estados.FirstOrDefault(Function(x) x.Estado = xEstado.Text.Trim)
 

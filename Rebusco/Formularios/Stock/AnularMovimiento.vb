@@ -30,7 +30,7 @@
             Exit Sub
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim MovGen = DC.T_MovGen.FirstOrDefault(Function(x) x.Movimiento = CInt(xMovimiento.Text))
 
         If MovGen Is Nothing Then
@@ -127,7 +127,7 @@
     Private Sub xMovimiento_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles xMovimiento.Validating
         If xMovimiento.Text.Trim = "" Then Exit Sub
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wMovG = DC.T_MovGen.FirstOrDefault(Function(x) x.Movimiento = CInt(xMovimiento.Text.Trim))
         If wMovG IsNot Nothing Then
             If wMovG.Estado = "N" Then

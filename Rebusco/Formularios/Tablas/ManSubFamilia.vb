@@ -33,7 +33,7 @@ Public Class ManSubFamilia
     Private Sub xSubFamilia_Validating(Optional sender As Object = Nothing, Optional e As CancelEventArgs = Nothing) Handles xSubFamilia.Validating
         Try
             If xSubFamilia.Text.Trim = "" Then Exit Sub
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wSFam = DC.T_SubFamilias.FirstOrDefault(Function(x) x.SubFamilia = CInt(xSubFamilia.Text))
 
             If wSFam IsNot Nothing Then
@@ -84,7 +84,7 @@ Public Class ManSubFamilia
             Exit Sub
         End If
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wSFam As New T_SubFamilias
         Dim qSFam = DC.T_SubFamilias.FirstOrDefault(Function(x) x.SubFamilia = xSubFamilia.Text.ToDecimal)
 

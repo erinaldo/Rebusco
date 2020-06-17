@@ -401,7 +401,7 @@ Public Class ControlPagos
 
                     If Val(wRow.Item(T_MODIF)) = 1 Then
                         ConError = 0
-                        Dim DC = New MarketONEDataContext(P_CONEXION)
+                        Dim DC = New RebuscoDataContext(P_CONEXION)
                         Dim wDocP = DC.T_DocumentosP.FirstOrDefault(Function(x) x.ID = Val(wRow.Item(T_ID)))
                         If wDocP IsNot Nothing Then
                             wDocP.Fecha = CDate(wRow.Item(T_FECHAEMI))
@@ -569,7 +569,7 @@ Public Class ControlPagos
     Private Sub xTabla_DoubleClick(sender As Object, e As EventArgs) Handles xTabla.DoubleClick
         Dim wTipoDoc As String
         If xTabla.Col = T_NUMERO Or xTabla.Col = T_CLIENTE Or xTabla.Col = T_DOCUMENTO Then
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             wTipoDoc = DC.T_TipoDoc.FirstOrDefault(Function(x) x.DescTipoDoc = xTabla.GetData(xTabla.Row, T_DOCUMENTO).ToString).TipoDoc
             If Not Abrir_Documento(DTE.Ruta_Archivo_Fiscal(gPDF, Val(xTabla.GetData(xTabla.Row, T_LOCAL).ToString), wTipoDoc, Val(xTabla.GetData(xTabla.Row, T_NUMERO).ToString), 0)) Then
                 If Pregunta("¿Desea generar nuevamente el documento?") Then

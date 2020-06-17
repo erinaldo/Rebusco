@@ -19,7 +19,7 @@ Public Class Settings
     Public Property Base As String
     Public Property IPServidor As String
 
-    Private Const NombreArchivo As String = "MarketONE_Settings"
+    Private Const NombreArchivo As String = "Rebusco_Settings"
 
     Public Sub New()
         Empresa = ""
@@ -54,7 +54,7 @@ Public Class Settings
             If CONFIGURACION Is Nothing Then
                 CONFIGURACION = New Settings()
                 SaveConfig(CONFIGURACION)
-                Throw New Exception("No se ha configurado MarketONE.")
+                Throw New Exception("No se ha configurado Rebusco")
             Else
 
                 If Not CONFIGURACION.Check() Then
@@ -67,7 +67,7 @@ Public Class Settings
                     Throw New Exception("No se ha seleccionado una empresa del listado de Servidores")
                 End If
 
-                CONFIGURACION.Base = $"MarketONE_{CONFIGURACION.Empresa}"
+                CONFIGURACION.Base = $"{CONFIGURACION.Empresa}"
 
             End If
 

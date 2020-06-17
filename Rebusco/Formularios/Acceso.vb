@@ -75,7 +75,7 @@ Friend Class Acceso
 
     Private Function CargarLocales() As Boolean
         Try
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim locales = DC.T_Locales.Select(Function(x) New With {.ID = CStr(x.Local), .Desc = x.NombreLocal}).ToList
             If Not locales.Any Then Return False
             cLocal.ValueMember = "ID"
@@ -92,11 +92,11 @@ Friend Class Acceso
 
         Cursor = Cursors.WaitCursor
         Dim servidor = cServidor.SelectedValue.ToString
-        Dim base = $"MarketONE_{cServidor.Text}"
+        Dim base = $"Rebusco"
 
         Dim Task = ProbarConexionServidor(servidor, base)
 
-        If task.Result Then
+        If Task.Result Then
             lIP.Text = servidor
             CONFIGURACION.IPServidor = servidor
             CONFIGURACION.Base = base
@@ -113,7 +113,7 @@ Friend Class Acceso
             End If
         Else
 
-            If task.IsCompleted Then
+            If Task.IsCompleted Then
                 MsgError("Los parámetros de conexión son incorrectos." & vbCrLf &
                      $"{servidor} : {base}", "Error de conexión")
             Else
@@ -133,7 +133,7 @@ Friend Class Acceso
     Private Sub xUsuario_Validating(ByVal eventSender As System.Object, ByVal eventArgs As System.ComponentModel.CancelEventArgs) Handles xUsuario.Validating
         Try
             If xUsuario.Text.Trim <> "" Then
-                Dim Bases = New MarketONEDataContext(P_CONEXION)
+                Dim Bases = New RebuscoDataContext(P_CONEXION)
                 Dim wUsr = Bases.T_Usuarios.FirstOrDefault(Function(x) x.Usuario = xUsuario.Text.Trim)
 
                 If wUsr IsNot Nothing Then
@@ -185,7 +185,7 @@ Friend Class Acceso
                 Exit Sub
             End If
 
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
 
             Dim wUsr = DC.T_Usuarios.FirstOrDefault(Function(x) x.Usuario = xUsuario.Text.Trim)
             If wUsr IsNot Nothing Then
@@ -244,7 +244,7 @@ Friend Class Acceso
 
                     Auditoria(Me.Text, "Acceso al Sistema", xUsuario.Text, "0")
                     Me.Hide()
-                    Principal.Show()
+                    Menu_Principal.Show()
 
                 Else
                     Auditoria(Me.Text, "Clave Incorrecta", xUsuario.Text, xClave.Text)

@@ -38,7 +38,7 @@
             Exit Sub
         End If
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wDocG = DC.T_DocumentosG.FirstOrDefault(Function(x) x.Local = CInt(cLocal.SelectedValue.ToString) And
                                                          x.TipoDoc = cTipoDoc.SelectedValue.ToString And
                                                          x.Numero = Val(xDocumento.Text))

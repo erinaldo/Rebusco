@@ -15,12 +15,12 @@
     End Enum
 
     Public Shared Function ExisteTrackingUsuario(Evento As Decimal, FechaRegistroReferencia As DateTime, AlertaSecuencial As Decimal, Usuario As String) As Boolean
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Return DC.T_Tracking.Any(Function(x) x.Evento = Evento AndAlso x.AlertaSecuencial = AlertaSecuencial AndAlso x.FechaRegistroReferencia.Date = FechaRegistroReferencia.Date AndAlso x.Usuario = Usuario)
     End Function
 
     Public Shared Function ExisteTrackingCliente(Evento As Decimal, FechaRegistroReferencia As DateTime, AlertaSecuencial As Decimal, Cliente As Decimal) As Boolean
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Return DC.T_Tracking.Any(Function(x) x.Evento = Evento AndAlso x.AlertaSecuencial = AlertaSecuencial AndAlso x.FechaRegistroReferencia.Date = FechaRegistroReferencia.Date AndAlso x.Cliente = Cliente)
     End Function
 
@@ -29,7 +29,7 @@
                                 FechaRegRef As DateTime, Secuencial As Decimal, Observacion As String,
                                 Especificacion As String, Modulo As String)
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim Eve = DC.T_Eventos.FirstOrDefault(Function(x) x.Evento = CDec(Evento))
         Dim Trk = New T_Tracking()
 
@@ -64,7 +64,7 @@
 
         If (Evento = Eventos.SinEvento) Then Exit Sub
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim Eve = DC.T_Eventos.FirstOrDefault(Function(x) x.Evento = Evento)
 
         Dim Art = DC.T_Articulos.FirstOrDefault(Function(x) x.Articulo = Articulo)

@@ -38,7 +38,7 @@ Public Class ConsultaTracking
 
         If xArticulo.DescEncontrada = "" Then
             Dim wIDArticulo = ObtenerArticulo(xArticulo.Text)
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wArt = DC.T_Articulos.FirstOrDefault(Function(x) x.Articulo = wIDArticulo.ToDecimal())
             If wArt IsNot Nothing Then
                 xArticulo.AutoCompletarActivo = False
@@ -88,7 +88,7 @@ Public Class ConsultaTracking
 
         Cursor = Cursors.WaitCursor
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim Tracking = DC.T_Tracking.Where(Function(x) x.FechaEvento >= dDesde.Value And x.FechaEvento <= dHasta.Value)
 
         If cTipoDoc.SelectedIndex > 0 Then

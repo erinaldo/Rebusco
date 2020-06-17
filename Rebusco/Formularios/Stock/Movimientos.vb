@@ -37,7 +37,7 @@ Public Class Movimientos
     End Sub
 
     Private Sub cMovimientos_SelectedIndexChanged(sender As Object, e As EventArgs)
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         If Not cTipoDoc.SelectedValue.ToString = Nothing Then
             Dim wAjuste = DC.T_TipoMov.FirstOrDefault(Function(x) x.TipoMov = cTipoDoc.SelectedValue.ToString)
             If wAjuste IsNot Nothing Then
@@ -80,7 +80,7 @@ Public Class Movimientos
 
         If xArticulo.DescEncontrada = "" Then
             Dim wIDArticulo = ObtenerArticulo(xArticulo.Text)
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wArt = DC.T_Articulos.FirstOrDefault(Function(x) x.Articulo = wIDArticulo.ToDecimal())
             If wArt IsNot Nothing Then
                 xArticulo.AutoCompletarActivo = False
@@ -111,7 +111,7 @@ Public Class Movimientos
     End Sub
 
     Private Function ConsultarStock(wCodigo As String, Optional wCantidadTransito As Decimal = 0) As Boolean
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wStock = DC.T_Stocks.FirstOrDefault(Function(x) x.Articulo = wCodigo.ToDecimal And
                                                              x.Local = G_LOCALACTUAL And
                                                              x.Bodega = G_BODEGA)
@@ -136,7 +136,7 @@ Public Class Movimientos
             Exit Sub
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         Dim Art = DC.T_Articulos.FirstOrDefault(Function(x) x.Articulo = xArticulo.Text.ToDecimal())
 
@@ -225,7 +225,7 @@ Public Class Movimientos
 
         xMovimiento.Text = SiguienteCorrelativo("MovGen").ToString()
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         Dim Bodegas = DC.T_Bodegas.ToList()
 

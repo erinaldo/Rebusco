@@ -5,7 +5,7 @@ Public Class ManBarras
         xSKU.Focus()
     End Sub
     Public Sub xArticulo_Validating(Optional sender As Object = Nothing, Optional e As System.ComponentModel.CancelEventArgs = Nothing) Handles xArticulo.Validating
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wEncontrado As Boolean = False
         If xArticulo.ListaVisible Then
             If xArticulo.ListaActiva Then
@@ -46,7 +46,7 @@ Public Class ManBarras
     End Sub
     Private Sub CargarBarras()
         If xArticulo.Text <> "" Then
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wListaBarra As New List(Of BarraArticulo)
             Dim wBarras = DC.T_Barras.Where(Function(x) x.Articulo = xArticulo.Text.ToDecimal)
             If wBarras.Any Then
@@ -83,7 +83,7 @@ Public Class ManBarras
             Exit Sub
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wListaBarra = New List(Of BarraArticulo)
         If xTabla.Rows.Count > 0 Then wListaBarra = CType(BarraArticuloBindingSource.DataSource, List(Of BarraArticulo))
 
@@ -135,7 +135,7 @@ Public Class ManBarras
             Exit Sub
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wBarrasArticulo = DC.T_Barras.Where(Function(x) x.Articulo = xArticulo.Text.ToDecimal)
         If wBarrasArticulo.Any() Then
             DC.T_Barras.DeleteAllOnSubmit(wBarrasArticulo)

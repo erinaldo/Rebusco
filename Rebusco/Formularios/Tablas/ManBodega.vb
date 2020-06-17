@@ -55,7 +55,7 @@ Public Class ManBodega
         End If
 
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wBog As New T_Bodegas
         Dim qBog = DC.T_Bodegas.FirstOrDefault(Function(x) x.Bodega = CInt(xBodega.Text))
 
@@ -90,7 +90,7 @@ Public Class ManBodega
     Private Sub bEliminar_Click(sender As Object, e As EventArgs) Handles bEliminar.Click
         Try
             If xBodega.Text.Trim <> "" Then
-                Dim DC = New MarketONEDataContext(P_CONEXION)
+                Dim DC = New RebuscoDataContext(P_CONEXION)
                 Dim wBodegaBorrar = DC.T_Bodegas.FirstOrDefault(Function(x) x.Bodega = xBodega.Text.ToDecimal())
 
                 If wBodegaBorrar Is Nothing Then

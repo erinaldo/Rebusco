@@ -83,7 +83,7 @@ Public Class ControlDTEProveedores
     Private Sub bImprimir_Click(sender As Object, e As EventArgs) Handles bImprimir.Click
         Dim wFiltro As String = ""
         Dim ListLocal = New List(Of ParametrosLocal)
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim tiposDoc = DC.T_TipoDoc.ToList()
 
         Dim PageSize As Integer = 300 'El tamaño máximo de página permitido es de 300 
@@ -215,7 +215,7 @@ Public Class ControlDTEProveedores
         xCantDoc.Text = ""
         Titulos()
 
-        Dim Bases = New MarketONEDataContext(P_CONEXION)
+        Dim Bases = New RebuscoDataContext(P_CONEXION)
 
         bConsultar.Enabled = False
         wReceptor = DTE.FE_Rut_Emisor
@@ -402,7 +402,7 @@ Public Class ControlDTEProveedores
 
     Sub Cargar_Datos(ResultadoDTE As ResultadoDocumentos)
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim tiposDoc = DC.T_TipoDoc.ToList()
 
         Dim wRut As String

@@ -38,7 +38,7 @@
             Exit Sub
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wRem As New T_Sueldos_Detalles
 
         wRem.Fecha = dFecha.Value

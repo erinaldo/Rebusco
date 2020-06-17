@@ -2,12 +2,6 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 23.625, 8.5" name="MarketONE">
   <DataContextMoniker Name="/MarketONEDataContext" />
   <nestedChildShapes>
-    <classShape Id="50c952f5-0059-4b6c-8414-b8409cdd3bff" isExpanded="false" absoluteBounds="0.5, 1.125, 2, 0.45">
-      <DataClassMoniker Name="/MarketONEDataContext/T_Abonos" />
-      <nestedChildShapes>
-        <elementListCompartment Id="172cf934-42c9-4e99-abbc-fb46838c4299" absoluteBounds="0.51500000000000012, 1.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
     <classShape Id="277a1a36-2989-4c47-a09b-18694c97d43d" isExpanded="false" absoluteBounds="0.5, 1.75, 2, 0.45">
       <DataClassMoniker Name="/MarketONEDataContext/T_Accesos" />
       <nestedChildShapes>
@@ -140,12 +134,6 @@
         <elementListCompartment Id="790674fa-fc1f-40c1-92aa-2ddd03c718da" absoluteBounds="7.265, 5.335, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="bead4e43-e28c-41b6-a03d-00a0b58f3abc" isExpanded="false" absoluteBounds="9.5, 0.5, 2, 0.45">
-      <DataClassMoniker Name="/MarketONEDataContext/T_OT" />
-      <nestedChildShapes>
-        <elementListCompartment Id="5e5e3160-4514-4b67-b67d-076e68240e5b" absoluteBounds="9.515, 0.96, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
     <classShape Id="cd0015d8-d2c4-4e70-9458-d648b6ae5f71" isExpanded="false" absoluteBounds="9.5, 1.75, 2, 0.45">
       <DataClassMoniker Name="/MarketONEDataContext/T_Pagos" />
       <nestedChildShapes>
@@ -168,12 +156,6 @@
       <DataClassMoniker Name="/MarketONEDataContext/T_PlantillasObservaciones" />
       <nestedChildShapes>
         <elementListCompartment Id="e7a7668a-f9a1-4126-8d71-eb3889fa6e8b" absoluteBounds="9.515, 4.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="58aca870-cceb-4af3-8dfc-b37a765b3407" isExpanded="false" absoluteBounds="9.5, 4.875, 2, 0.45">
-      <DataClassMoniker Name="/MarketONEDataContext/T_POS" />
-      <nestedChildShapes>
-        <elementListCompartment Id="1162a1d0-ec2e-4769-bff9-0703c6b435a5" absoluteBounds="9.515, 5.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="30d6d4cd-dcec-4372-aeef-2be08cd8f5fd" isExpanded="false" absoluteBounds="11.75, 0.5, 2, 0.45">
@@ -248,12 +230,6 @@
         <elementListCompartment Id="affe5adc-0709-45d5-a24c-2603758c024c" absoluteBounds="14.015, 4.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="18552859-2693-4786-8bc3-253388dff8fe" isExpanded="false" absoluteBounds="14, 4.25, 2, 0.45">
-      <DataClassMoniker Name="/MarketONEDataContext/T_TipoPOS" />
-      <nestedChildShapes>
-        <elementListCompartment Id="9a86e76e-0ed4-444e-a4cd-918c47ead300" absoluteBounds="14.015, 4.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
     <classShape Id="3e17aa33-51d2-4775-9230-e8f7d07f6418" isExpanded="false" absoluteBounds="16.25, 1.125, 2, 0.45">
       <DataClassMoniker Name="/MarketONEDataContext/T_Unidades" />
       <nestedChildShapes>
@@ -300,12 +276,6 @@
       <DataClassMoniker Name="/MarketONEDataContext/T_Articulos" />
       <nestedChildShapes>
         <elementListCompartment Id="0ba48307-67d2-42da-ad26-7ae475f0431a" absoluteBounds="0.51500000000000012, 3.46, 1.9700000000000002, 8.3260498046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="c1ba325d-8562-4b3f-96b6-bac20cab232b" isExpanded="false" absoluteBounds="9.5, 1.125, 2, 0.45">
-      <DataClassMoniker Name="/MarketONEDataContext/T_OTDet" />
-      <nestedChildShapes>
-        <elementListCompartment Id="90e0c2e4-2226-46c7-8484-0912c08a3bc7" absoluteBounds="9.515, 1.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="70082a0b-873f-4664-a669-e651466ed9d1" isExpanded="false" absoluteBounds="19.125, 1.75, 2, 0.45">
@@ -390,18 +360,6 @@
       <DataClassMoniker Name="/MarketONEDataContext/T_Tracking" />
       <nestedChildShapes>
         <elementListCompartment Id="e9638847-21a0-49f9-bbf0-fd7513f71649" absoluteBounds="14.015, 5.335, 1.9700000000000002, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="8c98e743-1908-4108-aadd-037109b44167" isExpanded="false" absoluteBounds="21.375, 1.75, 2, 0.45">
-      <DataClassMoniker Name="/MarketONEDataContext/T_KardexMovimientos" />
-      <nestedChildShapes>
-        <elementListCompartment Id="16f34140-baaa-455c-ac0e-b41ea7044689" absoluteBounds="21.39, 2.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="7267e4c9-c118-4fbb-9067-88cdca959153" isExpanded="false" absoluteBounds="21.375, 1.125, 2, 0.45">
-      <DataClassMoniker Name="/MarketONEDataContext/T_KardexDocumentos" />
-      <nestedChildShapes>
-        <elementListCompartment Id="0065b13c-ac5c-42d7-8e71-6c4aaf633887" absoluteBounds="21.39, 1.585, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="ba22c78c-68a8-4edf-851f-19d52203c174" isExpanded="false" absoluteBounds="14, 0.5, 2, 0.45">

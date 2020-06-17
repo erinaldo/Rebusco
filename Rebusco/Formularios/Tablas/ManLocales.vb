@@ -36,7 +36,7 @@ Public Class ManLocales
     End Sub
     Private Sub xLocal_Validating(sender As Object, e As CancelEventArgs) Handles xLocal.Validating
         If xLocal.Text.Trim = "" Then Exit Sub
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wLocal = DC.T_Locales.FirstOrDefault(Function(x) x.Local = xLocal.Text.ToDecimal)
 
         If wLocal IsNot Nothing Then
@@ -84,7 +84,7 @@ Public Class ManLocales
 
     Private Sub xClientes_Validating(Optional sender As Object = Nothing, Optional e As CancelEventArgs = Nothing) Handles xCliente.Validating
         If xCliente.Text <> "" Then
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wCliente = DC.T_Clientes.FirstOrDefault(Function(x) x.Cliente = xCliente.Text.ToDecimal)
             If wCliente IsNot Nothing Then
                 xNombreCliente.Text = wCliente.Nombre
@@ -146,7 +146,7 @@ Public Class ManLocales
 
     Private Sub bEliminar_Click(sender As Object, e As EventArgs) Handles bEliminar.Click
         If xLocal.Text.Trim <> "" Then
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wLocalBorrar = DC.T_Locales.FirstOrDefault(Function(x) x.Local = xLocal.Text.ToDecimal())
             If wLocalBorrar Is Nothing Then
                 MsgError("El local no se encuentra registrado")
@@ -186,7 +186,7 @@ Public Class ManLocales
         '    Next
         'End If
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wLocal As New T_Locales
         Dim qLocal = DC.T_Locales.FirstOrDefault(Function(x) x.Local = CInt(xLocal.Text))
 

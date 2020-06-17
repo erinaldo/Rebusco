@@ -44,7 +44,7 @@ Public Class ManAccesos
         End If
 
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wAcc As New T_Accesos
         Dim qAcc = DC.T_Accesos.FirstOrDefault(Function(x) x.Acceso = CInt(xAcceso.Text))
 

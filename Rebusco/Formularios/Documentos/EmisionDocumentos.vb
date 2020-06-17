@@ -148,7 +148,7 @@ Public Class EmisionDocumentos
 
         Aceptar.Enabled = False
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         '--------------------------------------
         'Si el Documento requiere pagos...
         If xFPago <> "V" Then
@@ -384,7 +384,7 @@ Public Class EmisionDocumentos
     End Sub
 
     Private Sub AgregarArticulo(Cantidad As Decimal, Optional EditarCantidad As Boolean = True)
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         If G_IDCLIENTE = Clientes.Wikets Then
             If xArticulo.Text.Trim = "" And xCliente.Text.Trim <> "" Then
@@ -1181,7 +1181,7 @@ Public Class EmisionDocumentos
             BodegaParcial = CInt(G_BODEGA)
             Exit Sub
         End If
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wUsr = DC.T_Usuarios.FirstOrDefault(Function(x) x.Usuario = xVendedor.Text.Trim)
         If wUsr IsNot Nothing Then
             xNomVen.Text = wUsr.NombreUsr
@@ -1258,7 +1258,7 @@ Public Class EmisionDocumentos
                 If cTipoDoc.Text = "Factura de Venta" Then
                     Dim wDeuda, wPagado, wCredito, wSaldo, wTotalDeuda, wCupo As Double
                     Dim wCupos As String
-                    Dim DC = New MarketONEDataContext(P_CONEXION)
+                    Dim DC = New RebuscoDataContext(P_CONEXION)
                     Dim wCli = DC.T_Clientes.FirstOrDefault(Function(x) x.Cliente = Val(xCliente.Text))
                     If wCli IsNot Nothing Then
                         'Sacar Total de Deuda
@@ -1298,7 +1298,7 @@ Public Class EmisionDocumentos
 
     Private Sub cTipoDocRef_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cTipoDocRef.SelectedIndexChanged
         xFechaDocRef.Enabled = False
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wTipoDoc = DC.T_TipoDoc.FirstOrDefault(Function(x) x.DescTipoDoc = cTipoDocRef.Text)
         If wTipoDoc IsNot Nothing Then
             xTipoDocRef.Text = wTipoDoc.TipoDoc
@@ -1342,7 +1342,7 @@ Public Class EmisionDocumentos
 
         If xArticulo.DescEncontrada = "" Then
             Dim wIDArticulo = ObtenerArticulo(xArticulo.Text)
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wArt = DC.T_Articulos.FirstOrDefault(Function(x) x.Articulo = wIDArticulo.ToDecimal())
             If wArt IsNot Nothing Then
                 xArticulo.AutoCompletarActivo = False
@@ -1468,7 +1468,7 @@ Public Class EmisionDocumentos
     End Sub
 
     Private Sub CambiarPOS()
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         Dim NumPOS As New NumeroPOS
 

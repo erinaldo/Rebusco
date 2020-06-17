@@ -61,8 +61,8 @@ Public Module Funciones
 
     Public Const P_EMPRESA As String = "Wikets Software"
     Public Const P_SISTEMA As String = "MarketONE"
-    Public Const VERSION As String = "1.50x "
-    Public Const FechaDespliegue As String = "10/06/2020"
+    Public Const VERSION As String = "1.01 "
+    Public Const FechaDespliegue As String = "01/06/2020"
 
     Public P_PROCESOSNEGOCIO As ProcesosNegocio
 
@@ -224,7 +224,7 @@ Public Module Funciones
 
         Try
 
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim PAR = DC.T_Parametros.FirstOrDefault()
 
             If PAR Is Nothing Then Return False
@@ -637,7 +637,7 @@ Public Module Funciones
         End If
 
         Try
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wAud = New T_Auditoria With {
                 .Lugar = "PC",
                 .Fecha = Now,
@@ -673,7 +673,7 @@ Public Module Funciones
     End Function
 
     Public Function ObtenerTipoBodega(wLocal As Decimal, wTipo As String) As KeyValuePair(Of Decimal, String)
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim Bod = DC.T_Bodegas.Where(Function(x) x.Local = wLocal)
 
         If Bod.Any Then
@@ -811,7 +811,7 @@ Public Module Funciones
     End Sub
     Public Function Stocks(wArticulo As Decimal, wBodega As Decimal, wLocal As Decimal, wCantidad As Decimal, wModo As String) As Double
         Try
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             'MODIFICACION STOCK
             Dim wStock = DC.T_Stocks.FirstOrDefault(Function(x) x.Articulo = wArticulo.ToDecimal And x.Bodega = wBodega And x.Local = wLocal)
             Dim qStock = New T_Stocks
@@ -876,7 +876,7 @@ Public Module Funciones
     End Function
 
     Public Function SiguienteCorrelativo(wLocal As Decimal, wTipoDoc As String, wPOS As Decimal) As String
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wCorrelativo = DC.T_Correlativos.FirstOrDefault(Function(x) x.Local = wLocal And x.TipoDoc = wTipoDoc And x.POS = wPOS)
         If wCorrelativo IsNot Nothing Then
             Return (Convert.ToDouble(wCorrelativo.Correlativo) + 1).ToString
@@ -885,7 +885,7 @@ Public Module Funciones
     End Function
 
     Public Function ActualizarCorrelativo(wLocal As Decimal, wTipoDoc As String, wPOS As Decimal) As Boolean
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wNuevoCorrelativo = DC.T_Correlativos.FirstOrDefault(Function(x) x.Local = wLocal And x.TipoDoc = wTipoDoc And x.POS = wPOS)
         If wNuevoCorrelativo IsNot Nothing Then
             wNuevoCorrelativo.Correlativo = wNuevoCorrelativo.Correlativo + 1
@@ -901,7 +901,7 @@ Public Module Funciones
 
     Public Function BuscarCorrelativo(Modo As ModoCorrelativo, TipoDoc As String, Fecha As DateTime, Optional POS As Decimal = 0) As Double
         Dim Correlativo As Double = 0
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         If POS = 0 Then
             POS = G_LOCALACTUAL
@@ -1020,7 +1020,7 @@ Public Module Funciones
         End If
 
         'Buscar por Artículo
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         If IsNumeric(wDato) Then
             Dim wArt = DC.T_Articulos.FirstOrDefault(Function(x) x.Articulo = Val(wDato))
             If wArt IsNot Nothing Then
@@ -1044,7 +1044,7 @@ Public Module Funciones
     End Function
 
     Public Function ParametroReporte() As List(Of ParametrosReporte)
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         Dim wPar = DC.T_Parametros.FirstOrDefault()
 
@@ -1056,7 +1056,7 @@ Public Module Funciones
         Return Nothing
     End Function
     Public Function ParametroLocal() As List(Of ParametrosLocal)
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wComunas = DC.T_Comunas.ToList()
         Dim wParLocal = DC.T_Locales.Where(Function(x) x.Local = G_LOCALACTUAL) _
                                      .Select(Function(x) New ParametrosLocal With {.Local = x.Local,
@@ -1172,7 +1172,7 @@ Public Module Funciones
                 Next
             Next
             Dim wFir As New List(Of FirmaDocumento)
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wFirma = DC.T_DocumentosG.FirstOrDefault(Function(x) x.Numero = Val(wNumDoc) And
                                                                       x.TipoDoc = wTipoDoc)
             If wFirma IsNot Nothing Then wFir.Add(New FirmaDocumento With {.Firma = wFirma.Firma})
@@ -1215,7 +1215,7 @@ Public Module Funciones
                             .topMargin = -0
                         }
 
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wArticulos = DC.T_Articulos.ToList()
 
             Select Case wTipoDoc
@@ -1697,7 +1697,7 @@ Public Module Funciones
         Return wTexto
     End Function
     Public Function CambiarCorrelativo(wLocal As Decimal, wPOS As Integer, wTipoDoc As String) As Double
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         Dim wCor = DC.T_Correlativos.FirstOrDefault(Function(x) x.Local = wLocal And x.POS = wPOS And x.TipoDoc = wTipoDoc)
         If wCor IsNot Nothing Then
@@ -2033,7 +2033,7 @@ Public Module Funciones
     End Function
 
     Public Function Primera_Linea(wLocal As Double, wTipoDoc As String, wNumero As Double) As String
-        Dim xBases As New MarketONEDataContext(P_CONEXION)
+        Dim xBases As New RebuscoDataContext(P_CONEXION)
         Dim wPrimeraLinea As String = "ARTICULO"
         xBases.Log = System.Console.Out
         Dim wPaso = xBases.T_DocumentosD.FirstOrDefault(Function(x) x.Local = wLocal And x.TipoDoc = wTipoDoc And x.Numero = wNumero)
@@ -2076,7 +2076,7 @@ Public Module Funciones
 
         If wCodigo = "" Then Return Nothing
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wBusquedaBarra As T_Barras = Nothing
         Dim wBusquedaArt As T_Articulos = Nothing
         Dim wTipo As TipoCodigo = TipoCodigo.NoEncontrado
@@ -2252,7 +2252,7 @@ Public Module Funciones
 
     Private Function ProbarConexionEx(ip As String, base As String) As Boolean
         Dim conexion As String = String.Format(PATRONCONEXION, ip, base)
-        Dim DC As New MarketONEDataContext(conexion)
+        Dim DC As New RebuscoDataContext(conexion)
         Try
             DC.ExecuteCommand("SELECT 1")
             Return True

@@ -42,7 +42,7 @@
     End Sub
 
     Private Sub bConsultar_Click(sender As Object, e As EventArgs) Handles bConsultar.Click
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wListaEventos = DC.T_EventosRem.ToList
 
         If cCalculoRem.Text <> "" Then

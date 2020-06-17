@@ -113,7 +113,7 @@ Public Class ConsultaDocumento
 
         If xArticulo.DescEncontrada = "" Then
             Dim wIDArticulo = ObtenerArticulo(xArticulo.Text)
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wArt = DC.T_Articulos.FirstOrDefault(Function(x) x.Articulo = wIDArticulo.ToDecimal())
             If wArt IsNot Nothing Then
                 xArticulo.AutoCompletarActivo = False
@@ -185,7 +185,7 @@ Public Class ConsultaDocumento
 
     Private Sub Consultar(Optional sender As Object = Nothing, Optional e As EventArgs = Nothing) Handles bConsultar.Click
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         bConsultar.Enabled = False
 
@@ -441,7 +441,7 @@ Public Class ConsultaDocumento
             wReporte.Database.Tables("MarketONE_DocumentoListado").SetDataSource(documentos)
         Else
 
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim articulos = DC.T_Articulos.ToList()
 
             Dim documentosDet = New List(Of DocumentoListado)

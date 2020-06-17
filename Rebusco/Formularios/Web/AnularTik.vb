@@ -30,7 +30,7 @@ Public Class AnularTik
             Exit Sub
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wTik = DC.T_TikGen.FirstOrDefault(Function(x) x.Ticket = Val(xTicket.Text))
         If wTik Is Nothing Then
             MsgError("Ticket no encontrado")
@@ -56,7 +56,7 @@ Public Class AnularTik
     End Sub
 
     Private Sub xTicket_Validating(sender As Object, e As CancelEventArgs) Handles xTicket.Validating
-        Ver_Ticket
+        Ver_Ticket()
     End Sub
 
     Sub Ver_Ticket()
@@ -71,7 +71,7 @@ Public Class AnularTik
                 Exit Sub
             End If
 
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wCli = DC.T_Clientes.FirstOrDefault(Function(x) x.Cliente = Val(wTik.GetText("Cliente")))
             xCliente.Text = wTik.GetText("Cliente")
             If wCli IsNot Nothing Then xNombre.Text = wCli.Nombre

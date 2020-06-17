@@ -15,7 +15,7 @@ Public Class ManPrevisionSalud
 
     Private Sub xCodigo_Validating(sender As Object, e As CancelEventArgs) Handles xCodigo.Validating
         If xCodigo.Text.Trim = "" Then Exit Sub
-        Dim wDC = New MarketONEDataContext(P_CONEXION)
+        Dim wDC = New RebuscoDataContext(P_CONEXION)
         Dim wSalud = wDC.T_Salud.FirstOrDefault(Function(x) x.Salud = xCodigo.Text.ToDecimal())
         If wSalud Is Nothing Then
             MsgError("Prevesión de salud no existe")
@@ -51,7 +51,7 @@ Public Class ManPrevisionSalud
     Private Sub bEliminar_Click(sender As Object, e As EventArgs) Handles bEliminar.Click
         Try
             If xCodigo.Text.Trim <> "" Then
-                Dim wDC = New MarketONEDataContext(P_CONEXION)
+                Dim wDC = New RebuscoDataContext(P_CONEXION)
                 Dim wSaludBorrar = wDC.T_Salud.FirstOrDefault(Function(x) x.Salud = xCodigo.Text.ToDecimal())
 
                 If wSaludBorrar Is Nothing Then
@@ -74,7 +74,7 @@ Public Class ManPrevisionSalud
     End Sub
 
     Private Sub bGuardar_Click(sender As Object, e As EventArgs) Handles bGuardar.Click
-        Dim wDC = New MarketONEDataContext(P_CONEXION)
+        Dim wDC = New RebuscoDataContext(P_CONEXION)
         Dim wMensaje As String() = {"Registro Modificado Correctamente", A_MODIFICADO}
 
         If xCodigo.Text.Trim() = "" Then

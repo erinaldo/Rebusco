@@ -31,7 +31,7 @@ Public Class ConsultaPrecios
 
         If xArticulo.DescEncontrada = "" Then
             Dim wIDArticulo = ObtenerArticulo(xArticulo.Text)
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wArt = DC.T_Articulos.FirstOrDefault(Function(x) x.Articulo = wIDArticulo.ToDecimal())
             If wArt IsNot Nothing Then
                 xArticulo.AutoCompletarActivo = False
@@ -95,7 +95,7 @@ Public Class ConsultaPrecios
         Cursor = Cursors.WaitCursor
         xTabla.Redraw = False
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wArt = DC.T_Articulos.ToList()
 
         If xArticulo.Text.Trim <> "" Then wArt = wArt.Where(Function(x) x.Articulo = xArticulo.Text.ToDecimal).ToList()

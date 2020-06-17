@@ -49,7 +49,7 @@
     Sub Procesar_Remuneraciones(xAño As Integer, xMes As Integer)
         Dim wFechaInicio As DateTime
         Dim wFechaFinal As DateTime
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         Dim Dias_Trabajados As Integer
         Dim TBase As Double, TGratificacion As Double, TAguinaldos As Double

@@ -72,7 +72,7 @@ Public Class CargaCAF
             Exit Function
         End Try
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wCor = DC.T_Correlativos.Where(Function(x) x.Local = wLocal And x.TipoDoc = wTipoDoc)
         Dim locales = DC.T_Locales.ToList()
         Dim tiposDoc = DC.T_TipoDoc.ToList()

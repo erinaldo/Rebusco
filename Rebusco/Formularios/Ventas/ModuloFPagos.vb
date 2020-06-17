@@ -24,7 +24,7 @@ Public Class ModuloFPagos
 
     Private Sub bGuardar_Click(sender As Object, e As EventArgs) Handles bGuardar.Click
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         If xMonto.Text = "" Then xMonto.Text = "0"
         If xTotal.Text = "" Then xTotal.Text = "0"
         If xVendedor.Text = "" Then xVendedor.Text = UsuarioActual
@@ -330,7 +330,7 @@ Public Class ModuloFPagos
     Public Sub xCliente_Validating(Optional sender As Object = Nothing, Optional e As System.ComponentModel.CancelEventArgs = Nothing) Handles xCliente.Validating
         If xCliente.Text.Trim = "" Then Exit Sub
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wCli = DC.T_Clientes.FirstOrDefault(Function(x) x.Cliente = CInt(Val(xCliente.Text)))
         If wCli IsNot Nothing Then
             xNombre.Text = wCli.Nombre

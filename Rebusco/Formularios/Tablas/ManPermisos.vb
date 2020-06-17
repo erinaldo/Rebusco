@@ -64,7 +64,7 @@
         bImportarI.Enabled = True
     End Sub
     Private Sub CargarModulosNew(wTipo As String)
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Cursor = Cursors.WaitCursor
         TitulosHabilitados()
         Titulos()
@@ -143,7 +143,7 @@
         End If
 
         If xTablaModulos.Rows.Count = 1 Then
-         '   CargarModulos()
+            '   CargarModulos()
         End If
         tEstado.Text = "Listo"
         pBarraProgreso.Visible = False
@@ -182,7 +182,7 @@
         If xTablaHabilitados.Rows.Count = 1 Then Exit Sub
 
         SQL("DELETE FROM " & wTabla & " WHERE " & wCampo & " = '" & wCodigo & "'")
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         For wFila As Integer = 1 To xTablaHabilitados.Rows.Count - 1
             If wTabla = "PermisosAcceso" Then
@@ -385,7 +385,7 @@
         bGuardar.Enabled = False
         Cursor = Cursors.WaitCursor
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wUsr = DC.T_Usuarios.Select(Function(x) x.Usuario).Distinct
         If wUsr.Any Then
             For Each wU In wUsr
@@ -540,7 +540,7 @@
     End Sub
 
     Sub CargarModulos()
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wMod = DC.T_Modulos()
         If wMod.Any Then
             Titulos()

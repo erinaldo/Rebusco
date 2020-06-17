@@ -55,7 +55,7 @@
 
     Private Sub bMostrar_Click(sender As Object, e As EventArgs) Handles bMostrar.Click
         Titulos()
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wListaUsuario = DC.T_Usuarios.ToList()
         Dim wListaFPAgos = DC.T_FPagos.ToList()
         Dim wRmg = SQL("Select * from Sueldos where Cancelado = 0 and Año =" & Val(cAño.Text) & " and Mes = " & Val(cMes.SelectedValue.ToString) & " And estado = 0")
@@ -124,7 +124,7 @@
             Exit Sub
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wListaFPagos = DC.T_FPagos.ToList()
 
         For i As Integer = 1 To xTabla.Rows.Count - 1

@@ -26,7 +26,7 @@ Public Class BuscadorArticulo
 
         Cursor = Cursors.WaitCursor
         bBuscar.Enabled = False
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wListadoGeneral = DC.T_BusquedaArticulo.ToList()
         Dim wStocks = wListadoGeneral
         Dim wLocales = DC.T_Locales.ToList()

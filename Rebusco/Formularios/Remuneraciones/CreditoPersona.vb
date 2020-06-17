@@ -30,7 +30,7 @@
             Exit Sub
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wSDT As New T_Sueldos_Detalles
 
         wSDT.Fecha = dFechaCuota.Value

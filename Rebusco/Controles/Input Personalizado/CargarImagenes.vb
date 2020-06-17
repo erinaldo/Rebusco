@@ -66,7 +66,7 @@ Public Class CargarImagenes
     Private Sub VistaImagenes_SelectedIndexChanged(sender As Object, e As EventArgs) Handles VistaImagenes.SelectedIndexChanged
 
         Try
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
 
             If VistaImagenes.SelectedIndices.Count = 0 Then Exit Sub
             Dim wItem = VistaImagenes.SelectedItems(0)

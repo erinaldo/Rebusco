@@ -32,7 +32,7 @@
             xTabla.AddItem("")
             xTabla.SetData(xTabla.Rows.Count - 1, T_CHECK, UNCHECK)
             xTabla.SetData(xTabla.Rows.Count - 1, T_ARTICULO, wDocD.GetText("Articulo"))
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
 
             If wDocD.GetText("Descripcion") <> "" Then
                 xTabla.SetData(xTabla.Rows.Count - 1, T_DESCRIPCION, wDocD.GetText("Descripcion"))
@@ -107,7 +107,7 @@
     Private Sub xArticulo_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles xArticulo.Validating
         If xArticulo.Text.Trim <> "" Then
             xArticulo.Text = ObtenerArticulo(xArticulo.Text)
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wArt = DC.T_Articulos.FirstOrDefault(Function(x) x.Articulo = xArticulo.ToDecimal)
             If wArt IsNot Nothing Then
                 xDescripcion.Text = wArt.Descripcion

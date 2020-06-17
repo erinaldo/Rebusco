@@ -359,18 +359,6 @@
     <Compile Include="Formularios\Cobranzas\ControlPagos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Consultas\ConsultaAbonos.Designer.vb">
-      <DependentUpon>ConsultaAbonos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Consultas\ConsultaAbonos.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Consultas\ConsultaKardex.Designer.vb">
-      <DependentUpon>ConsultaKardex.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Consultas\ConsultaKardex.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Formularios\Consultas\ConsultaTracking.Designer.vb">
       <DependentUpon>ConsultaTracking.vb</DependentUpon>
     </Compile>
@@ -405,24 +393,6 @@
       <DependentUpon>ConsultaPrecios.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Consultas\ConsultaPrecios.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Servicios\ConsultarDatoBicicleta.Designer.vb">
-      <DependentUpon>ConsultarDatoBicicleta.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Servicios\ConsultarDatoBicicleta.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Servicios\ConsultarProductos.Designer.vb">
-      <DependentUpon>ConsultarProductos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Servicios\ConsultarProductos.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Servicios\ConsultarAtenciones.Designer.vb">
-      <DependentUpon>ConsultarAtenciones.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Servicios\ConsultarAtenciones.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Consultas\ConsultaBodegas.Designer.vb">
@@ -569,12 +539,6 @@
     <Compile Include="Formularios\Remuneraciones\IngresoEventosRem.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Servicios\Status_ST.Designer.vb">
-      <DependentUpon>Status_ST.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Servicios\Status_ST.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Formularios\Stock\AnularMovimiento.Designer.vb">
       <DependentUpon>AnularMovimiento.vb</DependentUpon>
     </Compile>
@@ -689,12 +653,6 @@
     <Compile Include="Formularios\Tablas\ManPermisos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Tablas\ManPOS.Designer.vb">
-      <DependentUpon>ManPOS.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Tablas\ManPOS.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Formularios\Tablas\ManPrevisionSalud.Designer.vb">
       <DependentUpon>ManPrevisionSalud.vb</DependentUpon>
     </Compile>
@@ -737,40 +695,10 @@
     <Compile Include="Formularios\Tablas\ManUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Test.Designer.vb">
-      <DependentUpon>Test.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Test.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Ventas\Abonos.Designer.vb">
-      <DependentUpon>Abonos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Ventas\Abonos.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Formularios\Ventas\CambioFPago.Designer.vb">
       <DependentUpon>CambioFPago.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Ventas\CambioFPago.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Ventas\VentasCaja.Designer.vb">
-      <DependentUpon>VentasCaja.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Ventas\VentasCaja.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Distribución\MovimientoStockPOS.Designer.vb">
-      <DependentUpon>MovimientoStockPOS.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Distribución\MovimientoStockPOS.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Distribución\StockPorDocumento.Designer.vb">
-      <DependentUpon>StockPorDocumento.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Distribución\StockPorDocumento.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Documentos\AnularDocumento.Designer.vb">
@@ -828,52 +756,10 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Controles\Input Personalizado\InputPersonalizado.vb" />
-    <Compile Include="Formularios\Principal.Designer.vb">
-      <DependentUpon>Principal.vb</DependentUpon>
+    <Compile Include="Formularios\Menu_Principal.Designer.vb">
+      <DependentUpon>Menu_Principal.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Principal.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Servicios\Abastecimiento.Designer.vb">
-      <DependentUpon>Abastecimiento.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Servicios\Abastecimiento.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Servicios\AnularOT.Designer.vb">
-      <DependentUpon>AnularOT.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Servicios\AnularOT.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Servicios\ConsultaOT.Designer.vb">
-      <DependentUpon>ConsultaOT.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Servicios\ConsultaOT.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Servicios\ConsultaRepuestosOT.Designer.vb">
-      <DependentUpon>ConsultaRepuestosOT.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Servicios\ConsultaRepuestosOT.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Servicios\ImprimirOT.Designer.vb">
-      <DependentUpon>ImprimirOT.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Servicios\ImprimirOT.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Servicios\IngresoOT.Designer.vb">
-      <DependentUpon>IngresoOT.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Servicios\IngresoOT.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Servicios\ServicioTecnico.Designer.vb">
-      <DependentUpon>ServicioTecnico.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Servicios\ServicioTecnico.vb">
+    <Compile Include="Formularios\Menu_Principal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Stock\ImprimirMovimiento.Designer.vb">
@@ -918,28 +804,10 @@
     <Compile Include="Formularios\Stock\TransformacionArticulos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Ventas\DatosBicicleta.Designer.vb">
-      <DependentUpon>DatosBicicleta.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Ventas\DatosBicicleta.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Formularios\Ventas\ModuloFPagos.Designer.vb">
       <DependentUpon>ModuloFPagos.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Ventas\ModuloFPagos.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Ventas\TicketMesa.Designer.vb">
-      <DependentUpon>TicketMesa.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Ventas\TicketMesa.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Ventas\VentaLocal.Designer.vb">
-      <DependentUpon>VentaLocal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Ventas\VentaLocal.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\VisorReportes.Designer.vb">
@@ -1078,12 +946,6 @@
       <DependentUpon>ReporteBoleta.rpt</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reportes\ReporteConsultaKardex.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReporteConsultaKardex.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reportes\ReporteCuadraturaCaja.vb">
@@ -1262,12 +1124,6 @@
     <EmbeddedResource Include="Formularios\Cobranzas\ControlPagos.resx">
       <DependentUpon>ControlPagos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Consultas\ConsultaAbonos.resx">
-      <DependentUpon>ConsultaAbonos.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Consultas\ConsultaKardex.resx">
-      <DependentUpon>ConsultaKardex.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Consultas\ConsultaTracking.resx">
       <DependentUpon>ConsultaTracking.vb</DependentUpon>
     </EmbeddedResource>
@@ -1285,15 +1141,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Consultas\ConsultaPrecios.resx">
       <DependentUpon>ConsultaPrecios.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Servicios\ConsultarDatoBicicleta.resx">
-      <DependentUpon>ConsultarDatoBicicleta.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Servicios\ConsultarProductos.resx">
-      <DependentUpon>ConsultarProductos.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Servicios\ConsultarAtenciones.resx">
-      <DependentUpon>ConsultarAtenciones.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Consultas\ConsultaBodegas.resx">
       <DependentUpon>ConsultaBodegas.vb</DependentUpon>
@@ -1367,9 +1214,6 @@
     <EmbeddedResource Include="Formularios\Remuneraciones\IngresoEventosRem.resx">
       <DependentUpon>IngresoEventosRem.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Servicios\Status_ST.resx">
-      <DependentUpon>Status_ST.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Stock\AnularMovimiento.resx">
       <DependentUpon>AnularMovimiento.vb</DependentUpon>
     </EmbeddedResource>
@@ -1424,9 +1268,6 @@
     <EmbeddedResource Include="Formularios\Tablas\ManPermisos.resx">
       <DependentUpon>ManPermisos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Tablas\ManPOS.resx">
-      <DependentUpon>ManPOS.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Tablas\ManPrevisionSalud.resx">
       <DependentUpon>ManPrevisionSalud.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -1449,23 +1290,8 @@
     <EmbeddedResource Include="Formularios\Tablas\ManUsuarios.resx">
       <DependentUpon>ManUsuarios.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Test.resx">
-      <DependentUpon>Test.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Ventas\Abonos.resx">
-      <DependentUpon>Abonos.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Ventas\CambioFPago.resx">
       <DependentUpon>CambioFPago.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Ventas\VentasCaja.resx">
-      <DependentUpon>VentasCaja.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Distribución\MovimientoStockPOS.resx">
-      <DependentUpon>MovimientoStockPOS.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Distribución\StockPorDocumento.resx">
-      <DependentUpon>StockPorDocumento.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Documentos\AnularDocumento.resx">
       <DependentUpon>AnularDocumento.vb</DependentUpon>
@@ -1494,29 +1320,8 @@
     <EmbeddedResource Include="Controles\Input Personalizado\InputMensaje.resx">
       <DependentUpon>InputMensaje.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Principal.resx">
-      <DependentUpon>Principal.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Servicios\Abastecimiento.resx">
-      <DependentUpon>Abastecimiento.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Servicios\AnularOT.resx">
-      <DependentUpon>AnularOT.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Servicios\ConsultaOT.resx">
-      <DependentUpon>ConsultaOT.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Servicios\ConsultaRepuestosOT.resx">
-      <DependentUpon>ConsultaRepuestosOT.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Servicios\ImprimirOT.resx">
-      <DependentUpon>ImprimirOT.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Servicios\IngresoOT.resx">
-      <DependentUpon>IngresoOT.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Servicios\ServicioTecnico.resx">
-      <DependentUpon>ServicioTecnico.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\Menu_Principal.resx">
+      <DependentUpon>Menu_Principal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Stock\ImprimirMovimiento.resx">
       <DependentUpon>ImprimirMovimiento.vb</DependentUpon>
@@ -1539,17 +1344,8 @@
     <EmbeddedResource Include="Formularios\Stock\TransformacionArticulos.resx">
       <DependentUpon>TransformacionArticulos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Ventas\DatosBicicleta.resx">
-      <DependentUpon>DatosBicicleta.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Ventas\ModuloFPagos.resx">
       <DependentUpon>ModuloFPagos.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Ventas\TicketMesa.resx">
-      <DependentUpon>TicketMesa.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Ventas\VentaLocal.resx">
-      <DependentUpon>VentaLocal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\VisorReportes.resx">
       <DependentUpon>VisorReportes.vb</DependentUpon>
@@ -1590,10 +1386,6 @@
     <EmbeddedResource Include="Reportes\ReporteBoleta.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporteBoleta.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReporteConsultaKardex.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReporteConsultaKardex.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteCuadraturaCaja.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

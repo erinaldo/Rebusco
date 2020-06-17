@@ -160,7 +160,7 @@ Public Class TransformacionArticulos
 
     Private Sub xBarra_Validating(sender As Object, e As CancelEventArgs) Handles xBarra.Validating
         If xBarra.Text = "" Then Exit Sub
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wBarra = DC.T_Barras.FirstOrDefault(Function(x) x.Barra = xBarra.Text.Trim)
         If wBarra IsNot Nothing Then
             xPaqueteS.Text = wBarra.Unidades.ToString

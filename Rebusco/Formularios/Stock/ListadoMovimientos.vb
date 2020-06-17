@@ -201,7 +201,7 @@ Public Class ListadoMovimientos
     End Sub
 
     Private Sub bConsultar_Click(sender As Object, e As EventArgs) Handles bConsultar.Click
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wMovimientos = DC.T_ListadoMovimientosEncabezado.Where(Function(x) x.Fecha >= dDesde.Value.Date And x.Fecha <= dHasta.Value.Date)
         If Not wMovimientos.Any Then
             MsgError("No se encuentra registros para la fecha indicada")
@@ -249,7 +249,7 @@ Public Class ListadoMovimientos
         If e.RowIndex = -1 Then Exit Sub
         If xTablaMovimientos.Rows.Count = 0 Then Exit Sub
         Dim wMovimiento = CType(xTablaMovimientos.CurrentRow.DataBoundItem, MovEncabezado)
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wDetalle = DC.T_MovDet.Where(Function(x) x.Movimiento = wMovimiento.Movimiento And x.TipoMov = wMovimiento.TipoMov)
         If Not wDetalle.Any() Then
             MsgError("Error en movimiento, no se encuentra detalles")

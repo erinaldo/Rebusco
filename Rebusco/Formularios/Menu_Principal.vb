@@ -1,5 +1,5 @@
 ﻿
-Public Class Principal
+Public Class Menu_Principal
 
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ToolStripManager.Renderer = New Styles.CustomRenderer()
@@ -37,7 +37,7 @@ Public Class Principal
             Imagen.Image = G_LOGO
             DTE.Parametros_DTE(G_LOCALACTUAL)
 
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim PAR = DC.T_Parametros().FirstOrDefault()
             If PAR Is Nothing Then
                 End
@@ -64,15 +64,7 @@ Public Class Principal
                 mMenuDocumentos.Visible = False
                 bEmitirDocumentos.Visible = False
             End If
-            If PAR.Ventas Then
-                mMenuVentas.Visible = True
-                bVentaLocal.Visible = True
-                bCuadraturaCajas.Visible = True
-            Else
-                mMenuVentas.Visible = False
-                bVentaLocal.Visible = False
-                bCuadraturaCajas.Visible = False
-            End If
+
             If PAR.DTE Then mMenuDTE.Visible = True Else mMenuDTE.Visible = False
             If PAR.Web Then
                 mMenuWeb.Visible = True
@@ -81,22 +73,7 @@ Public Class Principal
                 mMenuWeb.Visible = False
                 bClick_Collect.Visible = False
             End If
-            If PAR.Distribucion Then
-                mMenuDistribucion.Visible = True
-                bStockDocumentos.Visible = True
-            Else
-                mMenuDistribucion.Visible = False
-                bStockDocumentos.Visible = False
-            End If
-            If PAR.Servicios Then
-                mMenuServicios.Visible = True
-                bServicioTecnico.Visible = True
-                bIngresoOT.Visible = True
-            Else
-                mMenuServicios.Visible = False
-                bServicioTecnico.Visible = False
-                bIngresoOT.Visible = False
-            End If
+
             If PAR.Cobranzas Then
                 mMenuCobranzas.Visible = True
                 bControlPagos.Visible = True
@@ -104,15 +81,7 @@ Public Class Principal
                 mMenuCobranzas.Visible = False
                 bControlPagos.Visible = False
             End If
-            If PAR.Stocks Then
-                mMenuStocks.Visible = True
-                bConsultaStocks.Visible = True
-                bMovimientos.Visible = True
-            Else
-                mMenuStocks.Visible = False
-                bConsultaStocks.Visible = False
-                bMovimientos.Visible = False
-            End If
+
             If PAR.Remuneraciones Then mMenuRemuneraciones.Visible = True Else mMenuRemuneraciones.Visible = False
             If PAR.Consultas Then
                 mMenuConsultas.Visible = True
@@ -126,7 +95,6 @@ Public Class Principal
 
             If G_IDCLIENTE = Clientes.Wikets Then
                 bVentaLocal.Visible = False
-                bStockDocumentos.Visible = False
                 bCuadraturaCajas.Visible = False
             End If
 
@@ -140,7 +108,6 @@ Public Class Principal
 
             AplicarPermisosUsuario()
 
-            If UsuarioActual = "RIC" Then bTest.Visible = True
 
         Catch ex As Exception
             MsgError(ex.Message, "Excepción al iniciar")
@@ -154,7 +121,7 @@ Public Class Principal
     Private Function CargarLocales() As Boolean
         Try
             RemoveHandler cLocal.SelectedIndexChanged, AddressOf cLocal_SelectedIndexChanged
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim locales = DC.T_Locales.Select(Function(x) New ItemCombo With {.ID = CStr(x.Local), .Desc = x.NombreLocal}).ToList
             If Not locales.Any Then Return False
             cLocal.ValueMember = "ID"
@@ -172,7 +139,7 @@ Public Class Principal
 
     Private Sub cLocal_SelectedIndexChanged(sender As Object, e As EventArgs)
         If cLocal.Text <> "" Then
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim seleccionado = cLocal.SelectedValue.ToString.ToDecimal()
             Dim wLoc = DC.T_Locales.FirstOrDefault(Function(x) x.Local = seleccionado)
             If wLoc IsNot Nothing Then
@@ -187,14 +154,14 @@ Public Class Principal
     End Sub
 
     Private Sub Salir_click(sender As System.Object, e As System.EventArgs) Handles mMenuSalir.Click
-        If Not Pregunta("¿Desea salir de MarketONE?") Then
+        If Not Pregunta("¿Desea salir de Rebusco?") Then
             Exit Sub
         End If
         End
     End Sub
 
     Private Sub Menu_Principal_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
-        If Not Pregunta("¿Desea salir de MarketONE?") Then
+        If Not Pregunta("¿Desea salir de Rebusco?") Then
             e.Cancel = True
         Else
             End
@@ -218,7 +185,7 @@ Public Class Principal
 
             If Not BuscarImagen.ShowDialog() = DialogResult.OK Then Exit Sub
 
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wPar = DC.T_Parametros.FirstOrDefault()
             If wPar IsNot Nothing Then
                 wPar.Logo1 = DTE.Leer_JPG(BuscarImagen.FileName)
@@ -420,10 +387,6 @@ Public Class Principal
         Return Nothing
     End Function
 
-    Private Sub bTest_Click(sender As Object, e As EventArgs) Handles bTest.Click
-        Test.Show()
-    End Sub
-
     Private Sub mIngresoDeDocumentos_Click(sender As Object, e As EventArgs) Handles mIngresoDeDocumentos.Click
         EmisionDocumentos.Show()
         EmisionDocumentos.BringToFront()
@@ -444,67 +407,37 @@ Public Class Principal
         AnularDocumento.BringToFront()
     End Sub
 
-    Private Sub mConsultaDeOT_Click(sender As Object, e As EventArgs) Handles mConsultaDeOT.Click
-        ConsultaOT.Show()
-        ConsultaOT.BringToFront()
-    End Sub
-
-    Private Sub mRepuestoParaOT_Click(sender As Object, e As EventArgs) Handles mRepuestoParaOT.Click
-        ConsultaRepuestosOT.Show()
-        ConsultaRepuestosOT.BringToFront()
-    End Sub
-
-    Private Sub mAnulaciónDeOT_Click(sender As Object, e As EventArgs) Handles mAnulaciónDeOT.Click
-        AnularOT.Show()
-        AnularOT.BringToFront()
-    End Sub
-
-    Private Sub mRepuestosPendientes_Click(sender As Object, e As EventArgs) Handles mRepuestosPendientes.Click
-        Abastecimiento.Show()
-        Abastecimiento.BringToFront()
-    End Sub
-
-    Private Sub mStocksPorDocumento_Click(sender As Object, e As EventArgs) Handles mStocksPorDocumento.Click
-        StockPorDocumento.Show()
-        StockPorDocumento.BringToFront()
-    End Sub
-
-    Private Sub mMovimientoDeStocksPOS_Click(sender As Object, e As EventArgs) Handles mMovimientoDeStocksPOS.Click
-        MovimientoStockPOS.Show()
-        MovimientoStockPOS.BringToFront()
-    End Sub
-
-    Private Sub mListadosDeMovimientos_Click(sender As Object, e As EventArgs) Handles mListadosDeMovimientos.Click
+    Private Sub mListadosDeMovimientos_Click(sender As Object, e As EventArgs)
         ListadoMovimientos.Show()
         ListadoMovimientos.BringToFront()
     End Sub
 
-    Private Sub mImprimirMovimientos_Click(sender As Object, e As EventArgs) Handles mImprimirMovimientos.Click
+    Private Sub mImprimirMovimientos_Click(sender As Object, e As EventArgs)
         ImprimirMovimiento.Show()
         ImprimirDocumentos.BringToFront()
     End Sub
 
-    Private Sub mModificarStocks_Click(sender As Object, e As EventArgs) Handles mModificarStocks.Click
+    Private Sub mModificarStocks_Click(sender As Object, e As EventArgs)
         ConsultaStock.Show()
         ConsultaStock.BringToFront()
     End Sub
 
-    Private Sub mMovimientos_Click(sender As Object, e As EventArgs) Handles mMovimientos.Click
+    Private Sub mMovimientos_Click(sender As Object, e As EventArgs)
         Movimientos.Show()
         Movimientos.BringToFront()
     End Sub
 
-    Private Sub mListadoDeTomaDeInventario_Click(sender As Object, e As EventArgs) Handles mListadoDeTomaDeInventario.Click
+    Private Sub mListadoDeTomaDeInventario_Click(sender As Object, e As EventArgs)
         ListadoTomaInventario.Show()
         ListadoTomaInventario.BringToFront()
     End Sub
 
-    Private Sub mListadoDeStocks_Click(sender As Object, e As EventArgs) Handles mListadoDeStocks.Click
+    Private Sub mListadoDeStocks_Click(sender As Object, e As EventArgs)
         ListadoStock.Show()
         ListadoStock.BringToFront()
     End Sub
 
-    Private Sub mTransformarArtículo_Click(sender As Object, e As EventArgs) Handles mTransformarArtículo.Click
+    Private Sub mTransformarArtículo_Click(sender As Object, e As EventArgs)
         TransformacionArticulos.Show()
         TransformacionArticulos.BringToFront()
     End Sub
@@ -608,12 +541,12 @@ Public Class Principal
         CambioProducto.BringToFront()
     End Sub
 
-    Private Sub mAnularMovimiento_Click(sender As Object, e As EventArgs) Handles mAnularMovimiento.Click
+    Private Sub mAnularMovimiento_Click(sender As Object, e As EventArgs)
         AnularMovimiento.Show()
         AnularMovimiento.BringToFront()
     End Sub
 
-    Private Sub mCierreDeStocksMensual_Click(sender As Object, e As EventArgs) Handles mCierreDeStocksMensual.Click
+    Private Sub mCierreDeStocksMensual_Click(sender As Object, e As EventArgs)
         CierreStockMes.Show()
         CierreStockMes.BringToFront()
     End Sub
@@ -686,11 +619,6 @@ Public Class Principal
         wConsulta.BringToFront()
     End Sub
 
-    Private Sub mConsultaAbonos_Click(sender As Object, e As EventArgs) Handles mConsultaAbonos.Click
-        ConsultaAbonos.Show()
-        ConsultaAbonos.BringToFront()
-    End Sub
-
     Private Sub mConsultaArticulos_Click(sender As Object, e As EventArgs) Handles mConsultaArticulos.Click
         ConsultaArticulos.Show()
         ConsultaArticulos.BringToFront()
@@ -760,7 +688,7 @@ Public Class Principal
         Dim G_UF = valores.UF
         Dim G_UF_MES = valores.UF_MES
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wUF As New T_UFs
         Dim qUF = DC.T_UFs.FirstOrDefault(Function(x) x.Año = Now.Year And x.Mes = Now.Month)
         If qUF IsNot Nothing Then wUF = qUF
@@ -807,12 +735,7 @@ Public Class Principal
         ManCorrelativos.BringToFront()
     End Sub
 
-    Private Sub mMantenciónDePOS_Click(sender As Object, e As EventArgs) Handles mMantenciónDePOS.Click
-        ManPOS.Show()
-        ManPOS.BringToFront()
-    End Sub
-
-    Private Sub mImpresiónDeEtiquetas_Click(sender As Object, e As EventArgs) Handles mImpresiónDeEtiquetas.Click
+    Private Sub mImpresiónDeEtiquetas_Click(sender As Object, e As EventArgs)
         GenerarEtiquetas.Show()
         GenerarEtiquetas.BringToFront()
     End Sub
@@ -822,7 +745,7 @@ Public Class Principal
         GenerarArchivoBanco.BringToFront()
     End Sub
 
-    Private Sub LimpiarBodegasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LimpiarBodegasToolStripMenuItem.Click
+    Private Sub LimpiarBodegasToolStripMenuItem_Click(sender As Object, e As EventArgs)
         LimpiarStocksBodega.Show()
         LimpiarStocksBodega.BringToFront()
     End Sub
@@ -847,51 +770,20 @@ Public Class Principal
         ConsultaDocumento.BringToFront()
     End Sub
 
-    Private Sub StatusServicioTécnicoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StatusServicioTécnicoToolStripMenuItem.Click
-        Status_ST.Show()
-        Status_ST.BringToFront()
-    End Sub
-
-    Private Sub VentasporCajaToolStripMenuItem(sender As Object, e As EventArgs) Handles ToolStripMenuItem12.Click
-        Cuadratura
-    End Sub
-
-    Sub Cuadratura()
-        VentasCaja.Show()
-        VentasCaja.BringToFront()
-        VentasCaja.bImprimir.Enabled = True
-        VentasCaja.bConsultar.Enabled = True
-        If G_ACCESOUSUARIO >= 5 Then
-            VentasCaja.cLocal.Enabled = True
-        Else
-            VentasCaja.cLocal.Enabled = False
-        End If
-    End Sub
-
-    Private Sub ConsultaDeAtencionesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConsultaDeAtencionesToolStripMenuItem.Click
-        ConsultarAtenciones.Show()
-        ConsultarAtenciones.BringToFront()
-    End Sub
-
-    Private Sub CambioDeFormaDePagoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CambioDeFormaDePagoToolStripMenuItem.Click
+    Private Sub CambioDeFormaDePagoToolStripMenuItem_Click(sender As Object, e As EventArgs)
         CambioFPago.Show()
         CambioFPago.BringToFront()
     End Sub
 
-    Private Sub mCambioPrecio_Click(sender As Object, e As EventArgs) Handles mCambioPrecio.Click
+    Private Sub mCambioPrecio_Click(sender As Object, e As EventArgs)
         CambioPrecios.Show()
         CambioPrecios.BringToFront()
-    End Sub
-
-    Private Sub mControlDeBicicletas_Click(sender As Object, e As EventArgs) Handles mControlDeBicicletas.Click
-        ConsultarDatoBicicleta.Show()
-        ConsultarDatoBicicleta.BringToFront()
     End Sub
 
     Private Sub bVerConfig_Click(sender As Object, e As EventArgs) Handles bVerConfig.Click
         Informacion("El archivo Json de configuración contiene los parámetros básicos para el funcionamiento del sistema." & vbCrLf & vbCrLf &
                     "Antes de realizar modificaciones realice un respaldo de sus contenido." & vbCrLf & vbCrLf &
-                    "Luego de realizar modificaciones en este archivo, guárdelo, cierre MarketONE y ejecútelo nuevamente.")
+                    "Luego de realizar modificaciones en este archivo, guárdelo, cierre Rebusco y ejecútelo nuevamente.")
         CONFIGURACION.Open()
     End Sub
 
@@ -915,7 +807,7 @@ Public Class Principal
     End Sub
 
     Private Sub CargarBases(Optional sender As Object = Nothing, Optional e As EventArgs = Nothing)
-        'Cargar bases de datos MarketONE_ disponibles en combo inferior        
+        'Cargar bases de datos Rebusco_ disponibles en combo inferior        
         cBase.Items.Clear()
 
         Dim servidor = cServidor.SelectedValue.ToString()
@@ -923,7 +815,6 @@ Public Class Principal
         Cursor = Cursors.WaitCursor
 
         Dim task = ProbarConexionServidor(servidor, "master")
-
         Dim restablecerBase = False
 
         If Not task.Result Then
@@ -956,7 +847,7 @@ Public Class Principal
                         "WHERE Cast(CASE WHEN name  " &
                         "IN ('master', 'model', 'msdb', 'tempdb', 'ReportServer', 'ReportServerTempDB')  " &
                         "THEN 1 ELSE is_distributor END AS bit) = 0 " &
-                        "AND Name LIKE '%MarketONE%' ORDER BY name"
+                        "AND Name LIKE '%Rebusco%' ORDER BY name"
             Using cmd = New SqlClient.SqlCommand(query, con)
                 Dim dt = New DataTable()
                 Using adap As New SqlClient.SqlDataAdapter(cmd)
@@ -976,7 +867,7 @@ Public Class Principal
             AddHandler cBase.SelectedIndexChanged, AddressOf cBase_SelectedIndexChanged
         End If
 
-            Cursor = Cursors.Default
+        Cursor = Cursors.Default
     End Sub
 
 
@@ -993,7 +884,7 @@ Public Class Principal
 
             CONFIGURACION.IPServidor = servidor
             CONFIGURACION.Base = base
-            CONFIGURACION.Empresa = base.Replace("MarketONE_", "")
+            CONFIGURACION.Empresa = base.Replace("Rebusco_", "")
 
             MostrarParametros()
 
@@ -1041,11 +932,6 @@ Public Class Principal
         CargarImpresoras()
     End Sub
 
-    Private Sub mConsultaDeKardex_Click(sender As Object, e As EventArgs) Handles mConsultaDeKardex.Click
-        ConsultaKardex.Show()
-        ConsultaKardex.BringToFront()
-    End Sub
-
     Private Sub WinDeco1_Load(sender As Object, e As EventArgs) Handles WinDeco1.Load
 
     End Sub
@@ -1070,18 +956,9 @@ Public Class Principal
         ConsultaStock.BringToFront()
     End Sub
 
-    Private Sub bVentaLocal_Click(sender As Object, e As EventArgs) Handles bVentaLocal.Click
-        VentaLocal.Show()
-        VentaLocal.BringToFront()
-    End Sub
-
     Private Sub bEmitirDocumentos_Click(sender As Object, e As EventArgs) Handles bEmitirDocumentos.Click
         EmisionDocumentos.Show()
         EmisionDocumentos.BringToFront()
-    End Sub
-
-    Private Sub bCuadraturaCajas_Click(sender As Object, e As EventArgs) Handles bCuadraturaCajas.Click
-        Cuadratura()
     End Sub
 
     Private Sub bControlPagos_Click(sender As Object, e As EventArgs) Handles bControlPagos.Click
@@ -1094,24 +971,9 @@ Public Class Principal
         ControlPagos.BringToFront()
     End Sub
 
-    Private Sub mVentaSucursal_Click(sender As Object, e As EventArgs) Handles mVentaLocal.Click
-        VentaLocal.Show()
-        VentaLocal.BringToFront()
-    End Sub
-
-    Private Sub bStockDocumentos_Click(sender As Object, e As EventArgs) Handles bStockDocumentos.Click
-        StockPorDocumento.Show()
-        StockPorDocumento.BringToFront()
-    End Sub
-
     Private Sub bMovimientos_Click_1(sender As Object, e As EventArgs) Handles bMovimientos.Click
         Movimientos.Show()
         Movimientos.BringToFront()
-    End Sub
-
-    Private Sub bServicioTecnico_Click(sender As Object, e As EventArgs) Handles bServicioTecnico.Click
-        ServicioTecnico.Show()
-        ServicioTecnico.BringToFront()
     End Sub
 
     Private Sub bBuscarArticulo_Click(sender As Object, e As EventArgs) Handles bBuscarArticulo.Click
@@ -1119,105 +981,7 @@ Public Class Principal
         wBuscador.ShowDialog()
     End Sub
 
-    Private Sub bIngresoOT_Click(sender As Object, e As EventArgs) Handles bIngresoOT.Click
-        IngresoOT.Show()
-        IngresoOT.BringToFront()
-    End Sub
-
-    Private Sub mIngresoDeOT_Click(sender As Object, e As EventArgs) Handles mIngresoDeOT.Click
-        IngresoOT.Show()
-        IngresoOT.BringToFront()
-    End Sub
-
     Private Sub cServidor_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cServidor.SelectedIndexChanged
 
     End Sub
 End Class
-
-
-'Sub CargarServidores()
-
-'    Cursor = Cursors.WaitCursor
-
-'    Dim seleccionado = False
-'    For Each ser In CONFIGURACION.ServidoresEmpresas
-'        Dim radio As New RadioButton
-'        radio.FlatStyle = FlatStyle.Flat
-'        radio.AutoSize = False
-'        radio.BackColor = Color.White
-'        radio.Cursor = Cursors.Hand
-'        radio.Appearance = Appearance.Button
-'        radio.UseVisualStyleBackColor = False
-'        radio.ImageAlign = ContentAlignment.MiddleLeft
-'        radio.TextImageRelation = TextImageRelation.ImageBeforeText
-'        radio.FlatAppearance.MouseOverBackColor = Color.FromArgb(102, 146, 213)
-'        radio.FlatAppearance.MouseDownBackColor = Color.FromArgb(71, 103, 150)
-'        radio.FlatAppearance.CheckedBackColor = Color.FromArgb(10, 87, 139)
-'        radio.FlatAppearance.BorderColor = Color.FromArgb(10, 87, 139)
-'        radio.ForeColor = Color.FromArgb(29, 73, 140)
-'        radio.Size = New Size(171, 31)
-'        radio.Text = ser.Empresa
-'        radio.Tag = ser.IP
-'        radio.Cursor = Cursors.Hand
-
-'        AddHandler radio.CheckedChanged, AddressOf wCheck_CheckedChanged
-
-'        If Not seleccionado AndAlso ser.IP = CONFIGURACION.IPServidor Then
-'            radio.Image = My.Resources.database_check
-'            radio.Checked = True
-'            seleccionado = True
-'        Else
-'            radio.Image = My.Resources.database_delete2
-'            radio.Checked = False
-'        End If
-
-'        pServidores.Controls.Add(radio)
-'    Next
-
-'    Cursor = Cursors.Arrow
-
-'End Sub
-
-'Dim UltimoServidor As RadioButton
-
-'Private Sub wCheck_CheckedChanged(sender As Object, e As EventArgs)
-
-'    Dim ServidorSeleccionado As RadioButton = DirectCast(sender, RadioButton)
-
-'    Dim servidor = ServidorSeleccionado.Tag.ToString
-'    ServidorSeleccionado.ForeColor = If(ServidorSeleccionado.Checked, Color.White, Color.FromArgb(29, 73, 140))
-'    ServidorSeleccionado.Image = If(ServidorSeleccionado.Checked, My.Resources.Resources.database_check,
-'                                                    My.Resources.Resources.database_delete2)
-
-'    If Not ServidorSeleccionado.Checked Then Return
-
-'    DoEvents()
-'    Cursor = Cursors.WaitCursor
-
-'    Dim task = Threading.Tasks.Task.Factory.StartNew(Function() ProbarConexion(servidor, CONFIGURACION.Base))
-'    task.Wait(P_TIEMPOCONEXION)
-
-'    If task.Result Then
-'        CONFIGURACION.IPServidor = ServidorSeleccionado.Tag.ToString
-'        UltimoServidor = ServidorSeleccionado
-'        MostrarParametros()
-'    Else
-
-'        If task.IsCompleted Then
-'            MsgError("Los parámetros de conexión son incorrectos" & vbCrLf &
-'                     $"{servidor} : {CONFIGURACION.Base}", "Error de conexión")
-'        Else
-'            MsgError("Se agotó el tiempo de respuesta con el servidor seleccionado" & vbCrLf &
-'                     $"{servidor} : {CONFIGURACION.Base}", "Error de conexión")
-'        End If
-
-'        RemoveHandler UltimoServidor.CheckedChanged, AddressOf wCheck_CheckedChanged
-'        UltimoServidor.Checked = True
-'        UltimoServidor.ForeColor = Color.White
-'        UltimoServidor.Image = My.Resources.Resources.database_check
-'        AddHandler UltimoServidor.CheckedChanged, AddressOf wCheck_CheckedChanged
-'    End If
-'    Cursor = Cursors.Default
-'End Sub
-
-

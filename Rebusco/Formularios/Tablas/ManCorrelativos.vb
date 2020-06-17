@@ -69,7 +69,7 @@ Public Class ManCorrelativos
             Exit Sub
         End If
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION) With {
+        Dim DC = New RebuscoDataContext(P_CONEXION) With {
             .Log = System.Console.Out
         }
         Dim wCorr As New T_Correlativos
@@ -145,7 +145,7 @@ Public Class ManCorrelativos
 
         If xCaja.Text = "" Then xCaja.Text = "0"
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wCorr = DC.T_Correlativos.FirstOrDefault(Function(x) x.POS = CInt(xCaja.Text) And
                                                                   x.Local = CInt(xLocal.Text) And
                                                                   x.TipoDoc = cTipoDoc.SelectedValue.ToString)

@@ -114,7 +114,7 @@ Public Class CambioPrecios
 
         Cursor = Cursors.WaitCursor
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         Dim Articulos = DC.T_Articulos.AsQueryable()
         Dim CostosIngresos = DC.T_CostosIngresos.ToList()
@@ -264,7 +264,7 @@ Public Class CambioPrecios
             Exit Sub
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         Cursor = Cursors.WaitCursor
 
@@ -301,7 +301,7 @@ Public Class CambioPrecios
             Exit Sub
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         If xArticulo.DescEncontrada = "" Then
 

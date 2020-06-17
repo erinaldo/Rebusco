@@ -64,7 +64,7 @@ Module DTE
     End Class
 
     Public Function Generar_TED(wLocal As Decimal, wTipoDoc As String, wNumDoc As Double, wFecha As Date, wRut As String, wNombre As String, wMonto As Double, wPrimeraLinea As String) As RespuestaTED
-        Dim DC As New MarketONEDataContext(P_CONEXION)
+        Dim DC As New RebuscoDataContext(P_CONEXION)
         Dim Imagen As Byte() = Nothing
         Dim XML As String
         Dim wStep = 0
@@ -204,7 +204,7 @@ Module DTE
     End Function
 
     Public Function Ruta_Archivo_Fiscal(wExtension As String, wLocal As Double, wTipoDoc As String, wNumero As Double, wCliente As Double) As String
-        Dim DC As New MarketONEDataContext(P_CONEXION)
+        Dim DC As New RebuscoDataContext(P_CONEXION)
         Dim wFantasia As String = ""
 
         If wCliente = 0 Then
@@ -241,7 +241,7 @@ Module DTE
     Public Function Emitir_DTE(wLocal As Double, wTipoDoc As String, wNumDoc As Double) As Boolean
         Dim wPrimeraLinea As String, wUnidad As String, wArticulo As String, Referencias As Double
         Dim wFechaRef As Date, wTipoDocRef As String, wNumDocRef As String
-        Dim DC As New MarketONEDataContext(P_CONEXION)
+        Dim DC As New RebuscoDataContext(P_CONEXION)
 
 
         'Las Boletas de Venta tienen tratamiento especial
@@ -508,7 +508,7 @@ Module DTE
     Public Function Emitir_Boleta(wLocal As Double, wTipoDoc As String, wNumDoc As Double) As Boolean
         Dim wPrimeraLinea As String, wUnidad As String, wArticulo As String
 
-        Dim DC As New MarketONEDataContext(P_CONEXION)
+        Dim DC As New RebuscoDataContext(P_CONEXION)
 
         'MODULO SIMILAR A LA EMISION DE FACTURAS PERO ES ESPECIFICO PARA BOLETAS YA QUE TIENN TRATAMIENTO DISTINTO
 
@@ -763,7 +763,7 @@ ReIntentos:
 
 
     Public Function Parametros_DTE(wLocal As Double) As Boolean
-        Dim DC As New MarketONEDataContext(P_CONEXION)
+        Dim DC As New RebuscoDataContext(P_CONEXION)
 
         Parametros_DTE = False
         Try
@@ -962,7 +962,7 @@ ReIntentos:
 
     Public Function Codigo_SII(wTipoDoc As String) As Decimal
         If wTipoDoc = "" Then Return 0
-        Dim DC As New MarketONEDataContext(P_CONEXION)
+        Dim DC As New RebuscoDataContext(P_CONEXION)
         Dim TipoDoc = DC.T_TipoDoc.FirstOrDefault(Function(x) x.TipoDoc = wTipoDoc)
         If TipoDoc Is Nothing Then Return 0
         Return TipoDoc.Cod_SII
@@ -987,14 +987,14 @@ ReIntentos:
 
     Public Function Saca_Comuna(wComuna As String) As String
         If wComuna = "" Then Return ""
-        Dim DC As New MarketONEDataContext(P_CONEXION)
+        Dim DC As New RebuscoDataContext(P_CONEXION)
         Dim Comuna = DC.T_Comunas.FirstOrDefault(Function(x) x.Codigo = wComuna)
         If Comuna Is Nothing Then Return wComuna
         Return Comuna.NombreComuna
     End Function
 
     Public Function Descripcion_Motivo(wTipoDoc As String, wMotivo As String) As String
-        Dim DC As New MarketONEDataContext(P_CONEXION)
+        Dim DC As New RebuscoDataContext(P_CONEXION)
         Dim Motivo = DC.T_Motivos.FirstOrDefault(Function(x) x.Motivo = wMotivo And x.TipoDoc = wTipoDoc)
         If Motivo Is Nothing Then Return ""
         Return Mid(Motivo.DescMotivo, 1, 50)

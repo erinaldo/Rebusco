@@ -41,7 +41,7 @@ Public Class ManUnidades
             Exit Sub
         End If
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wUni As New T_Unidades
         Dim qUni = DC.T_Unidades.FirstOrDefault(Function(x) x.Unidad = xUnidad.Text.Trim)
 
@@ -73,7 +73,7 @@ Public Class ManUnidades
     Private Sub bEliminar_Click(sender As Object, e As EventArgs) Handles bEliminar.Click
         Try
             If xUnidad.Text.Trim <> "" Then
-                Dim DC = New MarketONEDataContext(P_CONEXION)
+                Dim DC = New RebuscoDataContext(P_CONEXION)
                 Dim wUnidad = DC.T_Unidades.FirstOrDefault(Function(x) x.Unidad = xUnidad.Text.Trim())
 
                 If wUnidad Is Nothing Then

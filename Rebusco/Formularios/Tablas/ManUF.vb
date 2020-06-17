@@ -24,7 +24,7 @@
             Exit Sub
         End If
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wUF As New T_UFs
 
         Dim qUF = DC.T_UFs.FirstOrDefault(Function(x) x.Año = cAño.Text.ToDecimal() And x.Mes = cMes.SelectedValue.ToString.ToDecimal())
@@ -80,7 +80,7 @@
         If cMes.SelectedValue Is Nothing Or cAño.SelectedValue Is Nothing Then
             Exit Sub
         End If
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wUF = DC.T_UFs.FirstOrDefault(Function(x) x.Año = Val(cAño.Text) And x.Mes = CInt(cMes.SelectedValue.ToString))
 
         If wUF Is Nothing Then

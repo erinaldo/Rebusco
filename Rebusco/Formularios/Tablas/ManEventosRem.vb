@@ -59,7 +59,7 @@ Public Class ManEventosRem
             Exit Sub
         End If
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wEve As New T_EventosRem
         Dim qEven = DC.T_EventosRem.FirstOrDefault(Function(x) x.EventoRem = CInt(xEvento.Text))
 

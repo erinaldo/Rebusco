@@ -60,7 +60,7 @@ Public Class ManTipoDoc
         End If
 
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wTipoDoc As New T_TipoDoc
         Dim qTipoDoc = DC.T_TipoDoc.FirstOrDefault(Function(x) x.TipoDoc = xTipoDoc.Text.Trim)
 

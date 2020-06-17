@@ -57,7 +57,7 @@ Public Class ManTipoMov
             cAccion.Focus()
         End If
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wTipoM As New T_TipoMov
         Dim qTipoM = DC.T_TipoMov.FirstOrDefault(Function(x) x.TipoMov = xTipoMov.Text.Trim)
 

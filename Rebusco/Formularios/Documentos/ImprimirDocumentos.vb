@@ -54,7 +54,7 @@ Public Class ImprimirDocumentos
             Exit Sub
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wDoc = DC.T_DocumentosG.FirstOrDefault(Function(x) x.TipoDoc = cTipoDoc.SelectedValue.ToString And
                                                                 x.Local = Val(cLocal.SelectedValue.ToString) And
                                                                 x.Numero = Val(xNumDoc.Text))

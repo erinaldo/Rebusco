@@ -68,7 +68,7 @@ Public Class CambioFPago
         End If
 
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wDGs As New T_DocumentosG
         Dim DCg = DC.T_DocumentosG.FirstOrDefault(Function(x) x.Local = Val(cLocal.SelectedValue.ToString) And
                                                                 x.TipoDoc = cTipoDoc.SelectedValue.ToString And

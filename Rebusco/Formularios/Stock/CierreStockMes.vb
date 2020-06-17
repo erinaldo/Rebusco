@@ -15,7 +15,7 @@
             End If
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wStockC = DC.T_Stocks_Cierre.Where(Function(x) x.FechaCierre = dFechaCierre.Value)
 
         If wStockC.Any Then

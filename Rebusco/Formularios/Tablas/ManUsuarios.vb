@@ -125,7 +125,7 @@ Public Class ManUsuarios
         End If
 
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wUsr As New T_Usuarios
 
         Validacion.ValidateObj(wUsr)
@@ -188,7 +188,7 @@ Public Class ManUsuarios
     Public Sub xCodigo_Validating(sender As Object, e As EventArgs) Handles xCodigo.Validating
         If xCodigo.Text.Trim = "" Then Exit Sub
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wUsr = DC.T_Usuarios.FirstOrDefault(Function(x) x.Usuario = xCodigo.Text.Trim)
 
         If wUsr IsNot Nothing Then
@@ -257,7 +257,7 @@ Public Class ManUsuarios
         ValidarDigitos(sender)
         If xCliente.ToDecimal <= 0 Then Exit Sub
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wCli = DC.T_Clientes.FirstOrDefault(Function(x) x.Cliente = CInt(xCliente.Text))
 
         If wCli IsNot Nothing Then

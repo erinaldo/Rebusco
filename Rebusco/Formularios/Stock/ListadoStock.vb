@@ -40,7 +40,7 @@ Public Class ListadoStock
 
         If xArticulo.DescEncontrada = "" Then
             Dim wIDArticulo = ObtenerArticulo(xArticulo.Text)
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim wArt = DC.T_Articulos.FirstOrDefault(Function(x) x.Articulo = wIDArticulo.ToDecimal())
             If wArt IsNot Nothing Then
                 xArticulo.AutoCompletarActivo = False
@@ -160,7 +160,7 @@ Public Class ListadoStock
     Private Sub ConsultarPorLocal()
         Cursor = Cursors.WaitCursor
         bConsultar.Enabled = False
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         Dim wStocks = DC.T_ListadoStockLocal.ToList()
         Dim wLocales = DC.T_Locales.ToList()
@@ -261,7 +261,7 @@ Public Class ListadoStock
 
         Cursor = Cursors.WaitCursor
         bConsultar.Enabled = False
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         Dim wStocks = DC.T_ListadoStockBodega.ToList()
         Dim wBodegas = DC.T_Bodegas.ToList()

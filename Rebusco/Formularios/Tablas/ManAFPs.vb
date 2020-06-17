@@ -55,7 +55,7 @@ Public Class ManAFPs
         End If
 
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wAFP As New T_AFPs
         Dim qAFP = DC.T_AFPs.FirstOrDefault(Function(x) x.AFP = CInt(xAFPs.Text))
 

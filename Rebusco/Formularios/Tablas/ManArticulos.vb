@@ -168,7 +168,7 @@ Public Class ManArticulos
         End If
 
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim art As New T_Articulos
         Dim qArt = DC.T_Articulos.FirstOrDefault(Function(x) x.Articulo = xArticulo.Text.ToDecimal)
 
@@ -252,7 +252,7 @@ Public Class ManArticulos
     End Sub
 
     Public Sub CrearStock(wArticulo As String)
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wLocales = DC.T_Locales.ToList()
         For Each wLocal In wLocales
             Dim wBodegas = DC.T_Bodegas.ToList()
@@ -363,7 +363,7 @@ Public Class ManArticulos
     End Sub
 
     Private Sub bImagenes_Click(sender As Object, e As EventArgs) Handles bImagenes.Click
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         Dim art = xArticulo.Text.ToDecimal
         If Not DC.T_Articulos.Any(Function(x) x.Articulo = art) Then
@@ -400,7 +400,7 @@ Public Class ManArticulos
             Exit Sub
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         Dim wArticulo = DC.T_Articulos.FirstOrDefault(Function(x) x.Articulo = xArticulo.Text.ToDecimal)
         If wArticulo Is Nothing Then
             MsgError("El artículo no esta creado, guarde el artículo y luego ingrese las Barras")
@@ -427,7 +427,7 @@ Public Class ManArticulos
 
     Public Sub xArticulo_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles xArticulo.Validating
         Dim wEncontrado As Boolean = False
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
         If xArticulo.ListaVisible Then
             If xArticulo.ListaActiva Then
                 Exit Sub

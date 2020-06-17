@@ -50,7 +50,7 @@ Public Class ConsultaStock
             Exit Sub
         End If
 
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         If xArticulo.DescEncontrada = "" Then
             Dim wIDArticulo = ObtenerArticulo(xArticulo.Text)
@@ -100,7 +100,7 @@ Public Class ConsultaStock
         Dim bodega = cBodega.SelectedValue.ToString.ToDecimal()
 
         Cursor = Cursors.WaitCursor
-        Dim DC = New MarketONEDataContext(P_CONEXION)
+        Dim DC = New RebuscoDataContext(P_CONEXION)
 
         Dim Bodegas = DC.T_Bodegas.Where(Function(x) x.Bodega > 0)
         If cBodega.Text.Trim <> "" Then
@@ -176,7 +176,7 @@ Public Class ConsultaStock
 
             If Not stk.Modificado Then Continue For
 
-            Dim DC = New MarketONEDataContext(P_CONEXION)
+            Dim DC = New RebuscoDataContext(P_CONEXION)
             Dim stockArt = DC.T_Stocks.FirstOrDefault(Function(x) x.Articulo = xArticulo.Text.ToDecimal And
                                                               x.Local = stk.Local And
                                                               x.Bodega = stk.Bodega)
