@@ -139,15 +139,11 @@ Partial Class Menu_Principal
         Me.Label11 = New System.Windows.Forms.Label()
         Me.ActualizarStatus = New System.Windows.Forms.Timer(Me.components)
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
-        Me.bVentaLocal = New System.Windows.Forms.Button()
         Me.bEmitirDocumentos = New System.Windows.Forms.Button()
         Me.bCuadraturaCajas = New System.Windows.Forms.Button()
         Me.bClick_Collect = New System.Windows.Forms.Button()
         Me.bControlPagos = New System.Windows.Forms.Button()
-        Me.bConsultaStocks = New System.Windows.Forms.Button()
         Me.bMovimientos = New System.Windows.Forms.Button()
-        Me.bIngresoOT = New System.Windows.Forms.Button()
-        Me.bServicioTecnico = New System.Windows.Forms.Button()
         Me.bBuscarArticulo = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
@@ -1077,15 +1073,11 @@ Partial Class Menu_Principal
         Me.FlowLayoutPanel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.FlowLayoutPanel1.BackColor = System.Drawing.Color.Transparent
-        Me.FlowLayoutPanel1.Controls.Add(Me.bVentaLocal)
         Me.FlowLayoutPanel1.Controls.Add(Me.bEmitirDocumentos)
         Me.FlowLayoutPanel1.Controls.Add(Me.bCuadraturaCajas)
         Me.FlowLayoutPanel1.Controls.Add(Me.bClick_Collect)
         Me.FlowLayoutPanel1.Controls.Add(Me.bControlPagos)
-        Me.FlowLayoutPanel1.Controls.Add(Me.bConsultaStocks)
         Me.FlowLayoutPanel1.Controls.Add(Me.bMovimientos)
-        Me.FlowLayoutPanel1.Controls.Add(Me.bIngresoOT)
-        Me.FlowLayoutPanel1.Controls.Add(Me.bServicioTecnico)
         Me.FlowLayoutPanel1.Controls.Add(Me.bBuscarArticulo)
         Me.FlowLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.FlowLayoutPanel1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1095,23 +1087,6 @@ Partial Class Menu_Principal
         Me.FlowLayoutPanel1.Size = New System.Drawing.Size(993, 118)
         Me.FlowLayoutPanel1.TabIndex = 144
         '
-        'bVentaLocal
-        '
-        Me.bVentaLocal.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bVentaLocal.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bVentaLocal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bVentaLocal.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bVentaLocal.Image = Global.Rebusco.My.Resources.Resources.cashier_ok24
-        Me.bVentaLocal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bVentaLocal.Location = New System.Drawing.Point(3, 4)
-        Me.bVentaLocal.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bVentaLocal.Name = "bVentaLocal"
-        Me.bVentaLocal.Size = New System.Drawing.Size(186, 46)
-        Me.bVentaLocal.TabIndex = 112
-        Me.bVentaLocal.Text = " Venta Local"
-        Me.bVentaLocal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.bVentaLocal.UseVisualStyleBackColor = True
-        '
         'bEmitirDocumentos
         '
         Me.bEmitirDocumentos.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
@@ -1120,7 +1095,7 @@ Partial Class Menu_Principal
         Me.bEmitirDocumentos.Font = New System.Drawing.Font("Arial", 9.75!)
         Me.bEmitirDocumentos.Image = Global.Rebusco.My.Resources.Resources.PatientResult24
         Me.bEmitirDocumentos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bEmitirDocumentos.Location = New System.Drawing.Point(195, 4)
+        Me.bEmitirDocumentos.Location = New System.Drawing.Point(3, 4)
         Me.bEmitirDocumentos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.bEmitirDocumentos.Name = "bEmitirDocumentos"
         Me.bEmitirDocumentos.Size = New System.Drawing.Size(186, 46)
@@ -1137,7 +1112,7 @@ Partial Class Menu_Principal
         Me.bCuadraturaCajas.Font = New System.Drawing.Font("Arial", 9.75!)
         Me.bCuadraturaCajas.Image = Global.Rebusco.My.Resources.Resources.calc_ok24
         Me.bCuadraturaCajas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bCuadraturaCajas.Location = New System.Drawing.Point(387, 4)
+        Me.bCuadraturaCajas.Location = New System.Drawing.Point(195, 4)
         Me.bCuadraturaCajas.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.bCuadraturaCajas.Name = "bCuadraturaCajas"
         Me.bCuadraturaCajas.Size = New System.Drawing.Size(186, 46)
@@ -1154,7 +1129,7 @@ Partial Class Menu_Principal
         Me.bClick_Collect.Font = New System.Drawing.Font("Arial", 9.75!)
         Me.bClick_Collect.Image = Global.Rebusco.My.Resources.Resources.pagos24
         Me.bClick_Collect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bClick_Collect.Location = New System.Drawing.Point(579, 4)
+        Me.bClick_Collect.Location = New System.Drawing.Point(387, 4)
         Me.bClick_Collect.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.bClick_Collect.Name = "bClick_Collect"
         Me.bClick_Collect.Size = New System.Drawing.Size(186, 46)
@@ -1171,7 +1146,7 @@ Partial Class Menu_Principal
         Me.bControlPagos.Font = New System.Drawing.Font("Arial", 9.75!)
         Me.bControlPagos.Image = Global.Rebusco.My.Resources.Resources.Payment24
         Me.bControlPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bControlPagos.Location = New System.Drawing.Point(771, 4)
+        Me.bControlPagos.Location = New System.Drawing.Point(579, 4)
         Me.bControlPagos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.bControlPagos.Name = "bControlPagos"
         Me.bControlPagos.Size = New System.Drawing.Size(186, 46)
@@ -1179,23 +1154,6 @@ Partial Class Menu_Principal
         Me.bControlPagos.Text = " Control de Pagos"
         Me.bControlPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.bControlPagos.UseVisualStyleBackColor = True
-        '
-        'bConsultaStocks
-        '
-        Me.bConsultaStocks.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bConsultaStocks.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bConsultaStocks.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bConsultaStocks.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bConsultaStocks.Image = Global.Rebusco.My.Resources.Resources.ListadoStock24
-        Me.bConsultaStocks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bConsultaStocks.Location = New System.Drawing.Point(3, 58)
-        Me.bConsultaStocks.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bConsultaStocks.Name = "bConsultaStocks"
-        Me.bConsultaStocks.Size = New System.Drawing.Size(186, 46)
-        Me.bConsultaStocks.TabIndex = 124
-        Me.bConsultaStocks.Text = " Consulta de Stock"
-        Me.bConsultaStocks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.bConsultaStocks.UseVisualStyleBackColor = True
         '
         'bMovimientos
         '
@@ -1205,7 +1163,7 @@ Partial Class Menu_Principal
         Me.bMovimientos.Font = New System.Drawing.Font("Arial", 9.75!)
         Me.bMovimientos.Image = Global.Rebusco.My.Resources.Resources.gears241
         Me.bMovimientos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bMovimientos.Location = New System.Drawing.Point(195, 58)
+        Me.bMovimientos.Location = New System.Drawing.Point(771, 4)
         Me.bMovimientos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.bMovimientos.Name = "bMovimientos"
         Me.bMovimientos.Size = New System.Drawing.Size(186, 46)
@@ -1213,40 +1171,6 @@ Partial Class Menu_Principal
         Me.bMovimientos.Text = " Movimientos"
         Me.bMovimientos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.bMovimientos.UseVisualStyleBackColor = True
-        '
-        'bIngresoOT
-        '
-        Me.bIngresoOT.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bIngresoOT.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bIngresoOT.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bIngresoOT.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bIngresoOT.Image = Global.Rebusco.My.Resources.Resources.AgregarOT
-        Me.bIngresoOT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bIngresoOT.Location = New System.Drawing.Point(387, 58)
-        Me.bIngresoOT.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bIngresoOT.Name = "bIngresoOT"
-        Me.bIngresoOT.Size = New System.Drawing.Size(186, 46)
-        Me.bIngresoOT.TabIndex = 120
-        Me.bIngresoOT.Text = " Ingreso de OT"
-        Me.bIngresoOT.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.bIngresoOT.UseVisualStyleBackColor = True
-        '
-        'bServicioTecnico
-        '
-        Me.bServicioTecnico.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bServicioTecnico.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bServicioTecnico.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bServicioTecnico.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bServicioTecnico.Image = Global.Rebusco.My.Resources.Resources.Servicio
-        Me.bServicioTecnico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bServicioTecnico.Location = New System.Drawing.Point(579, 58)
-        Me.bServicioTecnico.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bServicioTecnico.Name = "bServicioTecnico"
-        Me.bServicioTecnico.Size = New System.Drawing.Size(186, 46)
-        Me.bServicioTecnico.TabIndex = 122
-        Me.bServicioTecnico.Text = " Servicio Técnico"
-        Me.bServicioTecnico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.bServicioTecnico.UseVisualStyleBackColor = True
         '
         'bBuscarArticulo
         '
@@ -1256,7 +1180,7 @@ Partial Class Menu_Principal
         Me.bBuscarArticulo.Font = New System.Drawing.Font("Arial", 9.75!)
         Me.bBuscarArticulo.Image = Global.Rebusco.My.Resources.Resources.buscarArt
         Me.bBuscarArticulo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bBuscarArticulo.Location = New System.Drawing.Point(771, 58)
+        Me.bBuscarArticulo.Location = New System.Drawing.Point(3, 58)
         Me.bBuscarArticulo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.bBuscarArticulo.Name = "bBuscarArticulo"
         Me.bBuscarArticulo.Size = New System.Drawing.Size(186, 46)
@@ -1542,15 +1466,11 @@ Partial Class Menu_Principal
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents ActualizarStatus As Timer
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
-    Friend WithEvents bVentaLocal As Button
     Friend WithEvents bEmitirDocumentos As Button
     Friend WithEvents bCuadraturaCajas As Button
     Friend WithEvents bClick_Collect As Button
     Friend WithEvents bControlPagos As Button
-    Friend WithEvents bConsultaStocks As Button
     Friend WithEvents bMovimientos As Button
-    Friend WithEvents bIngresoOT As Button
-    Friend WithEvents bServicioTecnico As Button
     Friend WithEvents bBuscarArticulo As Button
     Friend WithEvents mMenuWeb As ToolStripMenuItem
     Friend WithEvents ClickCollectToolStripMenuItem As ToolStripMenuItem

@@ -94,7 +94,6 @@ Public Class Menu_Principal
 
 
             If G_IDCLIENTE = Clientes.Wikets Then
-                bVentaLocal.Visible = False
                 bCuadraturaCajas.Visible = False
             End If
 
@@ -951,7 +950,7 @@ Public Class Menu_Principal
         AnularTik.BringToFront()
     End Sub
 
-    Private Sub bConsultaStocks_Click(sender As Object, e As EventArgs) Handles bConsultaStocks.Click
+    Private Sub bConsultaStocks_Click(sender As Object, e As EventArgs)
         ConsultaStock.Show()
         ConsultaStock.BringToFront()
     End Sub
