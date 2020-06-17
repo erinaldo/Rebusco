@@ -1,0 +1,49 @@
+﻿Public Class FirmaDocumento
+    'Public Property Local As Double
+    'Public Property TipoDoc As String
+    'Public Property Numero As Double
+    'Public Property Fecha As DateTime
+    'Public Property Estado As String
+    'Public Property Cliente As Double
+    'Public Property Rut As String
+    'Public Property Aprobado As Boolean
+    'Public Property FPago As String
+    'Public Property Bodega As Double
+    'Public Property OC As String
+    'Public Property Motivo As String
+    'Public Property TipoDocReferencia As String
+    'Public Property NumDocReferencia As Double
+    'Public Property FechaDocReferencia As Date
+    'Public Property Observaciones As String
+    'Public Property Usuario As String
+    'Public Property Vendedor As String
+    'Public Property Electronica As Boolean
+    'Public Property Ticket As Double
+    'Public Property SubTotal As Double
+    'Public Property Descuento As Double
+    'Public Property Neto As Double
+    'Public Property IVA As Double
+    'Public Property iEXE As Double
+    'Public Property iMIN As Double
+    'Public Property iBEB As Double
+    'Public Property iVIN As Double
+    'Public Property iCER As Double
+    'Public Property iLIC As Double
+    'Public Property iHAR As Double
+    'Public Property iCAR As Double
+    'Public Property iFEP As Double
+    'Public Property iTAB As Double
+    'Public Property iLOG As Double
+    'Public Property iOTRO As Double
+    'Public Property Total As Double
+    'Public Property RutTransporte As String
+    'Public Property NombreTransporte As String
+    'Public Property RutChofer As String
+    'Public Property NombreChofer As String
+    'Public Property PatenteMovil As String
+    'Public Property DTE As Boolean
+    Public Property Firma As Byte()
+    'Public Property STATUS_DTE As Double
+
+End Class
+

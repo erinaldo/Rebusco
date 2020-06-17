@@ -1,0 +1,39 @@
+﻿Public Class ParametrosLocal
+    Public Property Local As Double
+    Public Property Logo As Byte()
+    Public Property NombreLocal As String
+    Public Property RazonLocal As String
+    Public Property RutLocal As String
+    Public Property GiroLocal As String
+    Public Property DirLocal As String
+    Public Property Ciudad As String
+    Public Property Comuna As String
+    Public Property Cliente As Double
+    Public Property EMailLocal As String
+    Public Property TelefonosLocal As String
+    Public Property HorarioLocal As String
+    Public Property MaxDeuda As Double
+    Public Property EnvioPrecios As Boolean
+    Public Property CargadeVentas As Boolean
+    Public Property FElectronica As Boolean
+    Public Property IP_DTE As String
+    Public Property FV_Elect As Boolean
+    Public Property GD_Elect As Boolean
+    Public Property NC_Elect As Boolean
+    Public Property FE_Elect As Boolean
+    Public Property ND_Elect As Boolean
+    Public Property FC_Elect As Boolean
+    Public Property BV_Elect As Boolean
+    Public Property BE_Elect As Boolean
+    Public Property Llave As String
+    Public Property NResolucion As Double
+    Public Property FResolucion As Date
+    Public Property ATECO As String
+    Public Property SII As String
+    Public Property Envio_Automatico As Boolean
+    Public Property NombreComuna As String
+    Public Property Periodo As String
+    Public Property RedSocial1 As String
+    Public Property RedSocial2 As String
+End Class
+

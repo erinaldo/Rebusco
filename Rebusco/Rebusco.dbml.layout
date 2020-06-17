@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 23.625, 8.5" name="MarketONE">
+  <DataContextMoniker Name="/MarketONEDataContext" />
+  <nestedChildShapes>
+    <classShape Id="50c952f5-0059-4b6c-8414-b8409cdd3bff" isExpanded="false" absoluteBounds="0.5, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Abonos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="172cf934-42c9-4e99-abbc-fb46838c4299" absoluteBounds="0.51500000000000012, 1.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="277a1a36-2989-4c47-a09b-18694c97d43d" isExpanded="false" absoluteBounds="0.5, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Accesos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c4a25f4-7e8e-4dc3-a2a9-7210fcd6e07e" absoluteBounds="0.51500000000000012, 2.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ee567122-caf7-4d35-a379-5f1d7e7baf8c" isExpanded="false" absoluteBounds="0.5, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_AFPs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3ff189f6-dc0d-4440-b6e1-db02844143e9" absoluteBounds="0.51500000000000012, 2.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8eb20a77-d56c-47b9-9faa-015c5d926ae8" isExpanded="false" absoluteBounds="0.5, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Auditoria" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb7e5941-4ef0-4ec3-a76e-83c50c6e8b94" absoluteBounds="0.515, 4.085, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="033b3544-e7b8-4d90-994b-18ee4b66f311" isExpanded="false" absoluteBounds="0.5, 4.25, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Bancos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="793ec326-a19b-4f21-9991-0b530a0fedd3" absoluteBounds="0.51500000000000012, 4.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb54b95a-143c-46a7-92c5-6a8a11c7a8b0" isExpanded="false" absoluteBounds="2.75, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Bodegas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5ccd23cc-8e50-4aa3-8c07-cb4116bdbddb" absoluteBounds="2.765, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b5fa8536-b3a3-4300-9544-30bcea6292f3" isExpanded="false" absoluteBounds="2.75, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_CajaCompensacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d3cc527-7d5d-4041-bdf8-6b4a4c950fc8" absoluteBounds="2.765, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4e225ae6-a401-462c-be1e-4339d4a73b4c" isExpanded="false" absoluteBounds="2.75, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Comunas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5ff7254d-c382-440d-a9ec-86d6df340b99" absoluteBounds="2.765, 2.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c35441d-cafa-4aa0-8dea-f09a7ad3346d" isExpanded="false" absoluteBounds="2.75, 3, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Control_Articulos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="66e983e0-5bf6-4566-ae6c-4812c0d5e40b" absoluteBounds="2.765, 3.46, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7848d8db-4dc6-460c-b093-82595b7ba293" isExpanded="false" absoluteBounds="2.75, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Correlativos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1c819576-0cbf-4d08-9a93-cb0fd8cf76a2" absoluteBounds="2.765, 4.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2243d110-76a0-4063-b404-7f45c0ef09a1" isExpanded="false" absoluteBounds="2.75, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_DocumentosD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9faf71a0-3e5b-4491-ba40-64e2d1ac76e2" absoluteBounds="2.7650000000000006, 5.335, 1.9700000000000002, 4.4800211588541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8033b352-6c30-471d-bb59-58e9807bacb3" isExpanded="false" absoluteBounds="5, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_DocumentosR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="369a2190-6572-4f83-9377-75f679e75a30" absoluteBounds="5.015, 1.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c81ed64e-c978-4ee1-bc95-49c7d51c5616" isExpanded="false" absoluteBounds="5, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Etiquetas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8d93377-cae8-488c-bcca-e59cfd4e63d9" absoluteBounds="5.015, 2.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="20d48dae-fcec-40bb-a182-f7ba31e4983d" isExpanded="false" absoluteBounds="5, 3, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_EventosRem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bc273cbc-8505-49a2-903f-662ed33c32fd" absoluteBounds="5.015, 3.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5e12adf6-84eb-4e91-804b-4dee29879296" isExpanded="false" absoluteBounds="5, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Familias" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb4f47ba-979f-48a4-9178-c3c89b10eae0" absoluteBounds="5.0150000000000006, 4.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e6ca90e5-c520-40f9-abfb-92c23868a4b3" isExpanded="false" absoluteBounds="5, 4.25, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_FPagos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d688459e-3fc0-474b-9651-31fb09f26e9a" absoluteBounds="5.015, 4.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9192a01f-9ca9-4b7f-9f9d-2061f7517d69" isExpanded="false" absoluteBounds="5, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_ImpuestoUnico" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d8844db-8568-4e19-87fa-35b30f8203ea" absoluteBounds="5.015, 5.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="758a48d0-1e95-4bd6-a314-d27ab2bd5edf" isExpanded="false" absoluteBounds="7.25, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Log" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fba470d1-0df8-4d91-80c7-0b51e026bc0b" absoluteBounds="7.265, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="09462016-a43a-4c92-bd3d-ff76369f991e" isExpanded="false" absoluteBounds="7.25, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_LogIntegraciones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c901c14-4711-474e-9c35-f03409dddc84" absoluteBounds="7.265, 2.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dd045b6e-b855-4dc8-9703-2ad508693386" isExpanded="false" absoluteBounds="7.25, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_ModoPagos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b274e95c-82ff-47a8-98fa-2b3a3ba108b9" absoluteBounds="7.265, 2.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dcc0601d-4907-455c-934a-6d5d8d9c9b3b" isExpanded="false" absoluteBounds="7.25, 3, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Modulos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6513877b-389e-454a-9306-ae5c7f1da631" absoluteBounds="7.265, 3.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="31e5673d-5aac-403e-b02f-a3b6f3506050" isExpanded="false" absoluteBounds="7.25, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Motivos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f05caf7-53a7-43c2-8c22-c8b890f2c234" absoluteBounds="7.265, 4.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6cdd1944-079d-4390-9918-7c34f00b4503" isExpanded="false" absoluteBounds="7.25, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_MovGen" />
+      <nestedChildShapes>
+        <elementListCompartment Id="790674fa-fc1f-40c1-92aa-2ddd03c718da" absoluteBounds="7.265, 5.335, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bead4e43-e28c-41b6-a03d-00a0b58f3abc" isExpanded="false" absoluteBounds="9.5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_OT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5e5e3160-4514-4b67-b67d-076e68240e5b" absoluteBounds="9.515, 0.96, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cd0015d8-d2c4-4e70-9458-d648b6ae5f71" isExpanded="false" absoluteBounds="9.5, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Pagos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e78d67fd-05b8-41a8-9087-a5a5a87d7357" absoluteBounds="9.515, 2.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fed452dc-3331-4a42-a295-972b1d309234" isExpanded="false" absoluteBounds="9.5, 3, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_PermisosAcceso" />
+      <nestedChildShapes>
+        <elementListCompartment Id="30fb8208-c15a-49a7-a0e3-5cceca445826" absoluteBounds="9.515, 3.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aed6d1c0-9255-4a32-8a25-36df47ece870" isExpanded="false" absoluteBounds="9.5, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_PermisosUsuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f6a39c9-64c0-41c1-beec-5a529007ab87" absoluteBounds="9.515, 4.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ee218ca1-ec10-4ddf-af07-8ee71d8461c3" isExpanded="false" absoluteBounds="9.5, 4.25, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_PlantillasObservaciones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e7a7668a-f9a1-4126-8d71-eb3889fa6e8b" absoluteBounds="9.515, 4.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="58aca870-cceb-4af3-8dfc-b37a765b3407" isExpanded="false" absoluteBounds="9.5, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_POS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1162a1d0-ec2e-4769-bff9-0703c6b435a5" absoluteBounds="9.515, 5.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="30d6d4cd-dcec-4372-aeef-2be08cd8f5fd" isExpanded="false" absoluteBounds="11.75, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Regiones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bad0dca2-483e-4b15-86cf-a8c3ee2c2262" absoluteBounds="11.765, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e074ef85-fdf7-43dc-9597-624ffbddbebf" isExpanded="false" absoluteBounds="11.75, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Salud" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22d88dfe-6595-4929-8cad-ba2f691b858d" absoluteBounds="11.765, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8614583e-3581-4907-b3de-f6f616a49a93" isExpanded="false" absoluteBounds="11.75, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Servidores" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b2b58f46-338e-45b0-bf99-f9801507bc16" absoluteBounds="11.765, 2.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="26127969-d7d0-4040-b6c5-f37e6495504e" isExpanded="false" absoluteBounds="11.75, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Stocks" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8aadfa3d-3767-43ef-8b3d-f4d364218252" absoluteBounds="11.765, 2.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="90e4a1cf-d7cc-4289-a2cc-b0e628050b55" isExpanded="false" absoluteBounds="11.75, 3, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Stocks_Cierre" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8ff40d1-b310-4886-bda2-7d4480f98290" absoluteBounds="11.765, 3.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b4b04bdb-119a-4e0a-ad5c-945f5f780064" isExpanded="false" absoluteBounds="11.75, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_SubFamilias" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f62bc51-d66f-442a-ad75-d020dfd1c83c" absoluteBounds="11.765, 4.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="21c44319-0426-4958-be22-646eac76b4b7" isExpanded="false" absoluteBounds="11.75, 4.25, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Sueldos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="75dc05c4-cd63-42da-84cc-28839ae39385" absoluteBounds="11.765, 4.71, 1.9700000000000002, 9.0952555338541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c73e8afd-dc5b-4bba-8657-3e7fa8df6f71" isExpanded="false" absoluteBounds="11.75, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Sueldos_Detalles" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f4553b58-95f1-4d59-a8b8-5a69082502d4" absoluteBounds="11.765, 5.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="25d56ec9-d820-4842-895d-b6b8e5e30d5a" isExpanded="false" absoluteBounds="14, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_TipoArticulo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f53be2be-b92d-4d0e-8834-80a2b1510bbc" absoluteBounds="14.015, 2.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="471917a4-eb8e-4bed-96d4-df65f74c31aa" isExpanded="false" absoluteBounds="14, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_TipoDoc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74d170f5-84ca-4430-a72a-1f27b1ac30c2" absoluteBounds="14.015, 2.835, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8a5d982f-d8a7-4341-af41-137280252385" isExpanded="false" absoluteBounds="14, 3, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_TipoEstados" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2512cf8c-b9e7-4cfd-b1bf-8e6374744ffd" absoluteBounds="14.015, 3.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2c7f8b3-d487-4c7d-8ecc-1b61a9121eee" isExpanded="false" absoluteBounds="14, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_TipoMov" />
+      <nestedChildShapes>
+        <elementListCompartment Id="affe5adc-0709-45d5-a24c-2603758c024c" absoluteBounds="14.015, 4.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18552859-2693-4786-8bc3-253388dff8fe" isExpanded="false" absoluteBounds="14, 4.25, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_TipoPOS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a86e76e-0ed4-444e-a4cd-918c47ead300" absoluteBounds="14.015, 4.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3e17aa33-51d2-4775-9230-e8f7d07f6418" isExpanded="false" absoluteBounds="16.25, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Unidades" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1d9f26dd-8f2c-4492-9603-5fec730df828" absoluteBounds="16.265, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="61cb5f93-3f8e-465e-9689-85d490fe0dac" isExpanded="false" absoluteBounds="16.25, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Usuarios" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e666cf9f-a982-4930-9d8b-e14b0dcabec9" absoluteBounds="16.265, 2.21, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="81c58182-a21c-4095-9b8a-575c8cbf460f" isExpanded="false" absoluteBounds="16.25, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Valores" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1c291652-ca7f-4178-9d76-00f74e4720a9" absoluteBounds="16.265, 2.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="55915bbb-00c5-48b6-9930-ce82db7b2700" isExpanded="false" absoluteBounds="5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_DocumentosP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ac45ff1-b992-4bdb-be40-0f6d2d673546" absoluteBounds="5.015, 0.96, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="571fc2c2-a381-4fda-b6f8-466fea1008f3" isExpanded="false" absoluteBounds="2.75, 4.25, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_DocumentosG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="744f70b2-b1db-4c72-af01-db85dc14ebf2" absoluteBounds="2.7649999999999997, 4.71, 1.9700000000000002, 9.2875569661458321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="666b02f2-6a88-4a52-8d3d-c45f625bd40b" isExpanded="false" absoluteBounds="0.5, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Barras" />
+      <nestedChildShapes>
+        <elementListCompartment Id="14169fb0-cc3a-4bb3-b134-18cd5c939b2b" absoluteBounds="0.51499999999999968, 5.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="af3589d2-b796-401f-9e90-63049f5e3778" isExpanded="false" absoluteBounds="0.5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Abastecimiento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22ef0fd1-dcf4-45cc-a930-4cff9bb60a2c" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ffd55750-fb60-4622-bd4e-7304c502ddc8" isExpanded="false" absoluteBounds="0.5, 3, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Articulos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ba48307-67d2-42da-ad26-7ae475f0431a" absoluteBounds="0.51500000000000012, 3.46, 1.9700000000000002, 8.3260498046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c1ba325d-8562-4b3f-96b6-bac20cab232b" isExpanded="false" absoluteBounds="9.5, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_OTDet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="90e0c2e4-2226-46c7-8484-0912c08a3bc7" absoluteBounds="9.515, 1.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="70082a0b-873f-4664-a669-e651466ed9d1" isExpanded="false" absoluteBounds="19.125, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_BusquedaArticulo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7eca676f-5b86-4341-8839-64ed9a8bdb9e" absoluteBounds="19.14, 2.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6b60eb8b-b98e-46ae-807d-83f782546b00" isExpanded="false" absoluteBounds="19.125, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_BuscadorAutocompletar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8cb44e25-85ae-47a4-b561-bc8453777789" absoluteBounds="19.14, 2.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bddeb919-efd3-4578-8b17-0ce06a227091" isExpanded="false" absoluteBounds="19.125, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_ListadoStockLocal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="32c242c9-eaba-4a8b-adf9-b54bdc78e31a" absoluteBounds="19.14, 0.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8d690d15-9a2c-48b7-8325-aae79d0608ce" isExpanded="false" absoluteBounds="19.125, 3, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_ListadoMovimientosEncabezado" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fd2efdde-372f-4cfc-806c-320d5e6b974a" absoluteBounds="19.14, 3.46, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a8e29f03-3ed2-4810-9f98-96c3f0cc88d9" isExpanded="false" absoluteBounds="19.125, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_ListadoStockBodega" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a598e13-debd-46b4-ad30-ef0d19a2b481" absoluteBounds="19.14, 1.585, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="30d010b2-36fb-44e0-b26c-bb4fc74c0a1d" isExpanded="false" absoluteBounds="2.75, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Clientes" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9b500932-066e-455c-9a87-1a2a71fce796" absoluteBounds="2.765, 2.21, 1.9700000000000002, 4.4800211588541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3b9293b5-19e3-47ce-80f4-f9a5c6075347" isExpanded="false" absoluteBounds="16.25, 3, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Locales" />
+      <nestedChildShapes>
+        <elementListCompartment Id="13fbc598-b2cb-4dab-aaf6-a73cbcabf000" absoluteBounds="16.265, 3.46, 1.9700000000000002, 8.1337483723958321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f734dbd5-0d33-49dc-a1c1-31afbb96625b" isExpanded="false" absoluteBounds="16.25, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_UFs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="78a3ed17-ba2d-4d1c-bc31-6228b9d03dc6" absoluteBounds="16.265, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e9f2d3b0-d4c7-4367-91e1-3f9b93dbacf8" isExpanded="false" absoluteBounds="19.125, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_AccesoModulo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74bcb3a5-17b5-40f8-b021-99624fde5fe1" absoluteBounds="19.14, 4.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8d2f5c3-805a-4e63-819b-cc592c605af1" isExpanded="false" absoluteBounds="7.25, 4.25, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_MovDet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a9d5e4a1-af0a-4d87-aee6-4c20cb95cb8b" absoluteBounds="7.265, 4.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="231812f8-06e3-47ef-a53c-869826f7d500" isExpanded="false" absoluteBounds="7.25, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_CostosIngresos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="35c7384e-0834-4f6c-a0b2-78bff5c14174" absoluteBounds="7.265, 1.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66c94abe-27e4-47ee-8a23-6300292976d2" isExpanded="false" absoluteBounds="16.25, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Eventos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="11d386ac-9f97-4502-a027-3b9f968667fe" absoluteBounds="16.265, 4.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e680bab1-bc65-4851-b756-2a6b47794f2c" isExpanded="false" absoluteBounds="21.375, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_BuscarControlArticulos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8ea1f1bd-1cd2-456e-b780-43abb3a09641" absoluteBounds="21.39, 0.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="52997efb-c86c-4594-b3c2-7e0ac5981704" isExpanded="false" absoluteBounds="14, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Tracking" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e9638847-21a0-49f9-bbf0-fd7513f71649" absoluteBounds="14.015, 5.335, 1.9700000000000002, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c98e743-1908-4108-aadd-037109b44167" isExpanded="false" absoluteBounds="21.375, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_KardexMovimientos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16f34140-baaa-455c-ac0e-b41ea7044689" absoluteBounds="21.39, 2.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7267e4c9-c118-4fbb-9067-88cdca959153" isExpanded="false" absoluteBounds="21.375, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_KardexDocumentos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0065b13c-ac5c-42d7-8e71-6c4aaf633887" absoluteBounds="21.39, 1.585, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ba22c78c-68a8-4edf-851f-19d52203c174" isExpanded="false" absoluteBounds="14, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_TikDet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="efe7fcaf-1635-4521-a642-ed4aa8ab1ebf" absoluteBounds="14.015, 0.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3acfd455-8abc-4eb5-ba82-bb98b8d08fff" isExpanded="false" absoluteBounds="14, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_TikGen" />
+      <nestedChildShapes>
+        <elementListCompartment Id="744c1a0d-698a-4a91-ba0e-d8b36c81b275" absoluteBounds="14.015, 1.585, 1.9700000000000002, 7.7491455078125009" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b0f10917-48c4-4641-8923-21211bdb029a" isExpanded="false" absoluteBounds="9.5, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Parametros" />
+      <nestedChildShapes>
+        <elementListCompartment Id="124d2f0b-0a82-430e-b63f-c536d9762f4c" absoluteBounds="9.515, 2.835, 1.9700000000000002, 6.2107340494791661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4711edf5-0be1-4777-b754-eb64975beab8" isExpanded="false" absoluteBounds="5, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/MarketONEDataContext/T_Estados" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a61e038-e1ed-4911-a886-46e905d708e9" absoluteBounds="5.015, 2.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

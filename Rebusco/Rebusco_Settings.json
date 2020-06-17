@@ -1,0 +1,25 @@
+﻿{
+  "Empresa": "Wikets",
+  "ImprimirDocumento": "true",
+  "TiempoConexion": 3,
+  "CantidadCopias": 2,
+  "StockObligatorio": "false",
+  "ImpresoraVoucher": "",
+  "RutaArchivos": "F:\\FTP\\MARKETONE",
+  "ServidoresEmpresas": [
+    {
+      "Empresa": "Multibike",
+      "IP": "200.111.233.251"
+    },
+    {
+      "Empresa": "Bikemonkey",
+      "IP": "192.168.10.72"
+    },
+    {
+      "Empresa": "Wikets",
+      "IP": "PEDRO"
+    }
+
+  ]
+
+}
