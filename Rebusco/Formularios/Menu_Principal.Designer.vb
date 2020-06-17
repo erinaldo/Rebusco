@@ -35,6 +35,7 @@ Partial Class Menu_Principal
         Me.Label44 = New System.Windows.Forms.Label()
         Me.lDTE = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Imagen = New System.Windows.Forms.PictureBox()
         Me.lVersion = New System.Windows.Forms.Label()
         Me.lLocal = New System.Windows.Forms.Label()
         Me.lUsuario = New System.Windows.Forms.Label()
@@ -132,13 +133,12 @@ Partial Class Menu_Principal
         Me.Label10 = New System.Windows.Forms.Label()
         Me.cBase = New System.Windows.Forms.ComboBox()
         Me.pServidores = New System.Windows.Forms.Panel()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.cImpresoras = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.ActualizarStatus = New System.Windows.Forms.Timer(Me.components)
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.bVentaLocal = New System.Windows.Forms.Button()
         Me.bEmitirDocumentos = New System.Windows.Forms.Button()
         Me.bCuadraturaCajas = New System.Windows.Forms.Button()
@@ -149,24 +149,24 @@ Partial Class Menu_Principal
         Me.bIngresoOT = New System.Windows.Forms.Button()
         Me.bServicioTecnico = New System.Windows.Forms.Button()
         Me.bBuscarArticulo = New System.Windows.Forms.Button()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.WinDeco1 = New WinDeco.WinDeco()
         Me.bVerConfig = New System.Windows.Forms.Button()
-        Me.Imagen = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.gParametros.SuspendLayout()
+        CType(Me.Imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Barra.SuspendLayout()
         Me.pServidores.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -180,7 +180,7 @@ Partial Class Menu_Principal
         Me.cLocal.Location = New System.Drawing.Point(115, 17)
         Me.cLocal.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.cLocal.Name = "cLocal"
-        Me.cLocal.Size = New System.Drawing.Size(329, 24)
+        Me.cLocal.Size = New System.Drawing.Size(236, 24)
         Me.cLocal.TabIndex = 109
         '
         'gParametros
@@ -205,13 +205,13 @@ Partial Class Menu_Principal
         Me.gParametros.Controls.Add(Me.Label3)
         Me.gParametros.Controls.Add(Me.Label2)
         Me.gParametros.Controls.Add(Me.Label1)
-        Me.gParametros.Font = New System.Drawing.Font("Arial", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gParametros.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gParametros.ForeColor = System.Drawing.Color.White
-        Me.gParametros.Location = New System.Drawing.Point(18, 500)
+        Me.gParametros.Location = New System.Drawing.Point(18, 484)
         Me.gParametros.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.gParametros.Name = "gParametros"
         Me.gParametros.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.gParametros.Size = New System.Drawing.Size(807, 138)
+        Me.gParametros.Size = New System.Drawing.Size(779, 147)
         Me.gParametros.TabIndex = 111
         Me.gParametros.TabStop = False
         Me.gParametros.Text = "Parámetros Generales"
@@ -219,200 +219,211 @@ Partial Class Menu_Principal
         'lKey
         '
         Me.lKey.AutoSize = True
-        Me.lKey.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lKey.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lKey.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.lKey.Location = New System.Drawing.Point(778, 108)
+        Me.lKey.Location = New System.Drawing.Point(748, 108)
         Me.lKey.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lKey.Name = "lKey"
-        Me.lKey.Size = New System.Drawing.Size(21, 18)
+        Me.lKey.Size = New System.Drawing.Size(21, 16)
         Me.lKey.TabIndex = 47
         Me.lKey.Text = "W"
         '
         'lBodega
         '
         Me.lBodega.AutoSize = True
-        Me.lBodega.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lBodega.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lBodega.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.lBodega.Location = New System.Drawing.Point(618, 107)
+        Me.lBodega.Location = New System.Drawing.Point(560, 106)
         Me.lBodega.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lBodega.Name = "lBodega"
-        Me.lBodega.Size = New System.Drawing.Size(16, 18)
+        Me.lBodega.Size = New System.Drawing.Size(15, 16)
         Me.lBodega.TabIndex = 46
         Me.lBodega.Text = "0"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(525, 107)
+        Me.Label7.Location = New System.Drawing.Point(467, 106)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(79, 18)
+        Me.Label7.Size = New System.Drawing.Size(73, 16)
         Me.Label7.TabIndex = 45
         Me.Label7.Text = "Bodega    "
         '
         'lBase
         '
         Me.lBase.AutoSize = True
-        Me.lBase.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lBase.Location = New System.Drawing.Point(616, 24)
+        Me.lBase.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lBase.Location = New System.Drawing.Point(558, 25)
         Me.lBase.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lBase.Name = "lBase"
-        Me.lBase.Size = New System.Drawing.Size(90, 18)
+        Me.lBase.Size = New System.Drawing.Size(78, 16)
         Me.lBase.TabIndex = 44
         Me.lBase.Text = "MarketONE"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(525, 25)
+        Me.Label6.Location = New System.Drawing.Point(467, 26)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(76, 18)
+        Me.Label6.Size = New System.Drawing.Size(69, 16)
         Me.Label6.TabIndex = 43
         Me.Label6.Text = "Bases      "
         '
         'lAmbiente
         '
         Me.lAmbiente.AutoSize = True
-        Me.lAmbiente.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lAmbiente.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lAmbiente.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.lAmbiente.Location = New System.Drawing.Point(616, 77)
+        Me.lAmbiente.Location = New System.Drawing.Point(558, 78)
         Me.lAmbiente.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lAmbiente.Name = "lAmbiente"
-        Me.lAmbiente.Size = New System.Drawing.Size(59, 18)
+        Me.lAmbiente.Size = New System.Drawing.Size(54, 16)
         Me.lAmbiente.TabIndex = 42
         Me.lAmbiente.Text = "Prueba"
         '
         'Label44
         '
         Me.Label44.AutoSize = True
-        Me.Label44.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label44.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label44.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.Label44.Location = New System.Drawing.Point(525, 77)
+        Me.Label44.Location = New System.Drawing.Point(467, 78)
         Me.Label44.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(78, 18)
+        Me.Label44.Size = New System.Drawing.Size(73, 16)
         Me.Label44.TabIndex = 41
         Me.Label44.Text = "Ambiente "
         '
         'lDTE
         '
         Me.lDTE.AutoSize = True
-        Me.lDTE.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lDTE.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lDTE.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.lDTE.Location = New System.Drawing.Point(618, 50)
+        Me.lDTE.Location = New System.Drawing.Point(560, 51)
         Me.lDTE.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lDTE.Name = "lDTE"
-        Me.lDTE.Size = New System.Drawing.Size(57, 18)
+        Me.lDTE.Size = New System.Drawing.Size(50, 16)
         Me.lDTE.TabIndex = 40
         Me.lDTE.Text = "IP DTE"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(525, 50)
+        Me.Label5.Location = New System.Drawing.Point(467, 51)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(77, 18)
+        Me.Label5.Size = New System.Drawing.Size(70, 16)
         Me.Label5.TabIndex = 39
         Me.Label5.Text = "IP DTE     "
+        '
+        'Imagen
+        '
+        Me.Imagen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Imagen.Location = New System.Drawing.Point(15, 24)
+        Me.Imagen.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Imagen.Name = "Imagen"
+        Me.Imagen.Size = New System.Drawing.Size(203, 102)
+        Me.Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Imagen.TabIndex = 38
+        Me.Imagen.TabStop = False
         '
         'lVersion
         '
         Me.lVersion.AutoSize = True
-        Me.lVersion.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lVersion.Location = New System.Drawing.Point(329, 107)
+        Me.lVersion.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lVersion.Location = New System.Drawing.Point(314, 106)
         Me.lVersion.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lVersion.Name = "lVersion"
-        Me.lVersion.Size = New System.Drawing.Size(36, 18)
+        Me.lVersion.Size = New System.Drawing.Size(33, 16)
         Me.lVersion.TabIndex = 4
         Me.lVersion.Text = "1.00"
         '
         'lLocal
         '
         Me.lLocal.AutoSize = True
-        Me.lLocal.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lLocal.Location = New System.Drawing.Point(329, 77)
+        Me.lLocal.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lLocal.Location = New System.Drawing.Point(314, 78)
         Me.lLocal.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lLocal.Name = "lLocal"
-        Me.lLocal.Size = New System.Drawing.Size(63, 18)
+        Me.lLocal.Size = New System.Drawing.Size(58, 16)
         Me.lLocal.TabIndex = 4
         Me.lLocal.Text = "Wikets  "
         '
         'lUsuario
         '
         Me.lUsuario.AutoSize = True
-        Me.lUsuario.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lUsuario.Location = New System.Drawing.Point(329, 50)
+        Me.lUsuario.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lUsuario.Location = New System.Drawing.Point(314, 51)
         Me.lUsuario.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lUsuario.Name = "lUsuario"
-        Me.lUsuario.Size = New System.Drawing.Size(59, 18)
+        Me.lUsuario.Size = New System.Drawing.Size(54, 16)
         Me.lUsuario.TabIndex = 4
         Me.lUsuario.Text = "System"
         '
         'lConexion
         '
         Me.lConexion.AutoSize = True
-        Me.lConexion.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lConexion.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lConexion.ForeColor = System.Drawing.Color.White
-        Me.lConexion.Location = New System.Drawing.Point(329, 25)
+        Me.lConexion.Location = New System.Drawing.Point(314, 26)
         Me.lConexion.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lConexion.Name = "lConexion"
-        Me.lConexion.Size = New System.Drawing.Size(68, 18)
+        Me.lConexion.Size = New System.Drawing.Size(62, 16)
         Me.lConexion.TabIndex = 4
         Me.lConexion.Text = "127.0.0.1"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(241, 107)
+        Me.Label4.Location = New System.Drawing.Point(226, 106)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(61, 18)
+        Me.Label4.Size = New System.Drawing.Size(55, 16)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Versión"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(241, 77)
+        Me.Label3.Location = New System.Drawing.Point(226, 78)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(46, 18)
+        Me.Label3.Size = New System.Drawing.Size(43, 16)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Local"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(241, 50)
+        Me.Label2.Location = New System.Drawing.Point(226, 51)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(63, 18)
+        Me.Label2.Size = New System.Drawing.Size(56, 16)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Usuario"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(241, 24)
+        Me.Label1.Location = New System.Drawing.Point(226, 25)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(80, 18)
+        Me.Label1.Size = New System.Drawing.Size(73, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Conexión "
         '
@@ -437,19 +448,19 @@ Partial Class Menu_Principal
         Me.Barra.BackColor = System.Drawing.Color.Transparent
         Me.Barra.Dock = System.Windows.Forms.DockStyle.None
         Me.Barra.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Barra.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.Barra.ImageScalingSize = New System.Drawing.Size(0, 0)
         Me.Barra.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mMenuDocumentos, Me.mMenuDTE, Me.mMenuWeb, Me.mMenuCobranzas, Me.mMenuRemuneraciones, Me.mMenuConsultas, Me.mMenuTablas, Me.mMenuSalir})
         Me.Barra.Location = New System.Drawing.Point(1, 52)
         Me.Barra.Name = "Barra"
         Me.Barra.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
-        Me.Barra.Size = New System.Drawing.Size(1041, 38)
+        Me.Barra.Size = New System.Drawing.Size(1000, 22)
         Me.Barra.TabIndex = 116
         '
         'mMenuDocumentos
         '
         Me.mMenuDocumentos.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mIngresoDeDocumentos, Me.mImpresiónDeDocumentos, Me.mAnulaciones, Me.ToolStripSeparator6, Me.mCambioDeProducto, Me.ToolStripMenuItem9, Me.ConsultaDeDocumentosToolStripMenuItem})
         Me.mMenuDocumentos.Name = "mMenuDocumentos"
-        Me.mMenuDocumentos.Size = New System.Drawing.Size(99, 34)
+        Me.mMenuDocumentos.Size = New System.Drawing.Size(99, 18)
         Me.mMenuDocumentos.Text = "Documentos"
         '
         'mIngresoDeDocumentos
@@ -509,7 +520,7 @@ Partial Class Menu_Principal
         '
         Me.mMenuDTE.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mConsultarDocumentosAlDTE, Me.mEnvíoDTE, Me.mControlDTE, Me.mControlDTEProveedor, Me.ToolStripMenuItem6, Me.mCargaDeArchivosCAFDeSII, Me.ConsumoFoliosToolStripMenuItem, Me.mContadoresDTE})
         Me.mMenuDTE.Name = "mMenuDTE"
-        Me.mMenuDTE.Size = New System.Drawing.Size(48, 34)
+        Me.mMenuDTE.Size = New System.Drawing.Size(48, 18)
         Me.mMenuDTE.Text = "DTE"
         '
         'mConsultarDocumentosAlDTE
@@ -563,7 +574,7 @@ Partial Class Menu_Principal
         '
         Me.mMenuWeb.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClickCollectToolStripMenuItem, Me.AnulaciónDeTicketsToolStripMenuItem})
         Me.mMenuWeb.Name = "mMenuWeb"
-        Me.mMenuWeb.Size = New System.Drawing.Size(49, 34)
+        Me.mMenuWeb.Size = New System.Drawing.Size(49, 18)
         Me.mMenuWeb.Text = "Web"
         '
         'ClickCollectToolStripMenuItem
@@ -582,7 +593,7 @@ Partial Class Menu_Principal
         '
         Me.mMenuCobranzas.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mControlPagos})
         Me.mMenuCobranzas.Name = "mMenuCobranzas"
-        Me.mMenuCobranzas.Size = New System.Drawing.Size(88, 34)
+        Me.mMenuCobranzas.Size = New System.Drawing.Size(88, 18)
         Me.mMenuCobranzas.Text = "Cobranzas"
         '
         'mControlPagos
@@ -595,7 +606,7 @@ Partial Class Menu_Principal
         '
         Me.mMenuRemuneraciones.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mIngresoDeEventos, Me.mCréditosDePersonal, Me.ToolStripMenuItem1, Me.mCalculoDeRemuneraciones, Me.mImprimirLiquidaciónDeSueldos, Me.mImprimirPlanillaDeRemuneraciones, Me.mImprimirEventosDeRemuneraciones, Me.ToolStripMenuItem3, Me.mAnularEventosDeRemuneraciones, Me.mGenerarArchivoParaBancos, Me.mCierreDeRemuneraciones})
         Me.mMenuRemuneraciones.Name = "mMenuRemuneraciones"
-        Me.mMenuRemuneraciones.Size = New System.Drawing.Size(127, 34)
+        Me.mMenuRemuneraciones.Size = New System.Drawing.Size(127, 18)
         Me.mMenuRemuneraciones.Text = "Remuneraciones"
         '
         'mIngresoDeEventos
@@ -666,7 +677,7 @@ Partial Class Menu_Principal
         '
         Me.mMenuConsultas.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mConsultaAuditoria, Me.ToolStripSeparator14, Me.mConsultaArticulos, Me.ConsultaDeComisionesToolStripMenuItem, Me.ConsultaDePreciosToolStripMenuItem, Me.mConsultaTracking, Me.ToolStripSeparator8, Me.mOtrasConsultas})
         Me.mMenuConsultas.Name = "mMenuConsultas"
-        Me.mMenuConsultas.Size = New System.Drawing.Size(83, 34)
+        Me.mMenuConsultas.Size = New System.Drawing.Size(83, 18)
         Me.mMenuConsultas.Text = "&Consultas"
         '
         'mConsultaAuditoria
@@ -791,7 +802,7 @@ Partial Class Menu_Principal
         '
         Me.mMenuTablas.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mManCliente, Me.mManArticulo, Me.mManUnidadesMedidas, Me.mManFamilia, Me.mMantenciónDeSubFamilias, Me.mManLocal, Me.mManBodega, Me.mManMovimiento, Me.ToolStripSeparator4, Me.mMantenciónDeAccesos, Me.mManUsuarios, Me.mPermisos, Me.ToolStripMenuItem4, Me.mManPrevisionSalud, Me.mManAFP, Me.mManEventos, Me.mManUf, Me.ToolStripMenuItem5, Me.mManCorrelativo, Me.mMantenciónDePOS})
         Me.mMenuTablas.Name = "mMenuTablas"
-        Me.mMenuTablas.Size = New System.Drawing.Size(61, 34)
+        Me.mMenuTablas.Size = New System.Drawing.Size(61, 18)
         Me.mMenuTablas.Text = "Tablas"
         '
         'mManCliente
@@ -918,7 +929,7 @@ Partial Class Menu_Principal
         '
         Me.mMenuSalir.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator12})
         Me.mMenuSalir.Name = "mMenuSalir"
-        Me.mMenuSalir.Size = New System.Drawing.Size(48, 34)
+        Me.mMenuSalir.Size = New System.Drawing.Size(48, 18)
         Me.mMenuSalir.Text = "Salir"
         '
         'ToolStripSeparator12
@@ -948,7 +959,7 @@ Partial Class Menu_Principal
         Me.cServidor.Location = New System.Drawing.Point(102, 16)
         Me.cServidor.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.cServidor.Name = "cServidor"
-        Me.cServidor.Size = New System.Drawing.Size(380, 25)
+        Me.cServidor.Size = New System.Drawing.Size(305, 25)
         Me.cServidor.TabIndex = 136
         '
         'Label9
@@ -987,7 +998,7 @@ Partial Class Menu_Principal
         Me.cBase.Location = New System.Drawing.Point(102, 50)
         Me.cBase.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.cBase.Name = "cBase"
-        Me.cBase.Size = New System.Drawing.Size(380, 25)
+        Me.cBase.Size = New System.Drawing.Size(305, 25)
         Me.cBase.TabIndex = 136
         '
         'pServidores
@@ -1000,11 +1011,35 @@ Partial Class Menu_Principal
         Me.pServidores.Controls.Add(Me.cBase)
         Me.pServidores.Controls.Add(Me.cServidor)
         Me.pServidores.Controls.Add(Me.Label10)
-        Me.pServidores.Location = New System.Drawing.Point(8, 410)
+        Me.pServidores.Location = New System.Drawing.Point(8, 389)
         Me.pServidores.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.pServidores.Name = "pServidores"
-        Me.pServidores.Size = New System.Drawing.Size(495, 86)
+        Me.pServidores.Size = New System.Drawing.Size(420, 86)
         Me.pServidores.TabIndex = 139
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Image = Global.Rebusco.My.Resources.Resources.Database_Active_icon16
+        Me.PictureBox6.Location = New System.Drawing.Point(10, 53)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox6.TabIndex = 145
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Image = Global.Rebusco.My.Resources.Resources.Home_Server_icon16
+        Me.PictureBox5.Location = New System.Drawing.Point(10, 19)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox5.TabIndex = 144
+        Me.PictureBox5.TabStop = False
         '
         'cImpresoras
         '
@@ -1017,7 +1052,7 @@ Partial Class Menu_Principal
         Me.cImpresoras.Location = New System.Drawing.Point(115, 51)
         Me.cImpresoras.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.cImpresoras.Name = "cImpresoras"
-        Me.cImpresoras.Size = New System.Drawing.Size(329, 24)
+        Me.cImpresoras.Size = New System.Drawing.Size(236, 24)
         Me.cImpresoras.TabIndex = 140
         '
         'Label11
@@ -1054,11 +1089,181 @@ Partial Class Menu_Principal
         Me.FlowLayoutPanel1.Controls.Add(Me.bBuscarArticulo)
         Me.FlowLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.FlowLayoutPanel1.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(8, 94)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(8, 80)
         Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1034, 179)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(993, 118)
         Me.FlowLayoutPanel1.TabIndex = 144
+        '
+        'bVentaLocal
+        '
+        Me.bVentaLocal.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
+        Me.bVentaLocal.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bVentaLocal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bVentaLocal.Font = New System.Drawing.Font("Arial", 9.75!)
+        Me.bVentaLocal.Image = Global.Rebusco.My.Resources.Resources.cashier_ok24
+        Me.bVentaLocal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.bVentaLocal.Location = New System.Drawing.Point(3, 4)
+        Me.bVentaLocal.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.bVentaLocal.Name = "bVentaLocal"
+        Me.bVentaLocal.Size = New System.Drawing.Size(186, 46)
+        Me.bVentaLocal.TabIndex = 112
+        Me.bVentaLocal.Text = " Venta Local"
+        Me.bVentaLocal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.bVentaLocal.UseVisualStyleBackColor = True
+        '
+        'bEmitirDocumentos
+        '
+        Me.bEmitirDocumentos.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
+        Me.bEmitirDocumentos.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bEmitirDocumentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bEmitirDocumentos.Font = New System.Drawing.Font("Arial", 9.75!)
+        Me.bEmitirDocumentos.Image = Global.Rebusco.My.Resources.Resources.PatientResult24
+        Me.bEmitirDocumentos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.bEmitirDocumentos.Location = New System.Drawing.Point(195, 4)
+        Me.bEmitirDocumentos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.bEmitirDocumentos.Name = "bEmitirDocumentos"
+        Me.bEmitirDocumentos.Size = New System.Drawing.Size(186, 46)
+        Me.bEmitirDocumentos.TabIndex = 113
+        Me.bEmitirDocumentos.Text = " Emitir Documentos"
+        Me.bEmitirDocumentos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.bEmitirDocumentos.UseVisualStyleBackColor = True
+        '
+        'bCuadraturaCajas
+        '
+        Me.bCuadraturaCajas.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
+        Me.bCuadraturaCajas.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bCuadraturaCajas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bCuadraturaCajas.Font = New System.Drawing.Font("Arial", 9.75!)
+        Me.bCuadraturaCajas.Image = Global.Rebusco.My.Resources.Resources.calc_ok24
+        Me.bCuadraturaCajas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.bCuadraturaCajas.Location = New System.Drawing.Point(387, 4)
+        Me.bCuadraturaCajas.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.bCuadraturaCajas.Name = "bCuadraturaCajas"
+        Me.bCuadraturaCajas.Size = New System.Drawing.Size(186, 46)
+        Me.bCuadraturaCajas.TabIndex = 116
+        Me.bCuadraturaCajas.Text = " Cuadratura de Cajas"
+        Me.bCuadraturaCajas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.bCuadraturaCajas.UseVisualStyleBackColor = True
+        '
+        'bClick_Collect
+        '
+        Me.bClick_Collect.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
+        Me.bClick_Collect.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bClick_Collect.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bClick_Collect.Font = New System.Drawing.Font("Arial", 9.75!)
+        Me.bClick_Collect.Image = Global.Rebusco.My.Resources.Resources.pagos24
+        Me.bClick_Collect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.bClick_Collect.Location = New System.Drawing.Point(579, 4)
+        Me.bClick_Collect.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.bClick_Collect.Name = "bClick_Collect"
+        Me.bClick_Collect.Size = New System.Drawing.Size(186, 46)
+        Me.bClick_Collect.TabIndex = 125
+        Me.bClick_Collect.Text = " Click && Collect"
+        Me.bClick_Collect.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.bClick_Collect.UseVisualStyleBackColor = True
+        '
+        'bControlPagos
+        '
+        Me.bControlPagos.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
+        Me.bControlPagos.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bControlPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bControlPagos.Font = New System.Drawing.Font("Arial", 9.75!)
+        Me.bControlPagos.Image = Global.Rebusco.My.Resources.Resources.Payment24
+        Me.bControlPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.bControlPagos.Location = New System.Drawing.Point(771, 4)
+        Me.bControlPagos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.bControlPagos.Name = "bControlPagos"
+        Me.bControlPagos.Size = New System.Drawing.Size(186, 46)
+        Me.bControlPagos.TabIndex = 114
+        Me.bControlPagos.Text = " Control de Pagos"
+        Me.bControlPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.bControlPagos.UseVisualStyleBackColor = True
+        '
+        'bConsultaStocks
+        '
+        Me.bConsultaStocks.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
+        Me.bConsultaStocks.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bConsultaStocks.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bConsultaStocks.Font = New System.Drawing.Font("Arial", 9.75!)
+        Me.bConsultaStocks.Image = Global.Rebusco.My.Resources.Resources.ListadoStock24
+        Me.bConsultaStocks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.bConsultaStocks.Location = New System.Drawing.Point(3, 58)
+        Me.bConsultaStocks.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.bConsultaStocks.Name = "bConsultaStocks"
+        Me.bConsultaStocks.Size = New System.Drawing.Size(186, 46)
+        Me.bConsultaStocks.TabIndex = 124
+        Me.bConsultaStocks.Text = " Consulta de Stock"
+        Me.bConsultaStocks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.bConsultaStocks.UseVisualStyleBackColor = True
+        '
+        'bMovimientos
+        '
+        Me.bMovimientos.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
+        Me.bMovimientos.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bMovimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bMovimientos.Font = New System.Drawing.Font("Arial", 9.75!)
+        Me.bMovimientos.Image = Global.Rebusco.My.Resources.Resources.gears241
+        Me.bMovimientos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.bMovimientos.Location = New System.Drawing.Point(195, 58)
+        Me.bMovimientos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.bMovimientos.Name = "bMovimientos"
+        Me.bMovimientos.Size = New System.Drawing.Size(186, 46)
+        Me.bMovimientos.TabIndex = 115
+        Me.bMovimientos.Text = " Movimientos"
+        Me.bMovimientos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.bMovimientos.UseVisualStyleBackColor = True
+        '
+        'bIngresoOT
+        '
+        Me.bIngresoOT.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
+        Me.bIngresoOT.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bIngresoOT.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bIngresoOT.Font = New System.Drawing.Font("Arial", 9.75!)
+        Me.bIngresoOT.Image = Global.Rebusco.My.Resources.Resources.AgregarOT
+        Me.bIngresoOT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.bIngresoOT.Location = New System.Drawing.Point(387, 58)
+        Me.bIngresoOT.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.bIngresoOT.Name = "bIngresoOT"
+        Me.bIngresoOT.Size = New System.Drawing.Size(186, 46)
+        Me.bIngresoOT.TabIndex = 120
+        Me.bIngresoOT.Text = " Ingreso de OT"
+        Me.bIngresoOT.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.bIngresoOT.UseVisualStyleBackColor = True
+        '
+        'bServicioTecnico
+        '
+        Me.bServicioTecnico.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
+        Me.bServicioTecnico.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bServicioTecnico.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bServicioTecnico.Font = New System.Drawing.Font("Arial", 9.75!)
+        Me.bServicioTecnico.Image = Global.Rebusco.My.Resources.Resources.Servicio
+        Me.bServicioTecnico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.bServicioTecnico.Location = New System.Drawing.Point(579, 58)
+        Me.bServicioTecnico.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.bServicioTecnico.Name = "bServicioTecnico"
+        Me.bServicioTecnico.Size = New System.Drawing.Size(186, 46)
+        Me.bServicioTecnico.TabIndex = 122
+        Me.bServicioTecnico.Text = " Servicio Técnico"
+        Me.bServicioTecnico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.bServicioTecnico.UseVisualStyleBackColor = True
+        '
+        'bBuscarArticulo
+        '
+        Me.bBuscarArticulo.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
+        Me.bBuscarArticulo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.bBuscarArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bBuscarArticulo.Font = New System.Drawing.Font("Arial", 9.75!)
+        Me.bBuscarArticulo.Image = Global.Rebusco.My.Resources.Resources.buscarArt
+        Me.bBuscarArticulo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.bBuscarArticulo.Location = New System.Drawing.Point(771, 58)
+        Me.bBuscarArticulo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.bBuscarArticulo.Name = "bBuscarArticulo"
+        Me.bBuscarArticulo.Size = New System.Drawing.Size(186, 46)
+        Me.bBuscarArticulo.TabIndex = 123
+        Me.bBuscarArticulo.Text = " Buscar Artículo"
+        Me.bBuscarArticulo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.bBuscarArticulo.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -1070,10 +1275,10 @@ Partial Class Menu_Principal
         Me.Panel1.Controls.Add(Me.PictureBox4)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Location = New System.Drawing.Point(586, 410)
+        Me.Panel1.Location = New System.Drawing.Point(436, 388)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(456, 86)
+        Me.Panel1.Size = New System.Drawing.Size(372, 86)
         Me.Panel1.TabIndex = 145
         '
         'PictureBox3
@@ -1099,200 +1304,6 @@ Partial Class Menu_Principal
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox4.TabIndex = 143
         Me.PictureBox4.TabStop = False
-        '
-        'bVentaLocal
-        '
-        Me.bVentaLocal.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bVentaLocal.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bVentaLocal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bVentaLocal.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bVentaLocal.Image = Global.Rebusco.My.Resources.Resources.cashier_ok24
-        Me.bVentaLocal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bVentaLocal.Location = New System.Drawing.Point(3, 4)
-        Me.bVentaLocal.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bVentaLocal.Name = "bVentaLocal"
-        Me.bVentaLocal.Size = New System.Drawing.Size(199, 51)
-        Me.bVentaLocal.TabIndex = 112
-        Me.bVentaLocal.Text = " Venta Local"
-        Me.bVentaLocal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.bVentaLocal.UseVisualStyleBackColor = True
-        '
-        'bEmitirDocumentos
-        '
-        Me.bEmitirDocumentos.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bEmitirDocumentos.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bEmitirDocumentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bEmitirDocumentos.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bEmitirDocumentos.Image = Global.Rebusco.My.Resources.Resources.PatientResult24
-        Me.bEmitirDocumentos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bEmitirDocumentos.Location = New System.Drawing.Point(208, 4)
-        Me.bEmitirDocumentos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bEmitirDocumentos.Name = "bEmitirDocumentos"
-        Me.bEmitirDocumentos.Size = New System.Drawing.Size(199, 51)
-        Me.bEmitirDocumentos.TabIndex = 113
-        Me.bEmitirDocumentos.Text = " Emitir Documentos"
-        Me.bEmitirDocumentos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.bEmitirDocumentos.UseVisualStyleBackColor = True
-        '
-        'bCuadraturaCajas
-        '
-        Me.bCuadraturaCajas.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bCuadraturaCajas.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bCuadraturaCajas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bCuadraturaCajas.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bCuadraturaCajas.Image = Global.Rebusco.My.Resources.Resources.calc_ok24
-        Me.bCuadraturaCajas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bCuadraturaCajas.Location = New System.Drawing.Point(413, 4)
-        Me.bCuadraturaCajas.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bCuadraturaCajas.Name = "bCuadraturaCajas"
-        Me.bCuadraturaCajas.Size = New System.Drawing.Size(199, 51)
-        Me.bCuadraturaCajas.TabIndex = 116
-        Me.bCuadraturaCajas.Text = " Cuadratura de Cajas"
-        Me.bCuadraturaCajas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.bCuadraturaCajas.UseVisualStyleBackColor = True
-        '
-        'bClick_Collect
-        '
-        Me.bClick_Collect.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bClick_Collect.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bClick_Collect.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bClick_Collect.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bClick_Collect.Image = Global.Rebusco.My.Resources.Resources.pagos24
-        Me.bClick_Collect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bClick_Collect.Location = New System.Drawing.Point(618, 4)
-        Me.bClick_Collect.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bClick_Collect.Name = "bClick_Collect"
-        Me.bClick_Collect.Size = New System.Drawing.Size(199, 51)
-        Me.bClick_Collect.TabIndex = 125
-        Me.bClick_Collect.Text = " Click && Collect"
-        Me.bClick_Collect.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.bClick_Collect.UseVisualStyleBackColor = True
-        '
-        'bControlPagos
-        '
-        Me.bControlPagos.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bControlPagos.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bControlPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bControlPagos.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bControlPagos.Image = Global.Rebusco.My.Resources.Resources.Payment24
-        Me.bControlPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bControlPagos.Location = New System.Drawing.Point(823, 4)
-        Me.bControlPagos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bControlPagos.Name = "bControlPagos"
-        Me.bControlPagos.Size = New System.Drawing.Size(199, 51)
-        Me.bControlPagos.TabIndex = 114
-        Me.bControlPagos.Text = " Control de Pagos"
-        Me.bControlPagos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.bControlPagos.UseVisualStyleBackColor = True
-        '
-        'bConsultaStocks
-        '
-        Me.bConsultaStocks.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bConsultaStocks.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bConsultaStocks.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bConsultaStocks.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bConsultaStocks.Image = Global.Rebusco.My.Resources.Resources.ListadoStock24
-        Me.bConsultaStocks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bConsultaStocks.Location = New System.Drawing.Point(3, 63)
-        Me.bConsultaStocks.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bConsultaStocks.Name = "bConsultaStocks"
-        Me.bConsultaStocks.Size = New System.Drawing.Size(199, 51)
-        Me.bConsultaStocks.TabIndex = 124
-        Me.bConsultaStocks.Text = " Consulta de Stock"
-        Me.bConsultaStocks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.bConsultaStocks.UseVisualStyleBackColor = True
-        '
-        'bMovimientos
-        '
-        Me.bMovimientos.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bMovimientos.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bMovimientos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bMovimientos.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bMovimientos.Image = Global.Rebusco.My.Resources.Resources.gears241
-        Me.bMovimientos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bMovimientos.Location = New System.Drawing.Point(208, 63)
-        Me.bMovimientos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bMovimientos.Name = "bMovimientos"
-        Me.bMovimientos.Size = New System.Drawing.Size(199, 51)
-        Me.bMovimientos.TabIndex = 115
-        Me.bMovimientos.Text = " Movimientos"
-        Me.bMovimientos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.bMovimientos.UseVisualStyleBackColor = True
-        '
-        'bIngresoOT
-        '
-        Me.bIngresoOT.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bIngresoOT.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bIngresoOT.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bIngresoOT.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bIngresoOT.Image = Global.Rebusco.My.Resources.Resources.AgregarOT
-        Me.bIngresoOT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bIngresoOT.Location = New System.Drawing.Point(413, 63)
-        Me.bIngresoOT.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bIngresoOT.Name = "bIngresoOT"
-        Me.bIngresoOT.Size = New System.Drawing.Size(199, 51)
-        Me.bIngresoOT.TabIndex = 120
-        Me.bIngresoOT.Text = " Ingreso de OT"
-        Me.bIngresoOT.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.bIngresoOT.UseVisualStyleBackColor = True
-        '
-        'bServicioTecnico
-        '
-        Me.bServicioTecnico.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bServicioTecnico.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bServicioTecnico.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bServicioTecnico.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bServicioTecnico.Image = Global.Rebusco.My.Resources.Resources.Servicio
-        Me.bServicioTecnico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bServicioTecnico.Location = New System.Drawing.Point(618, 63)
-        Me.bServicioTecnico.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bServicioTecnico.Name = "bServicioTecnico"
-        Me.bServicioTecnico.Size = New System.Drawing.Size(199, 51)
-        Me.bServicioTecnico.TabIndex = 122
-        Me.bServicioTecnico.Text = " Servicio Técnico"
-        Me.bServicioTecnico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.bServicioTecnico.UseVisualStyleBackColor = True
-        '
-        'bBuscarArticulo
-        '
-        Me.bBuscarArticulo.BackgroundImage = Global.Rebusco.My.Resources.Resources.back_light_blue3
-        Me.bBuscarArticulo.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.bBuscarArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.bBuscarArticulo.Font = New System.Drawing.Font("Arial", 9.75!)
-        Me.bBuscarArticulo.Image = Global.Rebusco.My.Resources.Resources.buscarArt
-        Me.bBuscarArticulo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bBuscarArticulo.Location = New System.Drawing.Point(823, 63)
-        Me.bBuscarArticulo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.bBuscarArticulo.Name = "bBuscarArticulo"
-        Me.bBuscarArticulo.Size = New System.Drawing.Size(199, 51)
-        Me.bBuscarArticulo.TabIndex = 123
-        Me.bBuscarArticulo.Text = " Buscar Artículo"
-        Me.bBuscarArticulo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.bBuscarArticulo.UseVisualStyleBackColor = True
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.Image = Global.Rebusco.My.Resources.Resources.Database_Active_icon16
-        Me.PictureBox6.Location = New System.Drawing.Point(10, 53)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(16, 16)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox6.TabIndex = 145
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox5.Image = Global.Rebusco.My.Resources.Resources.Home_Server_icon16
-        Me.PictureBox5.Location = New System.Drawing.Point(10, 19)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(16, 16)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox5.TabIndex = 144
-        Me.PictureBox5.TabStop = False
         '
         'PictureBox1
         '
@@ -1331,7 +1342,7 @@ Partial Class Menu_Principal
         Me.WinDeco1.MuestraBordeExterior = -1
         Me.WinDeco1.Name = "WinDeco1"
         Me.WinDeco1.SiempreVisible = False
-        Me.WinDeco1.Size = New System.Drawing.Size(1053, 50)
+        Me.WinDeco1.Size = New System.Drawing.Size(1012, 50)
         Me.WinDeco1.TabIndex = 134
         Me.WinDeco1.TituloVentana = "           Rebusco"
         Me.WinDeco1.UbicacionTitulo = New System.Drawing.Point(4, 19)
@@ -1349,7 +1360,7 @@ Partial Class Menu_Principal
         Me.bVerConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bVerConfig.Font = New System.Drawing.Font("Arial", 9.75!)
         Me.bVerConfig.Image = Global.Rebusco.My.Resources.Resources.settingsJson24
-        Me.bVerConfig.Location = New System.Drawing.Point(832, 353)
+        Me.bVerConfig.Location = New System.Drawing.Point(803, 424)
         Me.bVerConfig.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.bVerConfig.Name = "bVerConfig"
         Me.bVerConfig.Size = New System.Drawing.Size(198, 50)
@@ -1359,26 +1370,15 @@ Partial Class Menu_Principal
         Me.bVerConfig.UseVisualStyleBackColor = True
         Me.bVerConfig.Visible = False
         '
-        'Imagen
-        '
-        Me.Imagen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Imagen.Location = New System.Drawing.Point(15, 24)
-        Me.Imagen.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Imagen.Name = "Imagen"
-        Me.Imagen.Size = New System.Drawing.Size(203, 102)
-        Me.Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Imagen.TabIndex = 38
-        Me.Imagen.TabStop = False
-        '
         'PictureBox2
         '
         Me.PictureBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(831, 509)
+        Me.PictureBox2.Location = New System.Drawing.Point(805, 490)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(209, 129)
+        Me.PictureBox2.Size = New System.Drawing.Size(195, 141)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.PictureBox2.TabIndex = 108
         Me.PictureBox2.TabStop = False
@@ -1387,7 +1387,7 @@ Partial Class Menu_Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1053, 661)
+        Me.ClientSize = New System.Drawing.Size(1012, 645)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Controls.Add(Me.pServidores)
@@ -1407,19 +1407,19 @@ Partial Class Menu_Principal
         Me.Text = "MarketONE"
         Me.gParametros.ResumeLayout(False)
         Me.gParametros.PerformLayout()
+        CType(Me.Imagen, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Barra.ResumeLayout(False)
         Me.Barra.PerformLayout()
         Me.pServidores.ResumeLayout(False)
         Me.pServidores.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FlowLayoutPanel1.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Imagen, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
