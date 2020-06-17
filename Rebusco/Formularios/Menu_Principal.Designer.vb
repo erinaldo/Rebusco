@@ -35,7 +35,6 @@ Partial Class Menu_Principal
         Me.Label44 = New System.Windows.Forms.Label()
         Me.lDTE = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Imagen = New System.Windows.Forms.PictureBox()
         Me.lVersion = New System.Windows.Forms.Label()
         Me.lLocal = New System.Windows.Forms.Label()
         Me.lUsuario = New System.Windows.Forms.Label()
@@ -133,12 +132,13 @@ Partial Class Menu_Principal
         Me.Label10 = New System.Windows.Forms.Label()
         Me.cBase = New System.Windows.Forms.ComboBox()
         Me.pServidores = New System.Windows.Forms.Panel()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.cImpresoras = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.ActualizarStatus = New System.Windows.Forms.Timer(Me.components)
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.bVentaLocal = New System.Windows.Forms.Button()
         Me.bEmitirDocumentos = New System.Windows.Forms.Button()
         Me.bCuadraturaCajas = New System.Windows.Forms.Button()
@@ -149,24 +149,24 @@ Partial Class Menu_Principal
         Me.bIngresoOT = New System.Windows.Forms.Button()
         Me.bServicioTecnico = New System.Windows.Forms.Button()
         Me.bBuscarArticulo = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.WinDeco1 = New WinDeco.WinDeco()
         Me.bVerConfig = New System.Windows.Forms.Button()
+        Me.Imagen = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.gParametros.SuspendLayout()
-        CType(Me.Imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Barra.SuspendLayout()
         Me.pServidores.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -220,7 +220,7 @@ Partial Class Menu_Principal
         '
         Me.lKey.AutoSize = True
         Me.lKey.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lKey.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.lKey.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
         Me.lKey.Location = New System.Drawing.Point(778, 108)
         Me.lKey.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lKey.Name = "lKey"
@@ -244,7 +244,7 @@ Partial Class Menu_Principal
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
         Me.Label7.Location = New System.Drawing.Point(525, 107)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
@@ -267,7 +267,7 @@ Partial Class Menu_Principal
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
         Me.Label6.Location = New System.Drawing.Point(525, 25)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
@@ -291,7 +291,7 @@ Partial Class Menu_Principal
         '
         Me.Label44.AutoSize = True
         Me.Label44.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label44.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label44.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
         Me.Label44.Location = New System.Drawing.Point(525, 77)
         Me.Label44.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label44.Name = "Label44"
@@ -315,24 +315,13 @@ Partial Class Menu_Principal
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
         Me.Label5.Location = New System.Drawing.Point(525, 50)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(77, 18)
         Me.Label5.TabIndex = 39
         Me.Label5.Text = "IP DTE     "
-        '
-        'Imagen
-        '
-        Me.Imagen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Imagen.Location = New System.Drawing.Point(15, 24)
-        Me.Imagen.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Imagen.Name = "Imagen"
-        Me.Imagen.Size = New System.Drawing.Size(203, 102)
-        Me.Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Imagen.TabIndex = 38
-        Me.Imagen.TabStop = False
         '
         'lVersion
         '
@@ -383,7 +372,7 @@ Partial Class Menu_Principal
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(241, 107)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
@@ -395,7 +384,7 @@ Partial Class Menu_Principal
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(241, 77)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
@@ -407,7 +396,7 @@ Partial Class Menu_Principal
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(241, 50)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
@@ -419,7 +408,7 @@ Partial Class Menu_Principal
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(190, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(228, Byte), Integer), CType(CType(20, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(241, 24)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
@@ -1017,30 +1006,6 @@ Partial Class Menu_Principal
         Me.pServidores.Size = New System.Drawing.Size(495, 86)
         Me.pServidores.TabIndex = 139
         '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.Image = Global.Rebusco.My.Resources.Resources.Database_Active_icon16
-        Me.PictureBox6.Location = New System.Drawing.Point(10, 53)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(16, 16)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox6.TabIndex = 145
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox5.Image = Global.Rebusco.My.Resources.Resources.Home_Server_icon16
-        Me.PictureBox5.Location = New System.Drawing.Point(10, 19)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(16, 16)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox5.TabIndex = 144
-        Me.PictureBox5.TabStop = False
-        '
         'cImpresoras
         '
         Me.cImpresoras.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -1094,6 +1059,46 @@ Partial Class Menu_Principal
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         Me.FlowLayoutPanel1.Size = New System.Drawing.Size(1034, 179)
         Me.FlowLayoutPanel1.TabIndex = 144
+        '
+        'Panel1
+        '
+        Me.Panel1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Controls.Add(Me.cLocal)
+        Me.Panel1.Controls.Add(Me.cImpresoras)
+        Me.Panel1.Controls.Add(Me.PictureBox3)
+        Me.Panel1.Controls.Add(Me.PictureBox4)
+        Me.Panel1.Controls.Add(Me.Label11)
+        Me.Panel1.Controls.Add(Me.Label8)
+        Me.Panel1.Location = New System.Drawing.Point(586, 410)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(456, 86)
+        Me.Panel1.TabIndex = 145
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Image = Global.Rebusco.My.Resources.Resources.print
+        Me.PictureBox3.Location = New System.Drawing.Point(14, 54)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox3.TabIndex = 142
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Image = Global.Rebusco.My.Resources.Resources.location16
+        Me.PictureBox4.Location = New System.Drawing.Point(14, 20)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox4.TabIndex = 143
+        Me.PictureBox4.TabStop = False
         '
         'bVentaLocal
         '
@@ -1265,56 +1270,40 @@ Partial Class Menu_Principal
         Me.bBuscarArticulo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.bBuscarArticulo.UseVisualStyleBackColor = True
         '
-        'Panel1
+        'PictureBox6
         '
-        Me.Panel1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Panel1.BackColor = System.Drawing.Color.Transparent
-        Me.Panel1.Controls.Add(Me.cLocal)
-        Me.Panel1.Controls.Add(Me.cImpresoras)
-        Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.PictureBox4)
-        Me.Panel1.Controls.Add(Me.Label11)
-        Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Location = New System.Drawing.Point(586, 410)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(456, 86)
-        Me.Panel1.TabIndex = 145
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Image = Global.Rebusco.My.Resources.Resources.Database_Active_icon16
+        Me.PictureBox6.Location = New System.Drawing.Point(10, 53)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox6.TabIndex = 145
+        Me.PictureBox6.TabStop = False
         '
-        'PictureBox3
+        'PictureBox5
         '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.Image = Global.Rebusco.My.Resources.Resources.print
-        Me.PictureBox3.Location = New System.Drawing.Point(14, 54)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(16, 16)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox3.TabIndex = 142
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.Image = Global.Rebusco.My.Resources.Resources.location16
-        Me.PictureBox4.Location = New System.Drawing.Point(14, 20)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(16, 16)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox4.TabIndex = 143
-        Me.PictureBox4.TabStop = False
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Image = Global.Rebusco.My.Resources.Resources.Home_Server_icon16
+        Me.PictureBox5.Location = New System.Drawing.Point(10, 19)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox5.TabIndex = 144
+        Me.PictureBox5.TabStop = False
         '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(139, Byte), Integer))
         Me.PictureBox1.Image = Global.Rebusco.My.Resources.Resources._512
-        Me.PictureBox1.Location = New System.Drawing.Point(8, 2)
+        Me.PictureBox1.Location = New System.Drawing.Point(1, 1)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Padding = New System.Windows.Forms.Padding(8, 0, 0, 0)
         Me.PictureBox1.Size = New System.Drawing.Size(58, 48)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 106
         Me.PictureBox1.TabStop = False
         '
@@ -1344,10 +1333,10 @@ Partial Class Menu_Principal
         Me.WinDeco1.SiempreVisible = False
         Me.WinDeco1.Size = New System.Drawing.Size(1053, 50)
         Me.WinDeco1.TabIndex = 134
-        Me.WinDeco1.TituloVentana = "              MarketONE"
+        Me.WinDeco1.TituloVentana = "           Rebusco"
         Me.WinDeco1.UbicacionTitulo = New System.Drawing.Point(4, 19)
         Me.WinDeco1.VerCerrar = True
-        Me.WinDeco1.VerLogo = True
+        Me.WinDeco1.VerLogo = False
         Me.WinDeco1.VerMaximizar = False
         Me.WinDeco1.VerMinimizar = True
         Me.WinDeco1.VerTitulo = True
@@ -1369,6 +1358,17 @@ Partial Class Menu_Principal
         Me.bVerConfig.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.bVerConfig.UseVisualStyleBackColor = True
         Me.bVerConfig.Visible = False
+        '
+        'Imagen
+        '
+        Me.Imagen.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Imagen.Location = New System.Drawing.Point(15, 24)
+        Me.Imagen.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Imagen.Name = "Imagen"
+        Me.Imagen.Size = New System.Drawing.Size(203, 102)
+        Me.Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Imagen.TabIndex = 38
+        Me.Imagen.TabStop = False
         '
         'PictureBox2
         '
@@ -1407,19 +1407,19 @@ Partial Class Menu_Principal
         Me.Text = "MarketONE"
         Me.gParametros.ResumeLayout(False)
         Me.gParametros.PerformLayout()
-        CType(Me.Imagen, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Barra.ResumeLayout(False)
         Me.Barra.PerformLayout()
         Me.pServidores.ResumeLayout(False)
         Me.pServidores.PerformLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FlowLayoutPanel1.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Imagen, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

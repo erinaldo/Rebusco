@@ -71,7 +71,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\MarketONE.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\Rebusco.ico</ApplicationIcon>
   </PropertyGroup>
   <!--111-->
   <!--111-->
@@ -1828,6 +1828,7 @@
     <Content Include="Lib\ShockwaveFlashObjects.dll" />
     <Content Include="Lib\stdole.dll" />
     <Content Include="Lib\WinDeco.dll" />
+    <None Include="Resources\Rebusco.ico" />
     <None Include="Resources\Database-Active-icon24.png" />
     <None Include="Resources\Database-Active-icon48.png" />
     <None Include="Resources\Home-Server-icon16.png" />

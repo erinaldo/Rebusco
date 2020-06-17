@@ -2237,6 +2237,12 @@ Public Module Funciones
 
     Private Function Ping(ip As String) As Boolean
         Try
+
+            If ip.Contains(",") Or ip.Contains("/") Then
+                ip = ip.Replace(",", "~").Replace("/", "~")
+                ip = ip.Split("~"c)(0)
+            End If
+
             Dim pg = New Net.NetworkInformation.Ping()
             Dim resultado = pg.Send(ip, CInt(CONFIGURACION.TiempoConexion / 2) * 1000)
             Return resultado.Status = Net.NetworkInformation.IPStatus.Success
